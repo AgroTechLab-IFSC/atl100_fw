@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="atl__main_8c" kind="file"><name>atl_main.c</name>
+    <member refid="atl__main_8c_1ab795a48e4796e4b0fca47a1341469d12" kind="define"><name>BLINK_GPIO</name></member>
+    <member refid="atl__main_8c_1a5a85b9c772bbeb480b209a3e6ea92b4c" kind="variable"><name>TAG</name></member>
+    <member refid="atl__main_8c_1a4ed953b2ba4513f63e76d1f65192ef1c" kind="variable"><name>s_led_state</name></member>
+    <member refid="atl__main_8c_1a630544a7f0a2cc40d8a7fefab7e2fe70" kind="function"><name>app_main</name></member>
+  </compound>
+  <compound refid="dir_5c982d53a68cdbcd421152b4020263a9" kind="dir"><name>main</name>
+  </compound>
+</doxygenindex>
