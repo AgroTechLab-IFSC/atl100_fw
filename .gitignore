@@ -50,3 +50,13 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Docker files
+.devcontainer/
+
+# VSCode files
+.vscode/
+
+# ESP-IDF files
+build/
+managed_components/
