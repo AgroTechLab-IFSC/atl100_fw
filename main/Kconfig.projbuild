@@ -1,49 +1,742 @@
-menu "Example Configuration"
-
-    orsource "$IDF_PATH/examples/common_components/env_caps/$IDF_TARGET/Kconfig.env_caps"
-
-    choice BLINK_LED
-        prompt "Blink LED type"
-        default BLINK_LED_GPIO
+menu "ATL100 Configuration"
+                
+    config ATL_LED_BUILTIN_GPIO
+        int "LED builtin GPIO pin"
+        range 0 48
+        default 48
         help
-            Select the LED type. A normal level controlled LED or an addressable LED strip.
-            The default selection is based on the Espressif DevKit boards.
-            You can change the default selection according to your board.
+            GPIO number (IOxx) to LED builtin.
 
-        config BLINK_LED_GPIO
-            bool "GPIO"
-        config BLINK_LED_STRIP
-            bool "LED strip"
-    endchoice
-
-    choice BLINK_LED_STRIP_BACKEND
-        depends on BLINK_LED_STRIP
-        prompt "LED strip backend peripheral"
-        default BLINK_LED_STRIP_BACKEND_RMT if SOC_RMT_SUPPORTED
-        default BLINK_LED_STRIP_BACKEND_SPI
+    config ATL_LED_RGB_R_GPIO
+        int "LED RGB red GPIO pin"
+        range 0 48
+        default 7
         help
-            Select the backend peripheral to drive the LED strip.
+            GPIO number (IOxx) to LED RGB red.
 
-        config BLINK_LED_STRIP_BACKEND_RMT
-            depends on SOC_RMT_SUPPORTED
-            bool "RMT"
-        config BLINK_LED_STRIP_BACKEND_SPI
-            bool "SPI"
-    endchoice
-
-    config BLINK_GPIO
-        int "Blink GPIO number"
-        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
-        default 8
+    config ATL_LED_RGB_G_GPIO
+        int "LED RGB green GPIO pin"
+        range 0 48
+        default 15
         help
-            GPIO number (IOxx) to blink on and off the LED.
-            Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.
+            GPIO number (IOxx) to LED RGB green.
 
-    config BLINK_PERIOD
-        int "Blink period in ms"
-        range 10 3600000
-        default 1000
+    config ATL_LED_RGB_B_GPIO
+        int "LED RGB blue GPIO pin"
+        range 0 48
+        default 6
         help
-            Define the blinking period in milliseconds.
+            GPIO number (IOxx) to LED RGB blue.
 
+    config ATL_LED_PERIOD
+        int "LED period (in seconds)"
+        range 1 3600
+        default 2
+        help
+            Define the LED blinking period (in seconds).
+    
+    config ATL_BUTTON_GPIO
+        int "Button GPIO pin"
+        range 0 48              
+        default 0
+        help
+            GPIO number (IOxx) to button.   
+
+    config ATL_GPIO_I2C_MASTER_SDA
+        int "I2C master SDA GPIO pin"
+        default 42
+        help
+            GPIO number for I2C Master data line.
+            
+    config ATL_GPIO_I2C_MASTER_SCL
+        int "I2C master SCL GPIO pin"
+        default 41
+        help
+            GPIO number for I2C Master clock line.
+
+    menu "ATL100 WiFi Configuration"
+        config ATL_WIFI_AP_SSID_PREFIX
+            string "WiFi AP SSID prefix"
+            default "ATL100-"
+            help
+                WiFi AP SSID (network name) prefix (max. 25).
+        
+        config ATL_WIFI_AP_PASSWORD
+            string "WiFi AP Password"
+            default "AgroTechLab"
+            help
+                WiFi AP password.
+
+        config ATL_WIFI_AP_CHANNEL
+            int "WiFi AP channel"
+            range 1 11
+            default 6
+            help
+                WiFi AP channel.
+
+        config ATL_WIFI_AP_MAX_STA_CONN
+            int "WiFi AP maximum client simultanous"
+            default 4
+            help
+                Maximum clientes connected simultanous at AP.
+        
+        config ATL_WIFI_STA_MAX_CONN_RETRY
+            int "WiFi AP maximum client simultanous"
+            default 5
+            help
+                Maximum STA connection retry.
+    endmenu
+    
+    menu "ATL100 LTE Configuration"
+        config ATL_LTE_ENABLED
+            bool "LTE interface enabled"
+            default "n"
+            help
+                Select this option to enable LTE interface.
+
+        config ATL_LTE_TXD_GPIO
+            int "LTE TXD GPIO pin"
+            range 0 48              
+            default 17
+            help
+                GPIO number (IOxx) to LTE TXD (at MCU).
+
+        config ATL_LTE_RXD_GPIO
+            int "LTE RXD GPIO pin"
+            range 0 48              
+            default 18
+            help
+                GPIO number (IOxx) to LTE RXD (at MCU). 
+    endmenu
+    
+    menu "ATL100 RS-232 Configuration"
+        choice 
+            prompt "RS-232 interface enabled"
+            default ATL_RS485_ENABLED_FALSE
+            help 
+                Select this option to enable/disable RS-232 interface.
+            
+            config ATL_RS232_ENABLED_FALSE
+                bool "Disabled"
+                help
+                    RS-232 interface is disabled.
+
+            config ATL_RS232_ENABLED_TRUE
+                bool "Enabled"
+                help
+                    RS-232 interface is enabled.
+        endchoice
+        
+        config ATL_RS232_ENABLED
+            int
+            default 0 if ATL_RS232_ENABLED_FALSE
+            default 1 if ATL_RS232_ENABLED_TRUE
+
+        config ATL_RS232_TXD_GPIO
+            int "RS-232 TXD GPIO pin"
+            range 0 48              
+            default 11
+            help
+                GPIO number (IOxx) to RS-232 TXD (at MCU and MAX3232 module).
+        
+        config ATL_RS232_RXD_GPIO
+            int "RS-232 RXD GPIO pin"
+            range 0 48              
+            default 12
+            help
+                GPIO number (IOxx) to RS-232 RXD (at MCU and MAX3232 module).    
+    endmenu
+
+    menu "ATL100 RS-485 Configuration"
+        choice 
+            prompt "RS-485 interface enabled"
+            default ATL_RS485_ENABLED_FALSE
+            help 
+                Select this option to enable/disable RS-485 interface.
+            
+            config ATL_RS485_ENABLED_FALSE
+                bool "Disabled"
+                help
+                    RS-485 interface is disabled.
+
+            config ATL_RS485_ENABLED_TRUE
+                bool "Enabled"
+                help
+                    RS-485 interface is enabled.
+        endchoice
+        
+        config ATL_RS485_ENABLED
+            int
+            default 0 if ATL_RS485_ENABLED_FALSE
+            default 1 if ATL_RS485_ENABLED_TRUE
+
+        config ATL_RS485_TXD_GPIO
+            int "RS-485 TXD GPIO pin"
+            range 0 48              
+            default 1
+            help
+                GPIO number (IOxx) to RS-485 TXD (at MCU and HW-519 module).
+        
+        config ATL_RS485_RXD_GPIO
+            int "RS-485 RXD GPIO pin"
+            range 0 48              
+            default 2
+            help
+                GPIO number (IOxx) to RS-485 RXD (at MCU and HW-519 module).
+    endmenu
+
+    menu "ATL100 Webserver Configuration"
+        config ATL_WEBSERVER_ADMIN_USER
+            string "Webserver administrator user"
+            default "admin"
+            help
+                Default administrator user at ATL100 webserver.
+            
+        config ATL_WEBSERVER_ADMIN_PASS
+            string "Webserver administrator password"
+            default "AgroTechLab"
+            help
+                Default administrator password at ATL100 webserver.       
+    endmenu
+    
+    menu "ATL100 MQTT Client Configuration"
+        choice
+            prompt "MQTT broker mode"
+            default ATL_MQTT_DISABLED
+            help 
+                Select the MQTT broker mode.
+
+            config ATL_MQTT_DISABLED
+                bool "Disabled"
+                help
+                    MQTT broker is disabled.
+
+            config ATL_MQTT_AGROTECHLAB_CLOUD
+                bool "Enabled and connected to AgroTechLab Cloud"
+                help
+                    MQTT broker is enabled e configured to connect at AgroTechLab Cloud.
+            
+            config ATL_MQTT_THIRD
+                bool "Enabled and connected to Third Cloud"
+                help
+                    MQTT broker is enabled e configured to connect at Third Cloud.
+        endchoice
+        
+        config ATL_MQTT_BROKER_MODE
+            int
+            default 0 if ATL_MQTT_DISABLED
+            default 1 if ATL_MQTT_AGROTECHLAB_CLOUD
+            default 2 if ATL_MQTT_THIRD
+
+        config ATL_MQTT_BROKER_ADDR
+            string "MQTT broker address"
+            default "agrotechlab.lages.ifsc.edu.br"
+            help
+                Address of MQTT broker.
+            
+        config ATL_MQTT_BROKER_PORT
+            int "MQTT broker port"
+            range 1 65535
+            default 1883
+            help
+                Port of MQTT broker.
+        
+        config ATL_MQTT_USERNAME
+            string "MQTT authentication username"
+            default "atl100"
+            help
+                Username for MQTT authentication.
+                
+        config ATL_MQTT_PASSWORD
+            string "MQTT authentication password"
+            default "AgroTechLab"
+            help
+                Password for MQTT authentication.
+        
+        config ATL_MQTT_QOS
+            int "MQTT QoS level"
+            range 0 2
+            default 0
+            help
+                Level of Qos at MQTT communication.
+    endmenu
+    
+    menu "ATL100 Telemetry"
+        config ATL_SEND_PERIOD
+            int "Telemetry send period (in seconds)"
+            range 2 3600
+            default 60
+            help
+                Define the send period (in seconds).
+
+        choice 
+            prompt "Power sensor enabled"
+            default ATL_PWR_ENABLED_FALSE
+            help 
+                Select this option to enable/disable power sensor.
+                                                                            
+            config ATL_PWR_ENABLED_FALSE
+                bool "Disabled"
+                help
+                    Power sensor is disabled.
+                                                                
+            config ATL_PWR_ENABLED_TRUE
+                bool "Enabled"
+                help
+                    Power sensor is enabled.
+        endchoice
+                                                                        
+        config ATL_PWR_ENABLED
+            int
+            default 0 if ATL_PWR_ENABLED_FALSE
+            default 1 if ATL_PWR_ENABLED_TRUE
+
+        config ATL_PWR_SAMPLING_PERIOD
+            int "Power sampling period (in seconds)"
+            range 2 3600
+            default 30
+            help
+                Define the power sampling period (in seconds).
+        
+        choice 
+            prompt "UV sensor enabled"
+            default ATL_UV_ENABLED_FALSE
+            help 
+                Select this option to enable/disable UV sensor.
+                                                                                    
+            config ATL_PWR_ENABLED_FALSE
+                bool "Disabled"
+                help
+                    UV sensor is disabled.
+                                                                        
+            config ATL_UV_ENABLED_TRUE
+                bool "Enabled"
+                help
+                    UV sensor is enabled.
+        endchoice
+                                                                                
+        config ATL_UV_ENABLED
+            int
+            default 0 if ATL_UV_ENABLED_FALSE
+            default 1 if ATL_UV_ENABLED_TRUE
+        
+        config ATL_UV_SAMPLING_PERIOD
+            int "UV sampling period (in seconds)"
+            range 2 3600
+            default 30
+            help
+                Define the power sampling period (in seconds).
+        
+        choice 
+            prompt "Light sensor enabled"
+            default ATL_LIGHT_ENABLED_FALSE
+            help 
+                Select this option to enable/disable light sensor.
+                                                                                            
+            config ATL_LIGHT_ENABLED_FALSE
+                bool "Disabled"
+                help
+                    Light sensor is disabled.
+                                                                                
+            config ATL_LIGHT_ENABLED_TRUE
+                bool "Enabled"
+                help
+                    Light sensor is enabled.
+        endchoice
+                                                                                        
+        config ATL_LIGHT_ENABLED
+            int
+            default 0 if ATL_LIGHT_ENABLED_FALSE
+            default 1 if ATL_LIGHT_ENABLED_TRUE
+        
+        config ATL_LIGHT_I2C_ADDR
+            hex 
+            prompt "Light I2C address"
+            range 0x23 0x5c
+            default 0x23
+            help
+                Light I2C address (BH1750).
+
+        config ATL_LIGHT_SAMPLING_PERIOD
+            int "Light sampling period (in seconds)"
+            range 2 3600
+            default 30
+            help
+                Define the light sampling period (in seconds).
+        
+        choice 
+            prompt "ADC sensor enabled"
+            default ATL_ADC_DISABLED
+            help 
+                Select this option to define the ADC sensor mode.
+                                                                    
+            config ATL_ADC_DISABLED
+                bool "Disabled"
+                help
+                    ADC sensor is disabled.
+                                                        
+            config ATL_ADC_INPUT_4_20_MA
+                bool "Enabled (4mA ~ 20mA)"
+                help
+                    ADC sensor is enabled and setted to 4mA ~ 20mA.
+            
+            config ATL_ADC_INPUT_0_10_V
+                bool "Enabled (0V ~ 10V)"
+                help
+                    ADC sensor is enabled and setted to 0V ~ 10V.
+        endchoice
+                                                                
+        config ATL_ADC_MODE
+            int
+            default 0 if ATL_ADC_DISABLED
+            default 1 if ATL_ADC_INPUT_4_20_MA
+            default 2 if ATL_ADC_INPUT_0_10_V
+        
+        config ATL_ADC_I2C_ADDR
+            hex 
+            prompt "ADC I2C address"
+            range 0x48 0x4b
+            default 0x48
+            help
+                ADC I2C address.
+                
+        config ATL_ADC_ALRT_GPIO
+            int "ADC alert GPIO pin"
+            range 0 48
+            default 40
+            help
+                GPIO number (IOxx) to ADC alert.
+
+        config ATL_ADC_SAMPLING_PERIOD
+            int "ADC sampling period (in seconds)"
+            range 2 3600
+            default 30
+            help
+                Define the ADC sampling period (in seconds).
+      
+        choice 
+            prompt "DHT sensor enabled"
+            default ATL_DHT_ENABLED_FALSE
+            help 
+                Select this option to enable/disable DHT22 sensor.
+                                                            
+            config ATL_DHT_ENABLED_FALSE
+                bool "Disabled"
+                help
+                    DHT22 sensor is disabled.
+                                                
+            config ATL_DHT_ENABLED_TRUE
+                bool "Enabled"
+                help
+                    DHT22 sensor is enabled.
+        endchoice
+                                                        
+        config ATL_DHT_ENABLED
+            int
+            default 0 if ATL_DHT_ENABLED_FALSE
+            default 1 if ATL_DHT_ENABLED_TRUE
+
+        config ATL_DHT_GPIO
+            int "DHT sensor GPIO number"
+            range 0 48
+            default 19
+            help
+                GPIO number (IOxx) for DHT sensor.
+        
+        config ATL_DHT_SAMPLING_PERIOD
+            int "DHT sampling period (in seconds)"
+            range 2 3600
+            default 30
+            help
+                Define the DHT sampling period (in seconds).
+        
+        choice 
+            prompt "BME280 sensor enabled"
+            default ATL_BME280_ENABLED_FALSE
+            help 
+                Select this option to enable/disable BME280 sensor.
+                                                    
+            config ATL_BME280_ENABLED_FALSE
+                bool "Disabled"
+                help
+                    BME280 sensor is disabled.
+                                        
+            config ATL_BME280_ENABLED_TRUE
+                bool "Enabled"
+                help
+                    BME280 sensor is enabled.
+        endchoice
+                                                
+        config ATL_BME280_ENABLED
+            int
+            default 0 if ATL_BME280_ENABLED_FALSE
+            default 1 if ATL_BME280_ENABLED_TRUE
+        
+        config ATL_BME280_I2C_ADDR
+            hex 
+            prompt "BME280 I2C address"
+            range 0x76 0x77
+            default 0x76
+            help
+                GPIO number (IOxx) for BLE280 sensor.
+                
+        config ATL_BME280_SAMPLING_PERIOD
+            int "BME280 sampling period (in seconds)"
+            range 2 3600
+            default 30
+            help
+                Define the BME280 sampling period (in seconds).
+                
+        choice 
+            prompt "Pluviometer sensor enabled"
+            default ATL_PLUVIOMETER_ENABLED_FALSE
+            help 
+                Select this option to enable/disable pluviometer sensor.
+                                            
+            config ATL_PLUVIOMETER_ENABLED_FALSE
+                bool "Disabled"
+                help
+                    Pluviometer sensor is disabled.
+                                
+            config ATL_PLUVIOMETER_ENABLED_TRUE
+                bool "Enabled"
+                help
+                    Pluviometer sensor is enabled.
+        endchoice
+                                        
+        config ATL_PLUVIOMETER_ENABLED
+            int
+            default 0 if ATL_PLUVIOMETER_ENABLED_FALSE
+            default 1 if ATL_PLUVIOMETER_ENABLED_TRUE
+        
+        config ATL_PLUVIOMETER_GPIO
+            int "Pluviometer sensor GPIO number"
+            range 0 48
+            default 39
+            help
+                GPIO number (IOxx) for pluviometer sensor.
+                
+        config ATL_PLUVIOMETER_SAMPLING_PERIOD
+            int "Pluviometer sampling period (in seconds)"
+            range 2 3600
+            default 30
+            help
+                Define the pluviometer sampling period (in seconds).
+
+        choice 
+            prompt "Anemometer sensor enabled"
+            default ATL_ANEMOMETER_ENABLED_FALSE
+            help 
+                Select this option to enable/disable anemometer sensor.
+                                    
+            config ATL_ANEMOMETER_ENABLED_FALSE
+                bool "Disabled"
+                help
+                    Anemometer sensor is disabled.
+                        
+            config ATL_ANEMOMETER_ENABLED_TRUE
+                bool "Enabled"
+                help
+                    Anemometer sensor is enabled.
+        endchoice
+                                
+        config ATL_ANEMOMETER_ENABLED
+            int
+            default 0 if ATL_ANEMOMETER_ENABLED_FALSE
+            default 1 if ATL_ANEMOMETER_ENABLED_TRUE
+                
+        config ATL_ANEMOMETER_GPIO
+            int "Anemometer sensor GPIO number"
+            range 0 48
+            default 35
+            help
+                GPIO number (IOxx) for anemometer sensor.
+                        
+        config ATL_ANEMOMETER_SAMPLING_PERIOD
+            int "Anemometer sampling period (in seconds)"
+            range 2 3600
+            default 30
+            help
+                Define the anemometer sampling period (in seconds).
+        
+        choice 
+            prompt "Wind sock sensor enabled"
+            default ATL_WIND_SOCK_ENABLED_FALSE
+            help 
+                Select this option to enable/disable wind sock sensor.
+                            
+            config ATL_WIND_SOCK_ENABLED_FALSE
+                bool "Disabled"
+                help
+                    Wind sock sensor is disabled.
+                
+            config ATL_WIND_SOCK_ENABLED_TRUE
+                bool "Enabled"
+                help
+                    Wind sock sensor is enabled.
+        endchoice
+                        
+        config ATL_WIND_SOCK_ENABLED
+            int
+            default 0 if ATL_WIND_SOCK_ENABLED_FALSE
+            default 1 if ATL_WIND_SOCK_ENABLED_TRUE
+                        
+        config ATL_WIND_SOCK_GPIO
+            int "Wind sock sensor GPIO number"
+            range 0 48
+            default 21
+            help
+                GPIO number (IOxx) for wind sock sensor.
+                                
+        config ATL_WIND_SOCK_SAMPLING_PERIOD
+            int "Wind sock sampling period (in seconds)"
+            range 2 3600
+            default 30
+            help
+                Define the wind sock sampling period (in seconds).
+        
+        choice 
+            prompt "Soil sensor enabled"
+            default ATL_SOIL_ENABLED_FALSE
+            help 
+                Select this option to enable/disable soil sensor.
+                    
+            config ATL_SOIL_ENABLED_FALSE
+                bool "Disabled"
+                help
+                    Soil sensor is disabled.
+        
+            config ATL_SOIL_ENABLED_TRUE
+                bool "Enabled"
+                help
+                    Soil sensor is enabled.
+        endchoice
+                
+        config ATL_SOIL_ENABLED
+            int
+            default 0 if ATL_SOIL_ENABLED_FALSE
+            default 1 if ATL_SOIL_ENABLED_TRUE
+        
+        choice ATL_SOIL_TYPE
+            prompt "Soil sensor type"
+            default ATL_SOIL_TYPE_NPKPHCTH
+            help 
+                Select the soil sensor type.
+
+            config ATL_SOIL_TYPE_PH
+                bool "Model PH-S"
+                help
+                    Model PH-S (RS-485): PH.
+
+            config ATL_SOIL_TYPE_H
+                bool "Model H-S"
+                help
+                    Model H-S (RS-485): humidity (moisture).
+                
+            config ATL_SOIL_TYPE_TH
+                bool "Model TH-S"
+                help
+                    Model TH-S (RS-485): temperature and humidity (moisture).
+
+            config ATL_SOIL_TYPE_THC
+                bool "Model THC-S"
+                help
+                    Model THC-S (RS-485): temperature, humidity (moisture) and conductivity (EC).
+
+            config ATL_SOIL_TYPE_THPH
+                bool "Model THPH-S"
+                help
+                    Model THPH-S (RS-485): temperature, humidity (moisture) and PH.
+
+            config ATL_SOIL_TYPE_CPH
+                bool "Model CPH-S"
+                help
+                    Model CPH-S (RS-485): conductivity (EC) and PH.
+
+            config ATL_SOIL_TYPE_THCPH
+                bool "Model THCPH-S"
+                help
+                    Model THCPH-S (RS-485): temperature, humidity (moisture), conductivity (EC) and PH.
+
+            config ATL_SOIL_TYPE_NPK
+                bool "Model NPK-S"
+                help
+                    Model NPK-S (RS-485): nitrogen, phosphorus and potassium.
+
+            config ATL_SOIL_TYPE_NPKTHPH
+                bool "Model NPKTHPH-S"
+                help
+                    Model NPKTHPH-S (RS-485): nitrogen, phosphorus, potassium, temperature, humidity (moisture) and PH, 
+
+            config ATL_SOIL_TYPE_NPKTHC
+                bool "Model NPKTHC-S"
+                help
+                    Model NPKTHC-S (RS-485): nitrogen, phosphorus, potassium, temperature, humidity (moisture) and conductiviyu (EC).
+
+            config ATL_SOIL_TYPE_NPKPH
+                bool "Model NPKPH-S"
+                help
+                    Model NPKPH-S (RS-485): nitrogen, phosphorus, potassium and PH.
+                
+            config ATL_SOIL_TYPE_NPKPHC
+                bool "Model NPKPHC-S"
+                help
+                    Model NPKPHC-S (RS-485): nitrogen, phosphorus, potassium, PH and conductivity (EC).
+                
+            config ATL_SOIL_TYPE_NPKPHCTH
+                bool "Model NPKPHCTH-S"
+                help
+                    Model NPKPHCTH-S (RS-485): nitrogen, phosphorus, potassium, PH, conductivity (EC), temperature and humidity (moisture).
+        endchoice
+
+        config ATL_SOIL_MODBUS_ADDR
+            int "Modbus-RTU address"
+            range 1 255
+            default 1
+            help
+                Define the Modbus-RTU address of soil sampling.
+
+        config ATL_SOIL_SAMPLING_PERIOD
+            int "Soil sampling period (in seconds)"
+            range 2 3600
+            default 30
+            help
+                Define the soil sampling period (in seconds).
+    endmenu
+    
+    menu "ATL100 Gateway"
+        choice
+            prompt "Gateway (Modbus-RTU) enabled"
+            default ATL_GATEWAY_ENABLED_FALSE
+            
+            config ATL_GATEWAY_ENABLED_FALSE
+                bool "Disabled"
+                help
+                    Select this option to disable gateway (Modbus-RTU).
+
+            config ATL_GATEWAY_ENABLED_TRUE
+                bool "Enabled"
+                help
+                    Select this option to enable gateway (Modbus-RTU).
+        endchoice
+
+        config ATL_GATEWAY_ENABLED
+            int
+            default 0 if ATL_GATEWAY_ENABLED_FALSE
+            default 1 if ATL_GATEWAY_ENABLED_TRUE
+        
+        config ATL_GATEWAY_MODBUS_ADDR
+            int "Modbus-RTU address"
+            range 1 255
+            default 2
+            help
+                Define the Modbus-RTU address of CR300 datalogger.
+
+        config ATL_GATEWAY_SAMPLING_PERIOD
+            int "CR300 gateway sampling period (in seconds)"
+            range 2 3600
+            default 30
+            help
+                Define the CR300 gateway sampling period (in seconds).
+    endmenu
 endmenu
