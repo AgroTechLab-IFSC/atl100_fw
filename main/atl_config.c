@@ -8,7 +8,7 @@
 #include <nvs_flash.h>
 #include <nvs.h>
 #include "atl_config.h"
-// #include "atl_wifi.h"
+#include "atl_wifi.h"
 // #include "atl_webserver.h"
 // #include "atl_mqtt.h"
 
@@ -17,7 +17,7 @@ static const char *TAG = "atl-config";      /**< Module identification. */
 
 /* Global variables */
 SemaphoreHandle_t atl_config_mutex;         /**< Configuration semaphore (mutex). */
-atl_config_t atl_config;                    /**< Global configuration variable. */
+atl_config_t atl_config;                    /**< Global configuration variable. */  
 
 /**
  * @fn atl_config_create_default(void)
@@ -35,17 +35,17 @@ static void atl_config_create_default(void) {
     // atl_config.ota.behaviour = ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY;
 
     /** Creates default WIFI configuration **/
-    // atl_config.wifi.mode = ATL_WIFI_AP_MODE;
-    // esp_efuse_mac_get_default(mac);
-    // sprintf(ssid, "%s%02x%02x%02x", CONFIG_ATL_WIFI_AP_SSID_PREFIX, mac[3], mac[4], mac[5]+1);
-    // strncpy((char*)&atl_config.wifi.ap_ssid, ssid, sizeof(atl_config.wifi.ap_ssid));
-    // strncpy((char*)&atl_config.wifi.ap_pass, CONFIG_ATL_WIFI_AP_PASSWORD, sizeof(atl_config.wifi.ap_pass));
-    // atl_config.wifi.ap_channel = CONFIG_ATL_WIFI_AP_CHANNEL;
-    // atl_config.wifi.ap_max_conn = CONFIG_ATL_WIFI_AP_MAX_STA_CONN;
-    // strncpy((char*)&atl_config.wifi.sta_ssid, "AgroTechLab", sizeof(atl_config.wifi.sta_ssid));
-    // strncpy((char*)&atl_config.wifi.sta_pass, CONFIG_ATL_WEBSERVER_ADMIN_PASS, sizeof(atl_config.wifi.sta_pass));
-    // atl_config.wifi.sta_channel = CONFIG_ATL_WIFI_AP_CHANNEL;
-    // atl_config.wifi.sta_max_conn_retry = CONFIG_ATL_WIFI_STA_MAX_CONN_RETRY;    
+    atl_config.wifi.mode = ATL_WIFI_AP_MODE;
+    esp_efuse_mac_get_default(mac);
+    sprintf(ssid, "%s%02x%02x%02x", CONFIG_ATL_WIFI_AP_SSID_PREFIX, mac[3], mac[4], mac[5]+1);
+    strncpy((char*)&atl_config.wifi.ap_ssid, ssid, sizeof(atl_config.wifi.ap_ssid));
+    strncpy((char*)&atl_config.wifi.ap_pass, CONFIG_ATL_WIFI_AP_PASSWORD, sizeof(atl_config.wifi.ap_pass));
+    atl_config.wifi.ap_channel = CONFIG_ATL_WIFI_AP_CHANNEL;
+    atl_config.wifi.ap_max_conn = CONFIG_ATL_WIFI_AP_MAX_STA_CONN;
+    strncpy((char*)&atl_config.wifi.sta_ssid, "AgroTechLab", sizeof(atl_config.wifi.sta_ssid));
+    strncpy((char*)&atl_config.wifi.sta_pass, CONFIG_ATL_WIFI_AP_PASSWORD, sizeof(atl_config.wifi.sta_pass));
+    atl_config.wifi.sta_channel = CONFIG_ATL_WIFI_AP_CHANNEL;
+    atl_config.wifi.sta_max_conn_retry = CONFIG_ATL_WIFI_STA_MAX_CONN_RETRY;    
 
     /** Creates default WEBSERVER configuration **/  
     // atl_config.webserver.mode = ATL_WEBSERVER_HTTP;  

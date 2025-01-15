@@ -54,38 +54,38 @@ menu "ATL-100 Configuration"
         help
             GPIO number to the I2C Master clock line.
 
-    # menu "ATL100 WiFi Configuration"
-    #     config ATL_WIFI_AP_SSID_PREFIX
-    #         string "WiFi AP SSID prefix"
-    #         default "ATL100-"
-    #         help
-    #             WiFi AP SSID (network name) prefix (max. 25).
+    menu "ATL-100 WiFi Configuration"
+        config ATL_WIFI_AP_SSID_PREFIX
+            string "WiFi AP SSID prefix"
+            default "ATL100-"
+            help
+                WiFi AP SSID (network name) prefix (max. 25).
         
-    #     config ATL_WIFI_AP_PASSWORD
-    #         string "WiFi AP Password"
-    #         default "AgroTechLab"
-    #         help
-    #             WiFi AP password.
+        config ATL_WIFI_AP_PASSWORD
+            string "WiFi AP Password"
+            default "AgroTechLab"
+            help
+                WiFi AP password.
 
-    #     config ATL_WIFI_AP_CHANNEL
-    #         int "WiFi AP channel"
-    #         range 1 11
-    #         default 6
-    #         help
-    #             WiFi AP channel.
+        config ATL_WIFI_AP_CHANNEL
+            int "WiFi AP channel"
+            range 1 11
+            default 6
+            help
+                WiFi AP channel.
 
-    #     config ATL_WIFI_AP_MAX_STA_CONN
-    #         int "WiFi AP maximum client simultanous"
-    #         default 4
-    #         help
-    #             Maximum clientes connected simultanous at AP.
+        config ATL_WIFI_AP_MAX_STA_CONN
+            int "WiFi AP maximum client simultanous"
+            default 4
+            help
+                Maximum clientes connected simultanous at AP.
         
-    #     config ATL_WIFI_STA_MAX_CONN_RETRY
-    #         int "WiFi AP maximum client simultanous"
-    #         default 5
-    #         help
-    #             Maximum STA connection retry.
-    # endmenu
+        config ATL_WIFI_STA_MAX_CONN_RETRY
+            int "WiFi AP maximum client simultanous"
+            default 5
+            help
+                Maximum STA connection retry.
+    endmenu
     
     # menu "ATL100 LTE Configuration"
     #     config ATL_LTE_ENABLED
