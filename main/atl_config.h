@@ -5,7 +5,7 @@
 #include "atl_wifi.h"
 #include "atl_webserver.h"
 #include "atl_mqtt.h"
-// #include "atl_ota.h"
+#include "atl_ota.h"
 // #include "atl_telemetry.h"
 
 #ifdef __cplusplus
@@ -28,7 +28,7 @@ typedef struct {
  * @brief OTA configuration structure.
  */
 typedef struct {
-    // atl_ota_behaviour_e    behaviour; /**< OTA behaviour. */
+    atl_ota_behaviour_e    behaviour; /**< OTA behaviour. */
 } atl_config_ota_t;
 
 /**

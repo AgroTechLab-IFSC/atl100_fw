@@ -32,7 +32,7 @@ static void atl_config_create_default(void) {
     atl_config.system.led_behaviour = ATL_LED_ENABLED_FULL;
 
     /** Creates default OTA configuration **/
-    // atl_config.ota.behaviour = ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY;
+    atl_config.ota.behaviour = ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY;
 
     /** Creates default WIFI configuration **/
     atl_config.wifi.mode = ATL_WIFI_AP_MODE;

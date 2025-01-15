@@ -1504,12 +1504,12 @@ static esp_err_t conf_configuration_get_handler(httpd_req_t *req) {
 
     /* Send download session chunks */
     httpd_resp_sendstr_chunk(req, "<div class=\"row\" style=\"border: 1px solid #223904\"> \
-                        <p>Download ATL200 configuration file (JSON)</p><input class=\"btn_generic\" name=\"btn_get_conf\" \
+                        <p>Download ATL-100 configuration file (JSON)</p><input class=\"btn_generic\" name=\"btn_get_conf\" \
                         onclick=\"getConfJSONFile()\" value=\"Download\"></div><br><br>");
 
     /* Send upload session chunks */
     httpd_resp_sendstr_chunk(req, "<div class=\"row\" style=\"border: 1px solid #223904\"> \
-                        <p>Upload ATL200 configuration file (JSON)</p><form action=\"/api/v1/system/set/conf\" method=\"post\" enctype=\"multipart/form-data\"> \
+                        <p>Upload ATL-100 configuration file (JSON)</p><form action=\"/api/v1/system/set/conf\" method=\"post\" enctype=\"multipart/form-data\"> \
                         <input id=\"file\" name=\"file\" type=\"file\" accept=\".json\" />");
     
     /* Send button chunks */
@@ -1569,7 +1569,7 @@ static esp_err_t api_v1_system_get_conf_handler(httpd_req_t *req) {
     }
     else {
         httpd_resp_send_408(req);
-        ESP_LOGE(TAG, "Fail to get ATL200 configuration mutex!");
+        ESP_LOGE(TAG, "Fail to get ATL-100 configuration mutex!");
         err = ESP_ERR_TIMEOUT;
         free(config_local);
         goto error_proc;
@@ -1616,15 +1616,15 @@ static esp_err_t api_v1_system_get_conf_handler(httpd_req_t *req) {
 
     /* Create mqtt client JSON object */
     cJSON *root_mqtt_client = cJSON_CreateObject();
-    // cJSON_AddStringToObject(root_mqtt_client, "mode", atl_mqtt_get_mode_str(config_local->mqtt_client.mode));
-    // cJSON_AddStringToObject(root_mqtt_client, "broker_address", (const char*)&config_local->mqtt_client.broker_address);
-    // cJSON_AddNumberToObject(root_mqtt_client, "broker_port", config_local->mqtt_client.broker_port);        
-    // cJSON_AddStringToObject(root_mqtt_client, "transport", atl_mqtt_get_transport_str(config_local->mqtt_client.transport));        
-    // cJSON_AddBoolToObject(root_mqtt_client, "disable_cn_check", config_local->mqtt_client.disable_cn_check);
-    // cJSON_AddStringToObject(root_mqtt_client, "user", (const char*)&config_local->mqtt_client.user);
-    // cJSON_AddStringToObject(root_mqtt_client, "pass", (const char*)&config_local->mqtt_client.pass);
-    // cJSON_AddNumberToObject(root_mqtt_client, "qos", config_local->mqtt_client.qos);
-    // cJSON_AddItemToObject(root, "mqtt_client", root_mqtt_client);
+    cJSON_AddStringToObject(root_mqtt_client, "mode", atl_mqtt_get_mode_str(config_local->mqtt_client.mode));
+    cJSON_AddStringToObject(root_mqtt_client, "broker_address", (const char*)&config_local->mqtt_client.broker_address);
+    cJSON_AddNumberToObject(root_mqtt_client, "broker_port", config_local->mqtt_client.broker_port);        
+    cJSON_AddStringToObject(root_mqtt_client, "transport", atl_mqtt_get_transport_str(config_local->mqtt_client.transport));        
+    cJSON_AddBoolToObject(root_mqtt_client, "disable_cn_check", config_local->mqtt_client.disable_cn_check);
+    cJSON_AddStringToObject(root_mqtt_client, "user", (const char*)&config_local->mqtt_client.user);
+    cJSON_AddStringToObject(root_mqtt_client, "pass", (const char*)&config_local->mqtt_client.pass);
+    cJSON_AddNumberToObject(root_mqtt_client, "qos", config_local->mqtt_client.qos);
+    cJSON_AddItemToObject(root, "mqtt_client", root_mqtt_client);
 
     /* Put JSON to response message */
     const char *conf_info = cJSON_Print(root);
@@ -1691,7 +1691,7 @@ static esp_err_t api_v1_system_set_conf_handler(httpd_req_t *req) {
     }
     buf[off] = '\0';
 
-    /* Allocate memory to local copy of X200 configuration */
+    /* Allocate memory to local copy of ATL-100 configuration */
     atl_config_t* config_local = calloc(1, sizeof(atl_config_t));
     if (config_local == NULL) {
         httpd_resp_send_500(req);
@@ -1700,7 +1700,7 @@ static esp_err_t api_v1_system_set_conf_handler(httpd_req_t *req) {
         goto error_proc;
     }
 
-    /* Make a local copy of ATL200 configuration */
+    /* Make a local copy of ATL-100 configuration */
     if (xSemaphoreTake(atl_config_mutex, portMAX_DELAY) == pdTRUE) {
         memcpy(config_local, &atl_config, sizeof(atl_config_t));
         
@@ -1709,7 +1709,7 @@ static esp_err_t api_v1_system_set_conf_handler(httpd_req_t *req) {
     }
     else {
         httpd_resp_send_408(req);
-        ESP_LOGE(TAG, "Fail to get ATL100 configuration mutex!");
+        ESP_LOGE(TAG, "Fail to get ATL-100 configuration mutex!");
         err = ESP_ERR_TIMEOUT;
         free(config_local);
         goto error_proc;
@@ -1747,7 +1747,7 @@ static esp_err_t api_v1_system_set_conf_handler(httpd_req_t *req) {
         if (root != NULL) {
             cJSON *behaviour = cJSON_GetObjectItem(root, "behaviour");
             if (behaviour != NULL) {
-                // config_local->ota.behaviour = atl_ota_get_behaviour(behaviour->valuestring);
+                config_local->ota.behaviour = atl_ota_get_behaviour(behaviour->valuestring);
             }
         }
 
@@ -1802,41 +1802,41 @@ static esp_err_t api_v1_system_set_conf_handler(httpd_req_t *req) {
                 strncpy((char*)config_local->webserver.admin_pass, password->valuestring, sizeof(config_local->webserver.admin_pass));
             }
         }
-        // root = cJSON_GetObjectItem(json, "mqtt_client");
-        // if (root != NULL) {
-        //     cJSON *mode = cJSON_GetObjectItem(root, "mode");
-        //     if (mode != NULL) {
-        //         config_local->mqtt_client.mode = atl_mqtt_get_mode(mode->valuestring);
-        //     }
-        //     cJSON *broker_address = cJSON_GetObjectItem(root, "broker_address");
-        //     if (broker_address != NULL) {
-        //         strncpy((char*)config_local->mqtt_client.broker_address, broker_address->valuestring, sizeof(config_local->mqtt_client.broker_address));
-        //     }
-        //     cJSON *broker_port = cJSON_GetObjectItem(root, "broker_port");
-        //     if (broker_port != NULL) {
-        //         config_local->mqtt_client.broker_port = broker_port->valueint;
-        //     }
-        //     cJSON *transport = cJSON_GetObjectItem(root, "transport");
-        //     if (transport != NULL) {
-        //         config_local->mqtt_client.transport = atl_mqtt_get_transport(transport->valuestring);
-        //     }
-        //     cJSON *disable_cn_check = cJSON_GetObjectItem(root, "disable_cn_check");
-        //     if (disable_cn_check != NULL) {
-        //         config_local->mqtt_client.disable_cn_check = disable_cn_check->valueint;
-        //     }
-        //     cJSON *user = cJSON_GetObjectItem(root, "user");
-        //     if (user != NULL) {
-        //         strncpy((char*)config_local->mqtt_client.user, user->valuestring, sizeof(config_local->mqtt_client.user));
-        //     }
-        //     cJSON *pass = cJSON_GetObjectItem(root, "pass");
-        //     if (pass != NULL) {
-        //         strncpy((char*)config_local->mqtt_client.pass, pass->valuestring, sizeof(config_local->mqtt_client.pass));
-        //     }
-        //     cJSON *qos = cJSON_GetObjectItem(root, "qos");
-        //     if (qos != NULL) {
-        //         config_local->mqtt_client.qos = qos->valueint;
-        //     }
-        // }
+        root = cJSON_GetObjectItem(json, "mqtt_client");
+        if (root != NULL) {
+            cJSON *mode = cJSON_GetObjectItem(root, "mode");
+            if (mode != NULL) {
+                config_local->mqtt_client.mode = atl_mqtt_get_mode(mode->valuestring);
+            }
+            cJSON *broker_address = cJSON_GetObjectItem(root, "broker_address");
+            if (broker_address != NULL) {
+                strncpy((char*)config_local->mqtt_client.broker_address, broker_address->valuestring, sizeof(config_local->mqtt_client.broker_address));
+            }
+            cJSON *broker_port = cJSON_GetObjectItem(root, "broker_port");
+            if (broker_port != NULL) {
+                config_local->mqtt_client.broker_port = broker_port->valueint;
+            }
+            cJSON *transport = cJSON_GetObjectItem(root, "transport");
+            if (transport != NULL) {
+                config_local->mqtt_client.transport = atl_mqtt_get_transport(transport->valuestring);
+            }
+            cJSON *disable_cn_check = cJSON_GetObjectItem(root, "disable_cn_check");
+            if (disable_cn_check != NULL) {
+                config_local->mqtt_client.disable_cn_check = disable_cn_check->valueint;
+            }
+            cJSON *user = cJSON_GetObjectItem(root, "user");
+            if (user != NULL) {
+                strncpy((char*)config_local->mqtt_client.user, user->valuestring, sizeof(config_local->mqtt_client.user));
+            }
+            cJSON *pass = cJSON_GetObjectItem(root, "pass");
+            if (pass != NULL) {
+                strncpy((char*)config_local->mqtt_client.pass, pass->valuestring, sizeof(config_local->mqtt_client.pass));
+            }
+            cJSON *qos = cJSON_GetObjectItem(root, "qos");
+            if (qos != NULL) {
+                config_local->mqtt_client.qos = qos->valueint;
+            }
+        }
 
         /* Delete JSON object */
         cJSON_Delete(root);
@@ -1849,7 +1849,7 @@ static esp_err_t api_v1_system_set_conf_handler(httpd_req_t *req) {
     }
     else {
         httpd_resp_send_408(req);
-        ESP_LOGW(TAG, "Fail to get ATL100 configuration mutex!");
+        ESP_LOGW(TAG, "Fail to get ATL-100 configuration mutex!");
         err = ESP_ERR_TIMEOUT;
         goto error_proc;
     }
@@ -1869,7 +1869,7 @@ static esp_err_t api_v1_system_set_conf_handler(httpd_req_t *req) {
         return ESP_OK;
     } else {
         httpd_resp_send_500(req);
-        ESP_LOGE(TAG, "Fail to commit ATL100 configuration to NVS!");
+        ESP_LOGE(TAG, "Fail to commit ATL-100 configuration to NVS!");
         goto error_proc;
     }
 
@@ -1943,7 +1943,7 @@ static esp_err_t conf_fw_update_get_handler(httpd_req_t *req) {
     httpd_resp_sendstr_chunk(req, resp_val);    
     httpd_resp_sendstr_chunk(req, "</td></tr></table><br><br>");
 
-    /* Allocate memory to local copy of ATL200 configuration */
+    /* Allocate memory to local copy of ATL-100 configuration */
     atl_config_ota_t* config_ota_local = calloc(1, sizeof(atl_config_ota_t));
     if (config_ota_local == NULL) {
         httpd_resp_send_500(req);
@@ -1952,7 +1952,7 @@ static esp_err_t conf_fw_update_get_handler(httpd_req_t *req) {
         goto error_proc;
     }
 
-    /* Make a local copy of ATL200 configuration */
+    /* Make a local copy of ATL-100 configuration */
     if (xSemaphoreTake(atl_config_mutex, portMAX_DELAY) == pdTRUE) {
         memcpy(config_ota_local, &atl_config.ota, sizeof(atl_config_ota_t));
         
@@ -1974,7 +1974,7 @@ static esp_err_t conf_fw_update_get_handler(httpd_req_t *req) {
                                       <tr><td>FW Update Behaviour</td>");
     
     httpd_resp_sendstr_chunk(req,"<td><select name=\"ota_behaviour\" id=\"ota_behaviour\">");
-/*    if (config_ota_local->behaviour == ATL_OTA_BEHAVIOUR_DISABLED) {
+    if (config_ota_local->behaviour == ATL_OTA_BEHAVIOUR_DISABLED) {
         httpd_resp_sendstr_chunk(req, "<option selected value=\"ATL_OTA_BEHAVIOUR_DISABLED\">Disabled</option> \
                                        <option value=\"ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY\">Verify & Notify</option> \
                                        <option value=\"ATL_OTA_BEHAVIOU_DOWNLOAD\">Download</option> \
@@ -1998,7 +1998,7 @@ static esp_err_t conf_fw_update_get_handler(httpd_req_t *req) {
                                        <option value=\"ATL_OTA_BEHAVIOU_DOWNLOAD\">Download</option> \
                                        <option selected value=\"ATL_OTA_BEHAVIOU_DOWNLOAD_REBOOT\">Download & Reboot</option> \
                                        </select></td></tr>");
-    } */
+    } 
     httpd_resp_sendstr_chunk(req, "</table><br><div class=\"reboot-msg\" id=\"delayMsg\"></div>");
 
     /* Send button chunks */    
@@ -2111,17 +2111,17 @@ static esp_err_t conf_fw_update_post_handler(httpd_req_t *req) {
         }
         memcpy(key, token, (token_len - value_len - 1));
         if (strcmp(key, "ota_behaviour") == 0) {
-            // if (strcmp(value, "ATL_OTA_BEHAVIOUR_DISABLED") == 0) {
-            //     config_ota_local->behaviour = ATL_OTA_BEHAVIOUR_DISABLED;
-            // } else if (strcmp(value, "ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY") == 0) {
-            //     config_ota_local->behaviour = ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY;
-            // } else if (strcmp(value, "ATL_OTA_BEHAVIOU_DOWNLOAD") == 0) {
-            //     config_ota_local->behaviour = ATL_OTA_BEHAVIOU_DOWNLOAD;
-            // } else if (strcmp(value, "ATL_OTA_BEHAVIOU_DOWNLOAD_REBOOT") == 0) {
-            //     config_ota_local->behaviour = ATL_OTA_BEHAVIOU_DOWNLOAD_REBOOT;
-            // }
-            // ESP_LOGI(TAG, "Updating [%s:%s]", key, value);
-            // ESP_LOGI(TAG, "Updating [%s:%d]", key, config_ota_local->behaviour);
+            if (strcmp(value, "ATL_OTA_BEHAVIOUR_DISABLED") == 0) {
+                config_ota_local->behaviour = ATL_OTA_BEHAVIOUR_DISABLED;
+            } else if (strcmp(value, "ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY") == 0) {
+                config_ota_local->behaviour = ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY;
+            } else if (strcmp(value, "ATL_OTA_BEHAVIOU_DOWNLOAD") == 0) {
+                config_ota_local->behaviour = ATL_OTA_BEHAVIOU_DOWNLOAD;
+            } else if (strcmp(value, "ATL_OTA_BEHAVIOU_DOWNLOAD_REBOOT") == 0) {
+                config_ota_local->behaviour = ATL_OTA_BEHAVIOU_DOWNLOAD_REBOOT;
+            }
+            ESP_LOGI(TAG, "Updating [%s:%s]", key, value);
+            ESP_LOGI(TAG, "Updating [%s:%d]", key, config_ota_local->behaviour);
         } 
         free(key);
         token = strtok(NULL, "&");
@@ -2242,7 +2242,7 @@ static esp_err_t conf_reboot_post_handler(httpd_req_t *req) {
     ESP_LOGD(TAG, "Processing POST conf_reboot");
 
     /* Restart ATL device */
-    ESP_LOGW(TAG, ">>> Rebooting ATL100!");
+    ESP_LOGW(TAG, ">>> Rebooting ATL-100!");
     atl_led_builtin_blink(10, 100, 255, 69, 0);
     esp_restart();
 

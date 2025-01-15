@@ -4,6 +4,7 @@ idf_component_register(SRCS
                          "atl_led.c"
                          "atl_main.c"
                          "atl_mqtt.c"
+                         "atl_ota.c"
                          "atl_webserver.c"
                          "atl_wifi.c"
                        INCLUDE_DIRS

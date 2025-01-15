@@ -6,7 +6,7 @@
 #include "atl_config.h"
 #include "atl_wifi.h"
 #include "atl_mqtt.h"
-// #include "atl_ota.h"
+#include "atl_ota.h"
 
 /* Constants */
 static const char *TAG = "atl-mqtt";                    /**< Module identification. */
@@ -203,14 +203,14 @@ static void atl_mqtt5_event_handler(void *handler_args, esp_event_base_t base, i
                 ESP_LOGI(TAG, "Sending subscribe to [v1/devices/me/attributes/response/+], msg_id=%d", msg_id);
 
                 /* Subscribe to ThingsBoard topic FIRMWARE ATTRIBUTES RESPONSE */
-                // if (atl_config.ota.behaviour != ATL_OTA_BEHAVIOUR_DISABLED) {                
-                //     esp_mqtt5_client_set_user_property(&subscribe_property.user_property, atl_user_property_arr, USE_PROPERTY_ARR_SIZE);
-                //     esp_mqtt5_client_set_subscribe_property(client, &subscribe_property);
-                //     msg_id = esp_mqtt_client_subscribe(client, "v2/fw/response/+/chunk/+", 1);
-                //     esp_mqtt5_client_delete_user_property(subscribe_property.user_property);
-                //     subscribe_property.user_property = NULL;
-                //     ESP_LOGI(TAG, "Sending subscribe to [v2/fw/response/+/chunk/+], msg_id=%d", msg_id);
-                // }
+                if (atl_config.ota.behaviour != ATL_OTA_BEHAVIOUR_DISABLED) {                
+                    esp_mqtt5_client_set_user_property(&subscribe_property.user_property, atl_user_property_arr, USE_PROPERTY_ARR_SIZE);
+                    esp_mqtt5_client_set_subscribe_property(client, &subscribe_property);
+                    msg_id = esp_mqtt_client_subscribe(client, "v2/fw/response/+/chunk/+", 1);
+                    esp_mqtt5_client_delete_user_property(subscribe_property.user_property);
+                    subscribe_property.user_property = NULL;
+                    ESP_LOGI(TAG, "Sending subscribe to [v2/fw/response/+/chunk/+], msg_id=%d", msg_id);
+                }
 
                 /* Send current firmware version to ThingsBoard */
                 esp_mqtt5_client_set_user_property(&publish_property.user_property, atl_user_property_arr, USE_PROPERTY_ARR_SIZE);
@@ -289,7 +289,7 @@ static void atl_mqtt5_event_handler(void *handler_args, esp_event_base_t base, i
                 esp_mqtt5_client_set_publish_property(client, &publish_property);
                 root = cJSON_CreateObject();                                                
                 memset(&json_item_value, 0, sizeof(json_item_value));               
-                // cJSON_AddStringToObject(root, "ota.behaviour", atl_ota_get_behaviour_str(atl_config.ota.behaviour));                
+                cJSON_AddStringToObject(root, "ota.behaviour", atl_ota_get_behaviour_str(atl_config.ota.behaviour));                
                 msg_id = esp_mqtt_client_publish(client, "v1/devices/me/attributes", cJSON_Print(root), 0, 1, 0);
                 esp_mqtt5_client_delete_user_property(publish_property.user_property);
                 publish_property.user_property = NULL;
@@ -358,20 +358,20 @@ static void atl_mqtt5_event_handler(void *handler_args, esp_event_base_t base, i
                 cJSON_Delete(root);
 
                 /* Request from ThingsBoard the firmware info */
-                // if (atl_config.ota.behaviour != ATL_OTA_BEHAVIOUR_DISABLED) {
-                //     esp_mqtt5_client_set_user_property(&publish_property.user_property, atl_user_property_arr, USE_PROPERTY_ARR_SIZE);
-                //     esp_mqtt5_client_set_publish_property(client, &publish_property);
-	            //     root = cJSON_CreateObject();
-                //     cJSON_AddStringToObject(root, "sharedKeys", "fw_checksum,fw_checksum_algorithm,fw_size,fw_title,fw_version");
-                //     request_id = msg_id + 1;
-                //     char fw_topic[60] = {};
-                //     sprintf(fw_topic, "v1/devices/me/attributes/request/%d", request_id);          
-                //     msg_id = esp_mqtt_client_publish(client, fw_topic, cJSON_Print(root), 0, 1, 0);
-                //     esp_mqtt5_client_delete_user_property(publish_property.user_property);
-                //     publish_property.user_property = NULL;
-                //     ESP_LOGI(TAG, "Requesting firmware information to [%s], msg_id=%d", fw_topic, msg_id);
-                //     cJSON_Delete(root);
-                // }
+                if (atl_config.ota.behaviour != ATL_OTA_BEHAVIOUR_DISABLED) {
+                    esp_mqtt5_client_set_user_property(&publish_property.user_property, atl_user_property_arr, USE_PROPERTY_ARR_SIZE);
+                    esp_mqtt5_client_set_publish_property(client, &publish_property);
+	                root = cJSON_CreateObject();
+                    cJSON_AddStringToObject(root, "sharedKeys", "fw_checksum,fw_checksum_algorithm,fw_size,fw_title,fw_version");
+                    request_id = msg_id + 1;
+                    char fw_topic[60] = {};
+                    sprintf(fw_topic, "v1/devices/me/attributes/request/%d", request_id);          
+                    msg_id = esp_mqtt_client_publish(client, fw_topic, cJSON_Print(root), 0, 1, 0);
+                    esp_mqtt5_client_delete_user_property(publish_property.user_property);
+                    publish_property.user_property = NULL;
+                    ESP_LOGI(TAG, "Requesting firmware information to [%s], msg_id=%d", fw_topic, msg_id);
+                    cJSON_Delete(root);
+                }
             }
             break;
         case MQTT_EVENT_DISCONNECTED:
@@ -501,20 +501,20 @@ static void atl_mqtt5_event_handler(void *handler_args, esp_event_base_t base, i
                 }                
                 
                 /* Checking Fimware Update configuration */                
-                // if (cJSON_HasObjectItem(root, "ota.behaviour") == true) {                    
-                //     cJSON *key = cJSON_GetObjectItem(root, "ota.behaviour");
-                //     if (cJSON_GetNumberValue(key) == ATL_OTA_BEHAVIOUR_DISABLED) {
-                //         atl_config.ota.behaviour = ATL_OTA_BEHAVIOUR_DISABLED;
-                //     } else if (cJSON_GetNumberValue(key) == ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY) {
-                //         atl_config.ota.behaviour = ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY;
-                //     } else if (cJSON_GetNumberValue(key) == ATL_OTA_BEHAVIOU_DOWNLOAD) {
-                //         atl_config.ota.behaviour = ATL_OTA_BEHAVIOU_DOWNLOAD;
-                //     } else if (cJSON_GetNumberValue(key) == ATL_OTA_BEHAVIOU_DOWNLOAD_REBOOT) {
-                //         atl_config.ota.behaviour = ATL_OTA_BEHAVIOU_DOWNLOAD_REBOOT;
-                //     } else {
-                //         ESP_LOGW(TAG, "Unknown value [ota.behaviour:%d]", (uint16_t)cJSON_GetNumberValue(key));
-                //     }
-                // }                
+                if (cJSON_HasObjectItem(root, "ota.behaviour") == true) {                    
+                    cJSON *key = cJSON_GetObjectItem(root, "ota.behaviour");
+                    if (cJSON_GetNumberValue(key) == ATL_OTA_BEHAVIOUR_DISABLED) {
+                        atl_config.ota.behaviour = ATL_OTA_BEHAVIOUR_DISABLED;
+                    } else if (cJSON_GetNumberValue(key) == ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY) {
+                        atl_config.ota.behaviour = ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY;
+                    } else if (cJSON_GetNumberValue(key) == ATL_OTA_BEHAVIOU_DOWNLOAD) {
+                        atl_config.ota.behaviour = ATL_OTA_BEHAVIOU_DOWNLOAD;
+                    } else if (cJSON_GetNumberValue(key) == ATL_OTA_BEHAVIOU_DOWNLOAD_REBOOT) {
+                        atl_config.ota.behaviour = ATL_OTA_BEHAVIOU_DOWNLOAD_REBOOT;
+                    } else {
+                        ESP_LOGW(TAG, "Unknown value [ota.behaviour:%d]", (uint16_t)cJSON_GetNumberValue(key));
+                    }
+                }                
 
                 /* Release memory */                
                 cJSON_Delete(root);
@@ -522,8 +522,8 @@ static void atl_mqtt5_event_handler(void *handler_args, esp_event_base_t base, i
                 /* Commit configuration to NVS */
                 atl_config_commit_nvs();    
 
-                /* Restart ATL100 device */
-                // ESP_LOGW(TAG, ">>> Rebooting ATL200!");
+                /* Restart ATL-100 device */
+                // ESP_LOGW(TAG, ">>> Rebooting ATL-100!");
                 // atl_led_builtin_blink(10, 100, 255, 69, 0);
                 // esp_restart();               
             } 
@@ -780,7 +780,7 @@ static void atl_mqtt5_event_handler(void *handler_args, esp_event_base_t base, i
                                 ESP_LOGI(TAG, "Sent publish successful to [v1/devices/me/telemetry], msg_id=%d", msg_id);
                                 cJSON_Delete(response);
 
-                                /* Notify ThingsBoard that X200 will apply new firmware */
+                                /* Notify ThingsBoard that ATL-100 will apply new firmware */
                                 esp_mqtt5_client_set_user_property(&publish_property.user_property, atl_user_property_arr, USE_PROPERTY_ARR_SIZE);
                                 esp_mqtt5_client_set_publish_property(client, &publish_property);
                                 //cJSON *response;
@@ -810,8 +810,8 @@ static void atl_mqtt5_event_handler(void *handler_args, esp_event_base_t base, i
                                     cJSON_Delete(response);
 
                                 } else {
-                                    /* Restart ATL100 */
-                                    ESP_LOGW(TAG, "Rebooting ATL100!");
+                                    /* Restart ATL-100 */
+                                    ESP_LOGW(TAG, "Rebooting ATL-100!");
                                     esp_restart();
                                 }
                             }
