@@ -20,4 +20,10 @@ void app_main(void) {
 
     /* Initialize button */
     atl_button_init();
+
+    /* Load configuration from NVS */
+    atl_config_init();
+
+    /* Update serial interface output */
+    ESP_LOGI(TAG, "Initialization finished!"); 
 }

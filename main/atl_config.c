@@ -16,8 +16,8 @@
 static const char *TAG = "atl-config";      /**< Module identification. */
 
 /* Global variables */
-SemaphoreHandle_t atl_config_mutex;
-atl_config_t atl_config;
+SemaphoreHandle_t atl_config_mutex;         /**< Configuration semaphore (mutex). */
+atl_config_t atl_config;                    /**< Global configuration variable. */
 
 /**
  * @fn atl_config_create_default(void)
