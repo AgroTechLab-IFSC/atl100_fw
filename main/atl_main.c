@@ -2,9 +2,10 @@
 #include <esp_log.h>
 #include "atl_config.h"
 #include "atl_led.h"
+#include "atl_button.h"
 
 /* Constants */
-static const char *TAG = "atl_main";        /**< Module identification. */
+static const char *TAG = "atl-main";        /**< Module identification. */
 
 /* Global external variables */
 extern atl_config_t atl_config;             /**< Global configuration variable. */
@@ -16,4 +17,7 @@ void app_main(void) {
 
     /* Initialize led builtin */
     atl_led_builtin_init();
+
+    /* Initialize button */
+    atl_button_init();
 }
