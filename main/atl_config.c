@@ -10,7 +10,7 @@
 #include "atl_config.h"
 #include "atl_wifi.h"
 #include "atl_webserver.h"
-// #include "atl_mqtt.h"
+#include "atl_mqtt.h"
 
 /* Constants */
 static const char *TAG = "atl-config";      /**< Module identification. */
@@ -53,14 +53,14 @@ static void atl_config_create_default(void) {
     strncpy((char*)&atl_config.webserver.admin_pass, CONFIG_ATL_WEBSERVER_ADMIN_PASS, sizeof(atl_config.webserver.admin_pass));
 
     /** Creates default MQTT CLIENT configuration **/
-    // atl_config.mqtt_client.mode = CONFIG_ATL_MQTT_BROKER_MODE;
-    // strncpy((char*)&atl_config.mqtt_client.broker_address, CONFIG_ATL_MQTT_BROKER_ADDR, sizeof(atl_config.mqtt_client.broker_address));
-    // atl_config.mqtt_client.broker_port = CONFIG_ATL_MQTT_BROKER_PORT;
-    // atl_config.mqtt_client.transport = MQTT_TRANSPORT_OVER_TCP;
-    // atl_config.mqtt_client.disable_cn_check = true;
-    // strncpy((char*)&atl_config.mqtt_client.user, (char*)&atl_config.wifi.ap_ssid, sizeof(atl_config.mqtt_client.user));
-    // strncpy((char*)&atl_config.mqtt_client.pass, (char*)&atl_config.wifi.ap_ssid, sizeof(atl_config.mqtt_client.pass));
-    // atl_config.mqtt_client.qos = CONFIG_ATL_MQTT_QOS;
+    atl_config.mqtt_client.mode = CONFIG_ATL_MQTT_BROKER_MODE;
+    strncpy((char*)&atl_config.mqtt_client.broker_address, CONFIG_ATL_MQTT_BROKER_ADDR, sizeof(atl_config.mqtt_client.broker_address));
+    atl_config.mqtt_client.broker_port = CONFIG_ATL_MQTT_BROKER_PORT;
+    atl_config.mqtt_client.transport = MQTT_TRANSPORT_OVER_TCP;
+    atl_config.mqtt_client.disable_cn_check = true;
+    strncpy((char*)&atl_config.mqtt_client.user, (char*)&atl_config.wifi.ap_ssid, sizeof(atl_config.mqtt_client.user));
+    strncpy((char*)&atl_config.mqtt_client.pass, (char*)&atl_config.wifi.ap_ssid, sizeof(atl_config.mqtt_client.pass));
+    atl_config.mqtt_client.qos = CONFIG_ATL_MQTT_QOS;
 
     /** Creates default TELEMETRY configuration **/
     // atl_config.telemetry.send_period = CONFIG_ATL_SEND_PERIOD;

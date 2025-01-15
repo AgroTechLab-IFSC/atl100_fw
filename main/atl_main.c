@@ -5,6 +5,7 @@
 #include "atl_button.h"
 #include "atl_wifi.h"
 #include "atl_webserver.h"
+#include "atl_mqtt.h"
 
 /* Constants */
 static const char *TAG = "atl-main";        /**< Module identification. */
@@ -40,20 +41,20 @@ void app_main(void) {
             /* Initialize WiFi in STA mode */
             if (atl_wifi_init_sta() == ESP_OK) {
 
-        //         /* Initialize MQTT client */
-        //         if ((atl_config.mqtt_client.mode == ATL_MQTT_AGROTECHLAB_CLOUD) || 
-        //             (atl_config.mqtt_client.mode == ATL_MQTT_THIRD)) {
-        //                 atl_mqtt_init();
-        //         }
+                /* Initialize MQTT client */
+                if ((atl_config.mqtt_client.mode == ATL_MQTT_AGROTECHLAB_CLOUD) || 
+                    (atl_config.mqtt_client.mode == ATL_MQTT_THIRD)) {
+                        atl_mqtt_init();
+                }
 
         //         /* Initialize telemetry */
         //         atl_telemetry_init();
 
-        //     } else {
-        //         ESP_LOGE(TAG, "Fail to initialize WiFi in STA mode!");
-        //         ESP_LOGE(TAG, "Waiting for 60 seconds and restarting!");
-        //         vTaskDelay(pdMS_TO_TICKS(60000));
-        //         esp_restart();
+            } else {
+                ESP_LOGE(TAG, "Fail to initialize WiFi in STA mode!");
+                ESP_LOGE(TAG, "Waiting for 60 seconds and restarting!");
+                vTaskDelay(pdMS_TO_TICKS(60000));
+                esp_restart();
             }
         }
 

@@ -18,7 +18,11 @@
 
 # ATL-100 (Firmware)
 
-**ATL100** is a multiparametric station developed by <a href="https://agrotechlab.lages.ifsc.edu.br">AgroTechLab (*Technology Development 
+**ATL-100** is a multiparametric station developed by <a href="https://agrotechlab.lages.ifsc.edu.br">AgroTechLab (*Technology Development 
 Laboratory for Agribusiness*)</a> of <a href="https://www.ifsc.edu.br">IFSC (*Federal Institute of Santa Catarina*)</a>.
 
 It can be used as meteorological station, agrometeorological station, hydrological station, aquaculture station, tide gauge station or fire monitoring station (forest or urban environment).
+
+The data collected in the field by the **ATL-100** stations are sent to the **AgroTechLab platform** where they are filtered, stored and processed. These data are sources for insights which both (data and insights) can be accessed by users through websites or mobile applications.
+
+![AgroTechLab Platform](./docs/figs/agrotechlab_platform.png "AgroTechLab Platform")

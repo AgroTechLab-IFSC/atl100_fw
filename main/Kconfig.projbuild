@@ -199,67 +199,67 @@ menu "ATL-100 Configuration"
                 Default administrator password at ATL100 webserver.       
     endmenu
     
-    # menu "ATL100 MQTT Client Configuration"
-    #     choice
-    #         prompt "MQTT broker mode"
-    #         default ATL_MQTT_DISABLED
-    #         help 
-    #             Select the MQTT broker mode.
+    menu "ATL-100 MQTT Client Configuration"
+        choice
+            prompt "MQTT broker mode"
+            default ATL_MQTT_DISABLED
+            help 
+                Select the MQTT broker mode.
 
-    #         config ATL_MQTT_DISABLED
-    #             bool "Disabled"
-    #             help
-    #                 MQTT broker is disabled.
+            config ATL_MQTT_DISABLED
+                bool "Disabled"
+                help
+                    MQTT broker is disabled.
 
-    #         config ATL_MQTT_AGROTECHLAB_CLOUD
-    #             bool "Enabled and connected to AgroTechLab Cloud"
-    #             help
-    #                 MQTT broker is enabled e configured to connect at AgroTechLab Cloud.
+            config ATL_MQTT_AGROTECHLAB_CLOUD
+                bool "Enabled and connected to AgroTechLab Cloud"
+                help
+                    MQTT broker is enabled e configured to connect at AgroTechLab Cloud.
             
-    #         config ATL_MQTT_THIRD
-    #             bool "Enabled and connected to Third Cloud"
-    #             help
-    #                 MQTT broker is enabled e configured to connect at Third Cloud.
-    #     endchoice
+            config ATL_MQTT_THIRD
+                bool "Enabled and connected to Third Cloud"
+                help
+                    MQTT broker is enabled e configured to connect at Third Cloud.
+        endchoice
         
-    #     config ATL_MQTT_BROKER_MODE
-    #         int
-    #         default 0 if ATL_MQTT_DISABLED
-    #         default 1 if ATL_MQTT_AGROTECHLAB_CLOUD
-    #         default 2 if ATL_MQTT_THIRD
+        config ATL_MQTT_BROKER_MODE
+            int
+            default 0 if ATL_MQTT_DISABLED
+            default 1 if ATL_MQTT_AGROTECHLAB_CLOUD
+            default 2 if ATL_MQTT_THIRD
 
-    #     config ATL_MQTT_BROKER_ADDR
-    #         string "MQTT broker address"
-    #         default "agrotechlab.lages.ifsc.edu.br"
-    #         help
-    #             Address of MQTT broker.
+        config ATL_MQTT_BROKER_ADDR
+            string "MQTT broker address"
+            default "agrotechlab.lages.ifsc.edu.br"
+            help
+                Address of MQTT broker.
             
-    #     config ATL_MQTT_BROKER_PORT
-    #         int "MQTT broker port"
-    #         range 1 65535
-    #         default 1883
-    #         help
-    #             Port of MQTT broker.
+        config ATL_MQTT_BROKER_PORT
+            int "MQTT broker port"
+            range 1 65535
+            default 1883
+            help
+                Port of MQTT broker.
         
-    #     config ATL_MQTT_USERNAME
-    #         string "MQTT authentication username"
-    #         default "atl100"
-    #         help
-    #             Username for MQTT authentication.
+        config ATL_MQTT_USERNAME
+            string "MQTT authentication username"
+            default "atl100"
+            help
+                Username for MQTT authentication.
                 
-    #     config ATL_MQTT_PASSWORD
-    #         string "MQTT authentication password"
-    #         default "AgroTechLab"
-    #         help
-    #             Password for MQTT authentication.
+        config ATL_MQTT_PASSWORD
+            string "MQTT authentication password"
+            default "AgroTechLab"
+            help
+                Password for MQTT authentication.
         
-    #     config ATL_MQTT_QOS
-    #         int "MQTT QoS level"
-    #         range 0 2
-    #         default 0
-    #         help
-    #             Level of Qos at MQTT communication.
-    # endmenu
+        config ATL_MQTT_QOS
+            int "MQTT QoS level"
+            range 0 2
+            default 0
+            help
+                Level of Qos at MQTT communication.
+    endmenu
     
     # menu "ATL100 Telemetry"
     #     config ATL_SEND_PERIOD
