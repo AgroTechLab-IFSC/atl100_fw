@@ -9,7 +9,7 @@
 #include <nvs.h>
 #include "atl_config.h"
 #include "atl_wifi.h"
-// #include "atl_webserver.h"
+#include "atl_webserver.h"
 // #include "atl_mqtt.h"
 
 /* Constants */
@@ -48,9 +48,9 @@ static void atl_config_create_default(void) {
     atl_config.wifi.sta_max_conn_retry = CONFIG_ATL_WIFI_STA_MAX_CONN_RETRY;    
 
     /** Creates default WEBSERVER configuration **/  
-    // atl_config.webserver.mode = ATL_WEBSERVER_HTTP;  
-    // strncpy((char*)&atl_config.webserver.admin_user, CONFIG_ATL_WEBSERVER_ADMIN_USER, sizeof(atl_config.webserver.admin_user));
-    // strncpy((char*)&atl_config.webserver.admin_pass, CONFIG_ATL_WEBSERVER_ADMIN_PASS, sizeof(atl_config.webserver.admin_pass));
+    atl_config.webserver.mode = ATL_WEBSERVER_HTTP;  
+    strncpy((char*)&atl_config.webserver.admin_user, CONFIG_ATL_WEBSERVER_ADMIN_USER, sizeof(atl_config.webserver.admin_user));
+    strncpy((char*)&atl_config.webserver.admin_pass, CONFIG_ATL_WEBSERVER_ADMIN_PASS, sizeof(atl_config.webserver.admin_pass));
 
     /** Creates default MQTT CLIENT configuration **/
     // atl_config.mqtt_client.mode = CONFIG_ATL_MQTT_BROKER_MODE;

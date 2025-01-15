@@ -185,19 +185,19 @@ menu "ATL-100 Configuration"
     #             GPIO number (IOxx) to RS-485 RXD (at MCU and HW-519 module).
     # endmenu
 
-    # menu "ATL100 Webserver Configuration"
-    #     config ATL_WEBSERVER_ADMIN_USER
-    #         string "Webserver administrator user"
-    #         default "admin"
-    #         help
-    #             Default administrator user at ATL100 webserver.
+    menu "ATL-100 Webserver Configuration"
+        config ATL_WEBSERVER_ADMIN_USER
+            string "Webserver administrator user"
+            default "admin"
+            help
+                Default administrator user at ATL100 webserver.
             
-    #     config ATL_WEBSERVER_ADMIN_PASS
-    #         string "Webserver administrator password"
-    #         default "AgroTechLab"
-    #         help
-    #             Default administrator password at ATL100 webserver.       
-    # endmenu
+        config ATL_WEBSERVER_ADMIN_PASS
+            string "Webserver administrator password"
+            default "AgroTechLab"
+            help
+                Default administrator password at ATL100 webserver.       
+    endmenu
     
     # menu "ATL100 MQTT Client Configuration"
     #     choice

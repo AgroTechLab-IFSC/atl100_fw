@@ -572,6 +572,13 @@ CONFIG_ATL_WIFI_AP_CHANNEL=6
 CONFIG_ATL_WIFI_AP_MAX_STA_CONN=4
 CONFIG_ATL_WIFI_STA_MAX_CONN_RETRY=5
 # end of ATL-100 WiFi Configuration
+
+#
+# ATL-100 Webserver Configuration
+#
+CONFIG_ATL_WEBSERVER_ADMIN_USER="admin"
+CONFIG_ATL_WEBSERVER_ADMIN_PASS="AgroTechLab"
+# end of ATL-100 Webserver Configuration
 # end of ATL-100 Configuration
 
 #
