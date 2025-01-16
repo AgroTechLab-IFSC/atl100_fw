@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="atl__modbus__params_8c" kind="file" language="C++">
+    <compoundname>atl_modbus_params.c</compoundname>
+    <includes refid="atl__modbus__params_8h" local="yes">atl_modbus_params.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>atl_modbus_params.c</label>
+        <link refid="atl__modbus__params_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>atl_modbus_params.h</label>
+        <link refid="atl__modbus__params_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="atl__modbus__params_8c_1aa3864bcbda7c50abe802bea206c094e6" prot="public" static="no" mutable="no">
+        <type><ref refid="structholding__reg__params__t" kindref="compound">holding_reg_params_t</ref></type>
+        <definition>holding_reg_params_t holding_reg_params</definition>
+        <argsstring></argsstring>
+        <name>holding_reg_params</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c" line="5" column="22" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__modbus__params_8c_1a14a10d24f69cd2e6c154b1d1055c898a" prot="public" static="no" mutable="no">
+        <type><ref refid="structinput__reg__params__t" kindref="compound">input_reg_params_t</ref></type>
+        <definition>input_reg_params_t input_reg_params</definition>
+        <argsstring></argsstring>
+        <name>input_reg_params</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c" line="6" column="20" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__modbus__params_8c_1a014a7e67d1e440ca2e1ef005d77b43ad" prot="public" static="no" mutable="no">
+        <type><ref refid="structcoil__reg__params__t" kindref="compound">coil_reg_params_t</ref></type>
+        <definition>coil_reg_params_t coil_reg_params</definition>
+        <argsstring></argsstring>
+        <name>coil_reg_params</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c" line="7" column="19" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__modbus__params_8c_1a9b5cab29763bc13862b37e4f3d18aaef" prot="public" static="no" mutable="no">
+        <type><ref refid="structdiscrete__reg__params__t" kindref="compound">discrete_reg_params_t</ref></type>
+        <definition>discrete_reg_params_t discrete_reg_params</definition>
+        <argsstring></argsstring>
+        <name>discrete_reg_params</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c" line="8" column="23" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;atl_modbus_params.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Here<sp/>are<sp/>the<sp/>user<sp/>defined<sp/>instances<sp/>for<sp/>device<sp/>parameters<sp/>packed<sp/>by<sp/>1<sp/>byte<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>These<sp/>are<sp/>keep<sp/>the<sp/>values<sp/>that<sp/>can<sp/>be<sp/>accessed<sp/>from<sp/>Modbus<sp/>master<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="structholding__reg__params__t" kindref="compound">holding_reg_params_t</ref><sp/>holding_reg_params<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="structinput__reg__params__t" kindref="compound">input_reg_params_t</ref><sp/>input_reg_params<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="structcoil__reg__params__t" kindref="compound">coil_reg_params_t</ref><sp/>coil_reg_params<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="structdiscrete__reg__params__t" kindref="compound">discrete_reg_params_t</ref><sp/>discrete_reg_params<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+    </programlisting>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="atl__i2c_8h" kind="file" language="C++">
+    <compoundname>atl_i2c.h</compoundname>
+    <includes local="no">driver/i2c_master.h</includes>
+    <includedby refid="ads1x15_8c" local="yes">ads1x15.c</includedby>
+    <includedby refid="atl__adc_8c" local="yes">atl_adc.c</includedby>
+    <includedby refid="atl__i2c_8c" local="yes">atl_i2c.c</includedby>
+    <includedby refid="atl__telemetry_8c" local="yes">atl_telemetry.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>atl_i2c.h</label>
+        <link refid="atl__i2c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>driver/i2c_master.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="atl__i2c_8h_1a3ce300af0c284c1618ca69c7ce7724af" prot="public" static="no">
+        <name>ATL_I2C_MASTER_NUM</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C master i2c port number, the number of i2c peripheral interfaces available will depend on the chip </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="8" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__i2c_8h_1aa21d58d8e54e0d31f8264dcbed37f6ad" prot="public" static="no">
+        <name>ATL_I2C_MASTER_FREQ_HZ</name>
+        <initializer>400000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C master clock frequency </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="9" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__i2c_8h_1a8a2aea7f287498576c36ab9709e9f18c" prot="public" static="no">
+        <name>ATL_I2C_MASTER_TX_BUF_DISABLE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C master doesn&apos;t need buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="10" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__i2c_8h_1aea37d356f02064525112fa9573689004" prot="public" static="no">
+        <name>ATL_I2C_MASTER_RX_BUF_DISABLE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C master doesn&apos;t need buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="11" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__i2c_8h_1af139eb9e0dc8c7a78eb502c7be68c41f" prot="public" static="no">
+        <name>ATL_I2C_MASTER_TIMEOUT_MS</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C master timeout </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="12" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__i2c_8h_1a7dd22b838d2b1f22d367e6cdef04ccc3" prot="public" static="no">
+        <name>ACK_CHECK_EN</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C master will check ack from slave </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="13" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__i2c_8h_1a8ad7ceb373ce664b1c2482a66537e7c0" prot="public" static="no">
+        <name>ACK_CHECK_DIS</name>
+        <initializer>0x0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C master will not check ack from slave </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="14" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__i2c_8h_1a1d64a546dacc15052a6c4887f9d0020f" prot="public" static="no">
+        <name>ACK_VAL</name>
+        <initializer>0x0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C ack value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="15" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__i2c_8h_1ae20bf16f65c41237e2d620ef49890781" prot="public" static="no">
+        <name>NACK_VAL</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C nack value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="16" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="atl__i2c_8h_1aca0ecd58b07529c4f00d71fb8ec63060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t atl_i2c_master_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_i2c_master_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>I2C master initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="21" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.c" bodystart="20" bodyend="50" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" declline="21" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__i2c_8h_1a91f1539b475d42862951c811482c7703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t atl_i2c_detect_devices</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_i2c_detect_devices</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Dectect I2C devices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="26" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.c" bodystart="55" bodyend="86" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" declline="26" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__i2c_8h_1a22166f2977e7dd13a1a088f577defd67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t atl_i2c_device_exists</definition>
+        <argsstring>(uint8_t i2c_address)</argsstring>
+        <name>atl_i2c_device_exists</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>i2c_address</declname>
+        </param>
+        <briefdescription>
+<para>Check if I2C device is connected. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="31" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.c" bodystart="91" bodyend="115" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" declline="31" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__i2c_8h_1a2334d2399fe333b8d0cc7eff81eaf4ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t atl_i2c_master_bus_add_device</definition>
+        <argsstring>(i2c_device_config_t *dev_cfg, i2c_master_dev_handle_t *dev_handle)</argsstring>
+        <name>atl_i2c_master_bus_add_device</name>
+        <param>
+          <type>i2c_device_config_t *</type>
+          <declname>dev_cfg</declname>
+        </param>
+        <param>
+          <type>i2c_master_dev_handle_t *</type>
+          <declname>dev_handle</declname>
+        </param>
+        <briefdescription>
+<para>Add device at I2C bus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev_cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device configuration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dev_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device handle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>esp_err_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="39" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.c" bodystart="123" bodyend="143" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" declline="39" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__i2c_8h_1ab122e1c97fb6928fc655c953a555c97e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t atl_i2c_receive</definition>
+        <argsstring>(i2c_master_dev_handle_t dev_handle, uint8_t *buf_ptr, size_t buf_size)</argsstring>
+        <name>atl_i2c_receive</name>
+        <param>
+          <type>i2c_master_dev_handle_t</type>
+          <declname>dev_handle</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buf_ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buf_size</declname>
+        </param>
+        <briefdescription>
+<para>Read data from I2C bus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dev_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device handle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of data buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ESP_OK if success, otherwise fail </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="48" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.c" bodystart="152" bodyend="175" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" declline="48" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__i2c_8h_1aee3400f5bbb43147e03c9ab3877c831c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t atl_i2c_transmit</definition>
+        <argsstring>(i2c_master_dev_handle_t dev_handle, uint8_t *buf_ptr, size_t buf_size)</argsstring>
+        <name>atl_i2c_transmit</name>
+        <param>
+          <type>i2c_master_dev_handle_t</type>
+          <declname>dev_handle</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buf_ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buf_size</declname>
+        </param>
+        <briefdescription>
+<para>Transmit data at I2C bus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dev_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device handle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of data buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ESP_OK if success, otherwise fail </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" line="57" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.c" bodystart="184" bodyend="206" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h" declline="57" declcolumn="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;driver/i2c_master.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_I2C_MASTER_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_I2C_MASTER_FREQ_HZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>400000<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_I2C_MASTER_TX_BUF_DISABLE<sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_I2C_MASTER_RX_BUF_DISABLE<sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_I2C_MASTER_TIMEOUT_MS<sp/><sp/><sp/><sp/><sp/><sp/>1000<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACK_CHECK_EN<sp/>0x1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACK_CHECK_DIS<sp/>0x0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACK_VAL<sp/>0x0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NACK_VAL<sp/>0x1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">esp_err_t<sp/>atl_i2c_master_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">uint8_t<sp/>atl_i2c_detect_devices(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">esp_err_t<sp/>atl_i2c_device_exists(uint8_t<sp/>i2c_address);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">esp_err_t<sp/>atl_i2c_master_bus_add_device(i2c_device_config_t<sp/>*dev_cfg,<sp/>i2c_master_dev_handle_t<sp/>*dev_handle);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">esp_err_t<sp/>atl_i2c_receive(i2c_master_dev_handle_t<sp/>dev_handle,<sp/>uint8_t*<sp/>buf_ptr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>buf_size);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">esp_err_t<sp/>atl_i2c_transmit(i2c_master_dev_handle_t<sp/>dev_handle,<sp/>uint8_t*<sp/>buf_ptr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>buf_size);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_i2c.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__adc__task__args__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_adc_task_args_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__adc__task__args__t_1afd5dbf719bae2b1ea9260a55e7c289cf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t i2c_address</definition>
+        <argsstring></argsstring>
+        <name>i2c_address</name>
+        <qualifiedname>atl_adc_task_args_t::i2c_address</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" line="17" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__adc__task__args__t_1a8dac261b4a1ef2f5ca29d1f40abab0a9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t i2c_port</definition>
+        <argsstring></argsstring>
+        <name>i2c_port</name>
+        <qualifiedname>atl_adc_task_args_t::i2c_port</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" line="18" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" line="16" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" bodystart="16" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structatl__adc__task__args__t_1afd5dbf719bae2b1ea9260a55e7c289cf" prot="public" virt="non-virtual"><scope>atl_adc_task_args_t</scope><name>i2c_address</name></member>
+      <member refid="structatl__adc__task__args__t_1a8dac261b4a1ef2f5ca29d1f40abab0a9" prot="public" virt="non-virtual"><scope>atl_adc_task_args_t</scope><name>i2c_port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

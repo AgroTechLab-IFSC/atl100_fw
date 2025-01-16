@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__data__telemetry__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_data_telemetry_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1a579949df4492aae2b400cfb42ab1a1b0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float power_voltage</definition>
+        <argsstring></argsstring>
+        <name>power_voltage</name>
+        <qualifiedname>atl_data_telemetry_t::power_voltage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power voltage (in V). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="85" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1a5cbb9c964da67812cd01b081c2fc6cd1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float air_temperature</definition>
+        <argsstring></argsstring>
+        <name>air_temperature</name>
+        <qualifiedname>atl_data_telemetry_t::air_temperature</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Air temperature (in oC). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="86" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1a531741af69122a00d7b578003b853b37" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float air_humidity</definition>
+        <argsstring></argsstring>
+        <name>air_humidity</name>
+        <qualifiedname>atl_data_telemetry_t::air_humidity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Air humidity (in %). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="87" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1ab90be8b57e55d7638fd682ecf1b1fa87" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float air_pressure</definition>
+        <argsstring></argsstring>
+        <name>air_pressure</name>
+        <qualifiedname>atl_data_telemetry_t::air_pressure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Air pressure (in hPa). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="88" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1a96fbe866fa68fbbf78e78a32b24d117e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t uv_index</definition>
+        <argsstring></argsstring>
+        <name>uv_index</name>
+        <qualifiedname>atl_data_telemetry_t::uv_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UV index. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="89" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1a9176ad201977b7411b70a06b4dd306a5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float light_intensity</definition>
+        <argsstring></argsstring>
+        <name>light_intensity</name>
+        <qualifiedname>atl_data_telemetry_t::light_intensity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light intensity (in lux). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="90" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1ad154f22ddc5493eb6b09454c00d66291" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float soil_temperature</definition>
+        <argsstring></argsstring>
+        <name>soil_temperature</name>
+        <qualifiedname>atl_data_telemetry_t::soil_temperature</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Soil temperature (in oC). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="91" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1a4ea448d71d6f8f065a8bd43aec18cd89" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float soil_humidity</definition>
+        <argsstring></argsstring>
+        <name>soil_humidity</name>
+        <qualifiedname>atl_data_telemetry_t::soil_humidity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Soil humidity (in %). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="92" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1a06e2b0c76d0604d989b5ce0628f1be6e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t soil_ec</definition>
+        <argsstring></argsstring>
+        <name>soil_ec</name>
+        <qualifiedname>atl_data_telemetry_t::soil_ec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Soil EC (in us/cm). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="93" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1a6a8f22e23cd9b29c2bdec3ec99a4a82c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float soil_ph</definition>
+        <argsstring></argsstring>
+        <name>soil_ph</name>
+        <qualifiedname>atl_data_telemetry_t::soil_ph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Soil pH. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="94" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1ab633ed6bfc01cfe87f5c81f95885992b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t soil_nitrogen</definition>
+        <argsstring></argsstring>
+        <name>soil_nitrogen</name>
+        <qualifiedname>atl_data_telemetry_t::soil_nitrogen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Soil nitrogen (in ppm). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="95" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1afa5a17414b8e5f9f0b7a1bcf77718172" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t soil_phosphorus</definition>
+        <argsstring></argsstring>
+        <name>soil_phosphorus</name>
+        <qualifiedname>atl_data_telemetry_t::soil_phosphorus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Soil phosphorus (in ppm). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="96" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1afa94d9fc5a3018ee78cf3150daf77167" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t soil_potassium</definition>
+        <argsstring></argsstring>
+        <name>soil_potassium</name>
+        <qualifiedname>atl_data_telemetry_t::soil_potassium</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Soil potassium (in ppm). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="97" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1aefcda1ea715e95d2ca9462723d3c65b3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t soil_salinity</definition>
+        <argsstring></argsstring>
+        <name>soil_salinity</name>
+        <qualifiedname>atl_data_telemetry_t::soil_salinity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Soil salinity (in mg/L). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="98" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1a7483aa7cb2f94c0ee190835a155b6b0b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t soil_tds</definition>
+        <argsstring></argsstring>
+        <name>soil_tds</name>
+        <qualifiedname>atl_data_telemetry_t::soil_tds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Soil TDS (Total Dissolved Solids) (in mg/L). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="99" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1aebe6bf5a40de4d481c060538269689cb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float pluviometer</definition>
+        <argsstring></argsstring>
+        <name>pluviometer</name>
+        <qualifiedname>atl_data_telemetry_t::pluviometer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pluviometer (in mm). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="100" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1a4eb9d93a05d39ce1f36f471daa8315dc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float anemometer</definition>
+        <argsstring></argsstring>
+        <name>anemometer</name>
+        <qualifiedname>atl_data_telemetry_t::anemometer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Anemometer (in Km/h). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="101" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1a0b04edae445b69fee59bf201a26d5abc" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wind_direction</definition>
+        <argsstring></argsstring>
+        <name>wind_direction</name>
+        <qualifiedname>atl_data_telemetry_t::wind_direction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wind direction (in degrees). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="102" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__telemetry__t_1a72c92c8504db65a701d1d5a9fd397a26" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__data__adc__telemetry__t" kindref="compound">atl_data_adc_telemetry_t</ref></type>
+        <definition>atl_data_adc_telemetry_t adc[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>adc</name>
+        <qualifiedname>atl_data_telemetry_t::adc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC sensor (4 ports). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="103" column="30" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>atl_data_adc_telemetry_t</label>
+        <link refid="structatl__data__adc__telemetry__t"/>
+      </node>
+      <node id="1">
+        <label>atl_data_telemetry_t</label>
+        <link refid="structatl__data__telemetry__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>adc</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="84" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="84" bodyend="104"/>
+    <listofallmembers>
+      <member refid="structatl__data__telemetry__t_1a72c92c8504db65a701d1d5a9fd397a26" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>adc</name></member>
+      <member refid="structatl__data__telemetry__t_1a531741af69122a00d7b578003b853b37" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>air_humidity</name></member>
+      <member refid="structatl__data__telemetry__t_1ab90be8b57e55d7638fd682ecf1b1fa87" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>air_pressure</name></member>
+      <member refid="structatl__data__telemetry__t_1a5cbb9c964da67812cd01b081c2fc6cd1" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>air_temperature</name></member>
+      <member refid="structatl__data__telemetry__t_1a4eb9d93a05d39ce1f36f471daa8315dc" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>anemometer</name></member>
+      <member refid="structatl__data__telemetry__t_1a9176ad201977b7411b70a06b4dd306a5" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>light_intensity</name></member>
+      <member refid="structatl__data__telemetry__t_1aebe6bf5a40de4d481c060538269689cb" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>pluviometer</name></member>
+      <member refid="structatl__data__telemetry__t_1a579949df4492aae2b400cfb42ab1a1b0" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>power_voltage</name></member>
+      <member refid="structatl__data__telemetry__t_1a06e2b0c76d0604d989b5ce0628f1be6e" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>soil_ec</name></member>
+      <member refid="structatl__data__telemetry__t_1a4ea448d71d6f8f065a8bd43aec18cd89" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>soil_humidity</name></member>
+      <member refid="structatl__data__telemetry__t_1ab633ed6bfc01cfe87f5c81f95885992b" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>soil_nitrogen</name></member>
+      <member refid="structatl__data__telemetry__t_1a6a8f22e23cd9b29c2bdec3ec99a4a82c" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>soil_ph</name></member>
+      <member refid="structatl__data__telemetry__t_1afa5a17414b8e5f9f0b7a1bcf77718172" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>soil_phosphorus</name></member>
+      <member refid="structatl__data__telemetry__t_1afa94d9fc5a3018ee78cf3150daf77167" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>soil_potassium</name></member>
+      <member refid="structatl__data__telemetry__t_1aefcda1ea715e95d2ca9462723d3c65b3" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>soil_salinity</name></member>
+      <member refid="structatl__data__telemetry__t_1a7483aa7cb2f94c0ee190835a155b6b0b" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>soil_tds</name></member>
+      <member refid="structatl__data__telemetry__t_1ad154f22ddc5493eb6b09454c00d66291" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>soil_temperature</name></member>
+      <member refid="structatl__data__telemetry__t_1a96fbe866fa68fbbf78e78a32b24d117e" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>uv_index</name></member>
+      <member refid="structatl__data__telemetry__t_1a0b04edae445b69fee59bf201a26d5abc" prot="public" virt="non-virtual"><scope>atl_data_telemetry_t</scope><name>wind_direction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

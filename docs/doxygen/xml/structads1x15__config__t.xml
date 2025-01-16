@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structads1x15__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>ads1x15_config_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structads1x15__config__t_1a3590df8c0f943a671fd63d696a55a50c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t i2c_addr</definition>
+        <argsstring></argsstring>
+        <name>i2c_addr</name>
+        <qualifiedname>ads1x15_config_t::i2c_addr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" line="105" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structads1x15__config__t_1a064ad62f48364786301c06c4bd02b844" prot="public" static="no" mutable="no">
+        <type>ads1x15_gain_t</type>
+        <definition>ads1x15_gain_t gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <qualifiedname>ads1x15_config_t::gain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gain </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" line="106" column="18" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structads1x15__config__t_1a3930d1e8af0848833f4de0e0e9517dca" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <qualifiedname>ads1x15_config_t::range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operation range </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" line="107" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sps_mask</definition>
+        <argsstring></argsstring>
+        <name>sps_mask</name>
+        <qualifiedname>ads1x15_config_t::sps_mask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sample rate </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" line="108" column="12" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structads1x15__config__t_1a6b93ee7499b57b1da89fa0766ef4199f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t next_reading_time</definition>
+        <argsstring></argsstring>
+        <name>next_reading_time</name>
+        <qualifiedname>ads1x15_config_t::next_reading_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Next reading time after conversion completed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" line="109" column="12" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool continuous</definition>
+        <argsstring></argsstring>
+        <name>continuous</name>
+        <qualifiedname>ads1x15_config_t::continuous</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Continuous mode enabled/disabled </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" line="110" column="8" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structads1x15__config__t_1aa79e72fe93d514b4ba28908a38e2d988" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool comparator</definition>
+        <argsstring></argsstring>
+        <name>comparator</name>
+        <qualifiedname>ads1x15_config_t::comparator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Comparator mode enabled/disabled </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" line="111" column="8" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" line="104" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.h" bodystart="104" bodyend="112"/>
+    <listofallmembers>
+      <member refid="structads1x15__config__t_1aa79e72fe93d514b4ba28908a38e2d988" prot="public" virt="non-virtual"><scope>ads1x15_config_t</scope><name>comparator</name></member>
+      <member refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" prot="public" virt="non-virtual"><scope>ads1x15_config_t</scope><name>continuous</name></member>
+      <member refid="structads1x15__config__t_1a064ad62f48364786301c06c4bd02b844" prot="public" virt="non-virtual"><scope>ads1x15_config_t</scope><name>gain</name></member>
+      <member refid="structads1x15__config__t_1a3590df8c0f943a671fd63d696a55a50c" prot="public" virt="non-virtual"><scope>ads1x15_config_t</scope><name>i2c_addr</name></member>
+      <member refid="structads1x15__config__t_1a6b93ee7499b57b1da89fa0766ef4199f" prot="public" virt="non-virtual"><scope>ads1x15_config_t</scope><name>next_reading_time</name></member>
+      <member refid="structads1x15__config__t_1a3930d1e8af0848833f4de0e0e9517dca" prot="public" virt="non-virtual"><scope>ads1x15_config_t</scope><name>range</name></member>
+      <member refid="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" prot="public" virt="non-virtual"><scope>ads1x15_config_t</scope><name>sps_mask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

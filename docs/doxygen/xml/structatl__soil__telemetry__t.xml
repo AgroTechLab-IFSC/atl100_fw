@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__soil__telemetry__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_soil_telemetry_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__soil__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>atl_soil_telemetry_t::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sensor enabled. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="35" column="17" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__soil__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sampling_period</definition>
+        <argsstring></argsstring>
+        <name>sampling_period</name>
+        <qualifiedname>atl_soil_telemetry_t::sampling_period</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sampling period. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="36" column="17" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__soil__telemetry__t_1a3a34fe33fa471a98e62d68426933fa2b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t modbus_rtu_addr</definition>
+        <argsstring></argsstring>
+        <name>modbus_rtu_addr</name>
+        <qualifiedname>atl_soil_telemetry_t::modbus_rtu_addr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modbus-RTU address. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="37" column="17" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="34" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="34" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structatl__soil__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" prot="public" virt="non-virtual"><scope>atl_soil_telemetry_t</scope><name>enabled</name></member>
+      <member refid="structatl__soil__telemetry__t_1a3a34fe33fa471a98e62d68426933fa2b" prot="public" virt="non-virtual"><scope>atl_soil_telemetry_t</scope><name>modbus_rtu_addr</name></member>
+      <member refid="structatl__soil__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" prot="public" virt="non-virtual"><scope>atl_soil_telemetry_t</scope><name>sampling_period</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

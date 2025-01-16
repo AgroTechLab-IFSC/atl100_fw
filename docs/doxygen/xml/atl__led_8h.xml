@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="atl__led_8h" kind="file" language="C++">
+    <compoundname>atl_led.h</compoundname>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">inttypes.h</includes>
+    <includedby refid="atl__adc_8c" local="yes">atl_adc.c</includedby>
+    <includedby refid="atl__button_8c" local="yes">atl_button.c</includedby>
+    <includedby refid="atl__config_8h" local="yes">atl_config.h</includedby>
+    <includedby refid="atl__led_8c" local="yes">atl_led.c</includedby>
+    <includedby refid="atl__main_8c" local="yes">atl_main.c</includedby>
+    <includedby refid="atl__modbus_8c" local="yes">atl_modbus.c</includedby>
+    <includedby refid="atl__webserver_8c" local="yes">atl_webserver.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>atl_led.h</label>
+        <link refid="atl__led_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>inttypes.h</label>
+      </node>
+      <node id="2">
+        <label>stdbool.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>atl_config.h</label>
+        <link refid="atl__config_8h_source"/>
+      </node>
+      <node id="1">
+        <label>atl_led.h</label>
+        <link refid="atl__led_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structatl__led__rgb__color__t" prot="public">atl_led_rgb_color_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="atl__led_8h_1aecaf3f695131a8da4a755b8e490b8c9f" prot="public" static="no">
+        <name>LED_STRIP_RMT_RES_HZ</name>
+        <initializer>(10 * 1000 * 1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="10" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="atl__led_8h_1a53492ef3950243f6009580197f51bcb4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>atl_led_behaviour_e</name>
+        <enumvalue id="atl__led_8h_1a53492ef3950243f6009580197f51bcb4aa6c9414eaf7db119bd865dabc282cd7f" prot="public">
+          <name>ATL_LED_DISABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__led_8h_1a53492ef3950243f6009580197f51bcb4a134322be4846beedcb028b1195d789ca" prot="public">
+          <name>ATL_LED_ENABLED_FAILS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__led_8h_1a53492ef3950243f6009580197f51bcb4a689cfa8f7e8d8e104086bf3fc9222285" prot="public">
+          <name>ATL_LED_ENABLED_COMM_FAILS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__led_8h_1a53492ef3950243f6009580197f51bcb4a1eef0854426e56ee93b9681ee8d64c7b" prot="public">
+          <name>ATL_LED_ENABLED_FULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LED behaviour. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="16" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" bodystart="16" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="atl__led_8h_1a22390d8a2f8f1670fbcbc25e98b54845" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * atl_led_get_behaviour_str</definition>
+        <argsstring>(atl_led_behaviour_e behaviour)</argsstring>
+        <name>atl_led_get_behaviour_str</name>
+        <param>
+          <type>atl_led_behaviour_e</type>
+          <declname>behaviour</declname>
+        </param>
+        <briefdescription>
+<para>Get the led behaviour string object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>behaviour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Function enum const* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="38" column="12" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.c" bodystart="73" bodyend="75" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" declline="38" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__led_8h_1a44bedb7c39699640fff9cea535f00a8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>atl_led_behaviour_e</type>
+        <definition>atl_led_behaviour_e atl_led_get_behaviour</definition>
+        <argsstring>(char *behaviour_str)</argsstring>
+        <name>atl_led_get_behaviour</name>
+        <param>
+          <type>char *</type>
+          <declname>behaviour_str</declname>
+        </param>
+        <briefdescription>
+<para>Get the led behaviour string object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>behaviour_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Function enum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="45" column="21" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.c" bodystart="82" bodyend="92" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" declline="45" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__led_8h_1ab30775fb4f1722f7a39c51a0ae458ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atl_led_builtin_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_led_builtin_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize led builtin task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Led strip config handle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; The GPIO that connected to the LED strip&apos;s data line</para>
+<para>&lt; The number of LEDs in the strip</para>
+<para>&lt; Pixel format of your LED strip</para>
+<para>&lt; LED strip model</para>
+<para>&lt; whether to invert the output signal</para>
+<para>&lt; different clock source can lead to different power consumption</para>
+<para>&lt; RMT counter clock frequency</para>
+<para>&lt; DMA feature is available on ESP target like ESP32-S3</para>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="52" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.c" bodystart="98" bodyend="139" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" declline="52" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__led_8h_1a08edb5b1787442de42481218bc13060d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atl_led_builtin_toogle</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_led_builtin_toogle</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Toggle led builtin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="58" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.c" bodystart="145" bodyend="174" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" declline="58" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__led_8h_1a629779beb53144a72ea08c073f77dc7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atl_led_builtin_blink</definition>
+        <argsstring>(uint8_t times, uint16_t interval, uint8_t red, uint8_t green, uint8_t blue)</argsstring>
+        <name>atl_led_builtin_blink</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>times</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>interval</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Blink led builtin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">times</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>blink times </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interval between blinks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>red value (0..255) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>green value (0..255) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>blue value (0..255) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="69" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.c" bodystart="185" bodyend="218" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" declline="69" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__led_8h_1a3e1a163e8c3b338c04be63435e7f1b05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atl_led_set_color</definition>
+        <argsstring>(uint8_t red, uint8_t green, uint8_t blue)</argsstring>
+        <name>atl_led_set_color</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Set led builtin color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>red value (0..255) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>green value (0..255) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>blue value (0..255) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="78" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.c" bodystart="227" bodyend="243" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" declline="78" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__led_8h_1ab66773c4944f8c8eec6b27e560eac586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atl_led_set_enabled</definition>
+        <argsstring>(bool status)</argsstring>
+        <name>atl_led_set_enabled</name>
+        <param>
+          <type>bool</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Enabled/disabled led builtin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>enabled or disabled led builtin </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="85" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.c" bodystart="250" bodyend="267" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" declline="85" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_STRIP_RMT_RES_HZ<sp/><sp/>(10<sp/>*<sp/>1000<sp/>*<sp/>1000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>ATL_LED_DISABLED,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>ATL_LED_ENABLED_FAILS,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>ATL_LED_ENABLED_COMM_FAILS,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>ATL_LED_ENABLED_FULL,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/>atl_led_behaviour_e;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structatl__led__rgb__color__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="structatl__led__rgb__color__t_1ad47d918910aaa51c73160ac85999d09c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structatl__led__rgb__color__t_1ad47d918910aaa51c73160ac85999d09c" kindref="member">red</ref>;<sp/></highlight></codeline>
+<codeline lineno="29" refid="structatl__led__rgb__color__t_1a90d21fa503b626c00cdc8d94863d5877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structatl__led__rgb__color__t_1a90d21fa503b626c00cdc8d94863d5877" kindref="member">green</ref>;<sp/></highlight></codeline>
+<codeline lineno="30" refid="structatl__led__rgb__color__t_1a287b397e90d7b995c81ff54e741f96b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structatl__led__rgb__color__t_1a287b397e90d7b995c81ff54e741f96b2" kindref="member">blue</ref>;<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/><ref refid="structatl__led__rgb__color__t" kindref="compound">atl_led_rgb_color_t</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>atl_led_get_behaviour_str(atl_led_behaviour_e<sp/>behaviour);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">atl_led_behaviour_e<sp/>atl_led_get_behaviour(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>behaviour_str);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>atl_led_builtin_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>atl_led_builtin_toogle(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>atl_led_builtin_blink(uint8_t<sp/>times,<sp/>uint16_t<sp/>interval,<sp/>uint8_t<sp/>red,<sp/>uint8_t<sp/>green,<sp/>uint8_t<sp/>blue);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>atl_led_set_color(uint8_t<sp/>red,<sp/>uint8_t<sp/>green,<sp/>uint8_t<sp/>blue);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>atl_led_set_enabled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h"/>
+  </compounddef>
+</doxygen>

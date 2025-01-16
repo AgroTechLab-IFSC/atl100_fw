@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__adc__telemetry__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_adc_telemetry_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__adc__telemetry__t_1af4c797a84b50407caa9d739666226b45" prot="public" static="no" mutable="no">
+        <type>atl_adc_input_mode_e</type>
+        <definition>atl_adc_input_mode_e mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <qualifiedname>atl_adc_telemetry_t::mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sensor mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="25" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__adc__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sampling_period</definition>
+        <argsstring></argsstring>
+        <name>sampling_period</name>
+        <qualifiedname>atl_adc_telemetry_t::sampling_period</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sampling period. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="26" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__adc__telemetry__t_1aba0b0513d397d51e6f438b2e9c420287" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sampling_window</definition>
+        <argsstring></argsstring>
+        <name>sampling_window</name>
+        <qualifiedname>atl_adc_telemetry_t::sampling_window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sampling window. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="27" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="24" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="24" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structatl__adc__telemetry__t_1af4c797a84b50407caa9d739666226b45" prot="public" virt="non-virtual"><scope>atl_adc_telemetry_t</scope><name>mode</name></member>
+      <member refid="structatl__adc__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" prot="public" virt="non-virtual"><scope>atl_adc_telemetry_t</scope><name>sampling_period</name></member>
+      <member refid="structatl__adc__telemetry__t_1aba0b0513d397d51e6f438b2e9c420287" prot="public" virt="non-virtual"><scope>atl_adc_telemetry_t</scope><name>sampling_window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

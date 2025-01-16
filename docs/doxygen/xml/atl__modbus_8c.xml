@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="atl__modbus_8c" kind="file" language="C++">
+    <compoundname>atl_modbus.c</compoundname>
+    <includes refid="atl__led_8h" local="yes">atl_led.h</includes>
+    <includes refid="atl__modbus_8h" local="yes">atl_modbus.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>atl_led.h</label>
+        <link refid="atl__led_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>atl_modbus.c</label>
+        <link refid="atl__modbus_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>atl_modbus.h</label>
+        <link refid="atl__modbus_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>atl_modbus_params.h</label>
+        <link refid="atl__modbus__params_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>esp_err.h</label>
+      </node>
+      <node id="4">
+        <label>inttypes.h</label>
+      </node>
+      <node id="7">
+        <label>mbcontroller.h</label>
+      </node>
+      <node id="3">
+        <label>stdbool.h</label>
+      </node>
+      <node id="9">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="atl__modbus_8c_1a5a85b9c772bbeb480b209a3e6ea92b4c" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* TAG</definition>
+        <argsstring></argsstring>
+        <name>TAG</name>
+        <initializer>= &quot;atl-modbus&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Module identification. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" line="5" column="19" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__modbus_8c_1af4a08698a94358f9805ccd785d241462" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool modbus_master_rs485_initialized</definition>
+        <argsstring></argsstring>
+        <name>modbus_master_rs485_initialized</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modbus Master RS-485 initialized flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" line="8" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__modbus_8c_1abf6d12e5e439a1d7823f790a1e770b44" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* mb_rs485_master_handler</definition>
+        <argsstring></argsstring>
+        <name>mb_rs485_master_handler</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modbus Master RS-485 handler </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" line="9" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__modbus_8c_1aa9b7d5b3030419ba1748fd0bc5e395f6" prot="public" static="no" mutable="no">
+        <type>const mb_parameter_descriptor_t</type>
+        <definition>const mb_parameter_descriptor_t atl_modbus_device_parameters[]</definition>
+        <argsstring>[]</argsstring>
+        <name>atl_modbus_device_parameters</name>
+        <briefdescription>
+<para>Modbus descriptor for NPKPHCTH sensor model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>CID - field in the table (must be unique). Param Name - Name of the parameter. Units - Units of the parameter. Modbus Slave Addr - field defines slave address of the device with correspond parameter. Modbus Reg Type - Type of Modbus register area (Holding register, Input Register and such). Reg Start - field defines the start Modbus register number. Reg Size - defines the number of registers for the characteristic accordingly. Instance Offset - defines offset in the appropriate parameter structure that will be used as instance to save parameter value. Data Type - specify value type of CID. Data Size - specify value size of CID. Parameter Options - field specifies the options that can be used to process parameter value (limits or masks). Access Mode - can be used to implement custom options for processing of characteristic (Read/Write restrictions, factory mode values and etc). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" line="26" column="33" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="atl__modbus_8c_1a7cbf346850a1a6dc21e56a1bd15c9399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t atl_modbus_get_num_device_params</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_modbus_get_num_device_params</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the number of parameters in the table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint16_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" line="62" column="10" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__modbus_8c_1a7786c56fc166feaa365261266b36d2be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * atl_modbus_master_rs485_get_param_data</definition>
+        <argsstring>(const mb_parameter_descriptor_t *param_descriptor)</argsstring>
+        <name>atl_modbus_master_rs485_get_param_data</name>
+        <param>
+          <type>const mb_parameter_descriptor_t *</type>
+          <declname>param_descriptor</declname>
+        </param>
+        <briefdescription>
+<para>The function to get pointer to parameter storage (instance) according to parameter description table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>param_descriptor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" line="70" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" bodystart="70" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__modbus_8c_1a7beb5dc784f6baf041a6d61df6c204a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t atl_modbus_master_rs485_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_modbus_master_rs485_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize Modbus Master stack at RS-485 interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>esp_err_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" line="103" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" bodystart="103" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__modbus_8c_1a69bc4c91e0a04cedd1cbd877fb32c2a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atl_modbus_master_rs485_initialized</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_modbus_master_rs485_initialized</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize Modbus Master stack at RS-485 interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>esp_err_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" line="177" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" bodystart="177" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;atl_led.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_modbus.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*TAG<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;atl-modbus&quot;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Global<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>modbus_master_rs485_initialized<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>mb_rs485_master_handler<sp/>=<sp/>NULL;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mb_parameter_descriptor_t<sp/>atl_modbus_device_parameters[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>{<sp/>CID,<sp/>Param<sp/>Name,<sp/>Units,<sp/>Modbus<sp/>Slave<sp/>Addr,<sp/>Modbus<sp/>Reg<sp/>Type,<sp/>Reg<sp/>Start,<sp/>Reg<sp/>Size,<sp/>Instance<sp/>Offset,<sp/>Data<sp/>Type,<sp/>Data<sp/>Size,<sp/>Parameter<sp/>Options,<sp/>Access<sp/>Mode}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>{<sp/>CID_HOLD_HUMIDITY,<sp/>ATL_MB_STR(&quot;CR300_BattV&quot;),<sp/>ATL_MB_STR(&quot;V&quot;),<sp/>1,<sp/>MB_PARAM_HOLDING,<sp/>1,<sp/>2,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data1),<sp/>PARAM_TYPE_FLOAT,<sp/>4,<sp/>ATL_MB_OPTS(<sp/>0,<sp/>24,<sp/>1<sp/>),<sp/>PAR_PERMS_READ<sp/>},</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>CID_HOLD_HUMIDITY,<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;Humidity&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;%RH&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_RS485_DEVICE_ADDR1,<sp/>MB_PARAM_HOLDING,<sp/>0,<sp/>1,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data0),<sp/>PARAM_TYPE_U16,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>0,<sp/>100,<sp/>0.1<sp/>),<sp/>PAR_PERMS_READ<sp/>},</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>CID_HOLD_TEMPERATURE,<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;Temperature&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;oC&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_RS485_DEVICE_ADDR1,<sp/>MB_PARAM_HOLDING,<sp/>1,<sp/>1,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data1),<sp/>PARAM_TYPE_U16,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>-40,<sp/>80,<sp/>0.1<sp/>),<sp/>PAR_PERMS_READ<sp/>},</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>CID_HOLD_CONDUCTIVITY,<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;Conductivity&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;us/cm&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_RS485_DEVICE_ADDR1,<sp/>MB_PARAM_HOLDING,<sp/>2,<sp/>1,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data2),<sp/>PARAM_TYPE_U16,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>0,<sp/>20000,<sp/>1<sp/>),<sp/>PAR_PERMS_READ<sp/>},</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>CID_HOLD_PH,<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;PH&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;PH&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_RS485_DEVICE_ADDR1,<sp/>MB_PARAM_HOLDING,<sp/>3,<sp/>1,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data3),<sp/>PARAM_TYPE_U16,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>3,<sp/>9,<sp/>0.1<sp/>),<sp/>PAR_PERMS_READ<sp/>},</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>CID_HOLD_NITROGEN,<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;Nitrogen&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;mg/kg&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_RS485_DEVICE_ADDR1,<sp/>MB_PARAM_HOLDING,<sp/>4,<sp/>1,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data4),<sp/>PARAM_TYPE_U16,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>1,<sp/>2999,<sp/>1<sp/>),<sp/>PAR_PERMS_READ_WRITE<sp/>},</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>CID_HOLD_PHOSPHORUS,<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;Phosphorus&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;mg/kg&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_RS485_DEVICE_ADDR1,<sp/>MB_PARAM_HOLDING,<sp/>5,<sp/>1,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data5),<sp/>PARAM_TYPE_U16,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>1,<sp/>2999,<sp/>1<sp/>),<sp/>PAR_PERMS_READ_WRITE<sp/>},</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>CID_HOLD_POTASSIUM,<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;Potassium&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;mg/kg&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_RS485_DEVICE_ADDR1,<sp/>MB_PARAM_HOLDING,<sp/>6,<sp/>1,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data6),<sp/>PARAM_TYPE_U16,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>1,<sp/>2999,<sp/>1<sp/>),<sp/>PAR_PERMS_READ_WRITE<sp/>},</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>CID_HOLD_SALINITY,<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;Salinity&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;mg/L&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_RS485_DEVICE_ADDR1,<sp/>MB_PARAM_HOLDING,<sp/>7,<sp/>1,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data7),<sp/>PARAM_TYPE_U16,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>1,<sp/>2999,<sp/>1<sp/>),<sp/>PAR_PERMS_READ<sp/>},</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>CID_HOLD_TDS,<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;TDS&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_STR(</highlight><highlight class="stringliteral">&quot;mg/L&quot;</highlight><highlight class="normal">),<sp/>ATL_MB_RS485_DEVICE_ADDR1,<sp/>MB_PARAM_HOLDING,<sp/>8,<sp/>1,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data8),<sp/>PARAM_TYPE_U16,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>1,<sp/>2999,<sp/>1<sp/>),<sp/>PAR_PERMS_READ<sp/>},</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>{<sp/>CID_HOLD_BATT_VOLTAGE,<sp/>ATL_MB_STR(&quot;CR300_BattV&quot;),<sp/>ATL_MB_STR(&quot;V&quot;),<sp/>2,<sp/>MB_PARAM_HOLDING,<sp/>40001,<sp/>2,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data9),<sp/>PARAM_TYPE_FLOAT,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>0,<sp/>40,<sp/>1<sp/>),<sp/>PAR_PERMS_READ<sp/>},</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>{<sp/>CID_HOLD_PTEMP,<sp/>ATL_MB_STR(&quot;CR300_PTemp&quot;),<sp/>ATL_MB_STR(&quot;oC&quot;),<sp/>2,<sp/>MB_PARAM_HOLDING,<sp/>2,<sp/>2,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data10),<sp/>PARAM_TYPE_FLOAT,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>-40,<sp/>80,<sp/>0.1<sp/>),<sp/>PAR_PERMS_READ<sp/>},</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>{<sp/>CID_HOLD_TEMPERATURE,<sp/>ATL_MB_STR(&quot;CR300_AirTemp&quot;),<sp/>ATL_MB_STR(&quot;oC&quot;),<sp/>2,<sp/>MB_PARAM_HOLDING,<sp/>4,<sp/>2,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data11),<sp/>PARAM_TYPE_FLOAT,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>-40,<sp/>80,<sp/>0.1<sp/>),<sp/>PAR_PERMS_READ<sp/>},</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>{<sp/>CID_HOLD_HUMIDITY,<sp/>ATL_MB_STR(&quot;CR300_AirHumid&quot;),<sp/>ATL_MB_STR(&quot;%RH&quot;),<sp/>2,<sp/>MB_PARAM_HOLDING,<sp/>6,<sp/>2,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HOLD_OFFSET(holding_data12),<sp/>PARAM_TYPE_FLOAT,<sp/>2,<sp/>ATL_MB_OPTS(<sp/>0,<sp/>100,<sp/>0.1<sp/>),<sp/>PAR_PERMS_READ<sp/>},</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">uint16_t<sp/>atl_modbus_get_num_device_params(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(atl_modbus_device_parameters)/</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(atl_modbus_device_parameters[0]));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>atl_modbus_master_rs485_get_param_data(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mb_parameter_descriptor_t*<sp/>param_descriptor)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(param_descriptor<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>instance_ptr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_descriptor-&gt;param_offset<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(param_descriptor-&gt;mb_param_type)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>MB_PARAM_HOLDING:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>instance_ptr<sp/>=<sp/>((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)&amp;holding_reg_params<sp/>+<sp/>param_descriptor-&gt;param_offset<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>MB_PARAM_INPUT:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>instance_ptr<sp/>=<sp/>((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)&amp;input_reg_params<sp/>+<sp/>param_descriptor-&gt;param_offset<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>MB_PARAM_COIL:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>instance_ptr<sp/>=<sp/>((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)&amp;coil_reg_params<sp/>+<sp/>param_descriptor-&gt;param_offset<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>MB_PARAM_DISCRETE:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>instance_ptr<sp/>=<sp/>((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)&amp;discrete_reg_params<sp/>+<sp/>param_descriptor-&gt;param_offset<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>instance_ptr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Wrong<sp/>parameter<sp/>offset<sp/>for<sp/>CID<sp/>#%u&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">)param_descriptor-&gt;cid);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(instance_ptr<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>instance_ptr;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">esp_err_t<sp/>atl_modbus_master_rs485_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>esp_err_t<sp/>err<sp/>=<sp/>ESP_OK;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>Modbus<sp/>Master<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>mb_communication_info_t<sp/>comm<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CONFIG_MB_COMM_MODE_ASCII</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.mode<sp/>=<sp/>MB_MODE_ASCII,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>CONFIG_MB_COMM_MODE_RTU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.mode<sp/>=<sp/>MB_RTU,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ser_opts.port<sp/>=<sp/>ATL_MB_RS485_PORT_NUM,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ser_opts.baudrate<sp/>=<sp/>ATL_MB_RS485_DEV_SPEED,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ser_opts.parity<sp/>=<sp/>MB_PARITY_NONE,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>Modbus-RTU<sp/>Master<sp/>controller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>mbc_master_create_serial(&amp;comm,<sp/>&amp;mb_rs485_master_handler);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Modbus-RTU<sp/>master<sp/>controller<sp/>initialization<sp/>fail!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_proc;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Setup<sp/>Modbus<sp/>Master<sp/>stack<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>err<sp/>=<sp/>mbc_master_setup((void*)&amp;comm);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/>&quot;Modbus<sp/>master<sp/>controller<sp/>setup<sp/>fail!&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>goto<sp/>error_proc;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>Modbus<sp/>UART<sp/>pin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>uart_set_pin(ATL_MB_RS485_PORT_NUM,<sp/>CONFIG_ATL_RS485_TXD_GPIO,<sp/>CONFIG_ATL_RS485_RXD_GPIO,<sp/>UART_PIN_NO_CHANGE,<sp/>UART_PIN_NO_CHANGE);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Modbus<sp/>Master<sp/>UART<sp/>set<sp/>pin<sp/>fail!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_proc;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Start<sp/>Modbus<sp/>Master<sp/>controller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>mbc_master_start(&amp;mb_rs485_master_handler);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Modbus<sp/>Master<sp/>controller<sp/>start<sp/>fail!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_proc;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>driver<sp/>mode<sp/>to<sp/>Half<sp/>Duplex<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>uart_set_mode(ATL_MB_RS485_PORT_NUM,<sp/>UART_MODE_RS485_HALF_DUPLEX);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Modbus<sp/>Master<sp/>UART<sp/>set<sp/>mode<sp/>fail!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_proc;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>Modbus<sp/>Master<sp/>stack<sp/>descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>vTaskDelay(5);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>mbc_master_set_descriptor(mb_rs485_master_handler,<sp/>&amp;atl_modbus_device_parameters[0],<sp/>atl_modbus_get_num_device_params());</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Modbus<sp/>Master<sp/>set<sp/>descriptor<sp/>fail!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_proc;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGI(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Modbus<sp/>Master<sp/>initialized<sp/>at<sp/>RS-485<sp/>interface!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>modbus_master_rs485_initialized<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Error<sp/>procedure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">error_proc:</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_led_builtin_blink(6,<sp/>100,<sp/>255,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>%d<sp/>=<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>err,<sp/>esp_err_to_name(err));</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>atl_modbus_master_rs485_initialized(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>modbus_master_rs485_initialized;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c"/>
+  </compounddef>
+</doxygen>

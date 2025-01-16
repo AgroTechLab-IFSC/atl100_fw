@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__config__telemetry__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_config_telemetry_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__config__telemetry__t_1ac5ced4296039304109d4335840f20f4e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t send_period</definition>
+        <argsstring></argsstring>
+        <name>send_period</name>
+        <qualifiedname>atl_config_telemetry_t::send_period</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send period (in seconds). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="55" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__telemetry__t_1a8f1db6bea0943db416f84f3f5a08bba8" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref></type>
+        <definition>atl_telemetry_t power</definition>
+        <argsstring></argsstring>
+        <name>power</name>
+        <qualifiedname>atl_config_telemetry_t::power</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power telemetry configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="56" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__adc__telemetry__t" kindref="compound">atl_adc_telemetry_t</ref></type>
+        <definition>atl_adc_telemetry_t adc[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>adc</name>
+        <qualifiedname>atl_config_telemetry_t::adc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Analog telemetry configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="57" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__telemetry__t_1ad1a744039c227ef365debdfa37b8c213" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref></type>
+        <definition>atl_telemetry_t dht</definition>
+        <argsstring></argsstring>
+        <name>dht</name>
+        <qualifiedname>atl_config_telemetry_t::dht</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DHT telemetry configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="58" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__telemetry__t_1a353f07b7ce4bcf4a22b126cf23da071b" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref></type>
+        <definition>atl_telemetry_t uv</definition>
+        <argsstring></argsstring>
+        <name>uv</name>
+        <qualifiedname>atl_config_telemetry_t::uv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UV telemetry configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="59" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__telemetry__t_1a744bb7d0442acd14dca186a375439f18" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref></type>
+        <definition>atl_telemetry_t light</definition>
+        <argsstring></argsstring>
+        <name>light</name>
+        <qualifiedname>atl_config_telemetry_t::light</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light telemetry configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="60" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__telemetry__t_1a7319d676df786a4152191f437c008b7c" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref></type>
+        <definition>atl_telemetry_t bme280</definition>
+        <argsstring></argsstring>
+        <name>bme280</name>
+        <qualifiedname>atl_config_telemetry_t::bme280</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BME280 telemetry configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="61" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__telemetry__t_1ab689546d56c6472f0fa922ff2abf29b4" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__soil__telemetry__t" kindref="compound">atl_soil_telemetry_t</ref></type>
+        <definition>atl_soil_telemetry_t soil</definition>
+        <argsstring></argsstring>
+        <name>soil</name>
+        <qualifiedname>atl_config_telemetry_t::soil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Soil telemetry configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="62" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__telemetry__t_1a1861cc2018a9cee6457ebdec5feb4be3" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref></type>
+        <definition>atl_telemetry_t pluviometer</definition>
+        <argsstring></argsstring>
+        <name>pluviometer</name>
+        <qualifiedname>atl_config_telemetry_t::pluviometer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pluviometer telemetry configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="63" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__telemetry__t_1a5221fd8b0569237a9cfee69b84375b5d" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref></type>
+        <definition>atl_telemetry_t anemometer</definition>
+        <argsstring></argsstring>
+        <name>anemometer</name>
+        <qualifiedname>atl_config_telemetry_t::anemometer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Anemometer telemetry configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="64" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__telemetry__t_1aff4382d39c32f12878a847898ada5b76" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref></type>
+        <definition>atl_telemetry_t wind_sock</definition>
+        <argsstring></argsstring>
+        <name>wind_sock</name>
+        <qualifiedname>atl_config_telemetry_t::wind_sock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wind sock telemetry configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="65" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__telemetry__t_1a2b8657be602137a6dca38b21131b5859" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__gw__telemetry__t" kindref="compound">atl_gw_telemetry_t</ref></type>
+        <definition>atl_gw_telemetry_t cr300_gw</definition>
+        <argsstring></argsstring>
+        <name>cr300_gw</name>
+        <qualifiedname>atl_config_telemetry_t::cr300_gw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wind sock telemetry configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="66" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>atl_adc_telemetry_t</label>
+        <link refid="structatl__adc__telemetry__t"/>
+      </node>
+      <node id="1">
+        <label>atl_config_telemetry_t</label>
+        <link refid="structatl__config__telemetry__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>anemometer</edgelabel>
+          <edgelabel>bme280</edgelabel>
+          <edgelabel>dht</edgelabel>
+          <edgelabel>light</edgelabel>
+          <edgelabel>pluviometer</edgelabel>
+          <edgelabel>power</edgelabel>
+          <edgelabel>uv</edgelabel>
+          <edgelabel>wind_sock</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>adc</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>soil</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>cr300_gw</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>atl_gw_telemetry_t</label>
+        <link refid="structatl__gw__telemetry__t"/>
+      </node>
+      <node id="4">
+        <label>atl_soil_telemetry_t</label>
+        <link refid="structatl__soil__telemetry__t"/>
+      </node>
+      <node id="2">
+        <label>atl_telemetry_t</label>
+        <link refid="structatl__telemetry__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="54" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="54" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" prot="public" virt="non-virtual"><scope>atl_config_telemetry_t</scope><name>adc</name></member>
+      <member refid="structatl__config__telemetry__t_1a5221fd8b0569237a9cfee69b84375b5d" prot="public" virt="non-virtual"><scope>atl_config_telemetry_t</scope><name>anemometer</name></member>
+      <member refid="structatl__config__telemetry__t_1a7319d676df786a4152191f437c008b7c" prot="public" virt="non-virtual"><scope>atl_config_telemetry_t</scope><name>bme280</name></member>
+      <member refid="structatl__config__telemetry__t_1a2b8657be602137a6dca38b21131b5859" prot="public" virt="non-virtual"><scope>atl_config_telemetry_t</scope><name>cr300_gw</name></member>
+      <member refid="structatl__config__telemetry__t_1ad1a744039c227ef365debdfa37b8c213" prot="public" virt="non-virtual"><scope>atl_config_telemetry_t</scope><name>dht</name></member>
+      <member refid="structatl__config__telemetry__t_1a744bb7d0442acd14dca186a375439f18" prot="public" virt="non-virtual"><scope>atl_config_telemetry_t</scope><name>light</name></member>
+      <member refid="structatl__config__telemetry__t_1a1861cc2018a9cee6457ebdec5feb4be3" prot="public" virt="non-virtual"><scope>atl_config_telemetry_t</scope><name>pluviometer</name></member>
+      <member refid="structatl__config__telemetry__t_1a8f1db6bea0943db416f84f3f5a08bba8" prot="public" virt="non-virtual"><scope>atl_config_telemetry_t</scope><name>power</name></member>
+      <member refid="structatl__config__telemetry__t_1ac5ced4296039304109d4335840f20f4e" prot="public" virt="non-virtual"><scope>atl_config_telemetry_t</scope><name>send_period</name></member>
+      <member refid="structatl__config__telemetry__t_1ab689546d56c6472f0fa922ff2abf29b4" prot="public" virt="non-virtual"><scope>atl_config_telemetry_t</scope><name>soil</name></member>
+      <member refid="structatl__config__telemetry__t_1a353f07b7ce4bcf4a22b126cf23da071b" prot="public" virt="non-virtual"><scope>atl_config_telemetry_t</scope><name>uv</name></member>
+      <member refid="structatl__config__telemetry__t_1aff4382d39c32f12878a847898ada5b76" prot="public" virt="non-virtual"><scope>atl_config_telemetry_t</scope><name>wind_sock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

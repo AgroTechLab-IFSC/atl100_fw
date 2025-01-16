@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structcoil__reg__params__t" kind="struct" language="C++" prot="public">
+    <compoundname>coil_reg_params_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcoil__reg__params__t_1afca68aff95ed4e46e2c55ba7361aed86" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t coils_port0</definition>
+        <argsstring></argsstring>
+        <name>coils_port0</name>
+        <qualifiedname>coil_reg_params_t::coils_port0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="29" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcoil__reg__params__t_1ab7d151f2e99e00b26d673c2c70ca7858" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t coils_port1</definition>
+        <argsstring></argsstring>
+        <name>coils_port1</name>
+        <qualifiedname>coil_reg_params_t::coils_port1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="30" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcoil__reg__params__t_1abf30b4c1d12c90a587fb70044c9ea162" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t coils_port2</definition>
+        <argsstring></argsstring>
+        <name>coils_port2</name>
+        <qualifiedname>coil_reg_params_t::coils_port2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="31" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="28" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="28" bodyend="32"/>
+    <listofallmembers>
+      <member refid="structcoil__reg__params__t_1afca68aff95ed4e46e2c55ba7361aed86" prot="public" virt="non-virtual"><scope>coil_reg_params_t</scope><name>coils_port0</name></member>
+      <member refid="structcoil__reg__params__t_1ab7d151f2e99e00b26d673c2c70ca7858" prot="public" virt="non-virtual"><scope>coil_reg_params_t</scope><name>coils_port1</name></member>
+      <member refid="structcoil__reg__params__t_1abf30b4c1d12c90a587fb70044c9ea162" prot="public" virt="non-virtual"><scope>coil_reg_params_t</scope><name>coils_port2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

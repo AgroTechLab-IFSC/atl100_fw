@@ -6,10 +6,11 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ATL-100 Firmware documentation &mdash; ATL-100 Firmware 0.1.0 documentation</title>
+  <title>ATL-100 Firmware &mdash; ATL-100 Firmware 0.1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="_static/agrotechlab.css?v=fe43902e" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
@@ -19,7 +20,8 @@
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Authors and License" href="authors_license.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,11 +43,15 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">ATL-100 Firmware documentation</a></li>
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="authors_license.html">Authors and License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions_support.html">Versions support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_specs.html">Technical Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source_code_docs.html">Source Code Docs</a></li>
 </ul>
-</div>
+
         </div>
       </div>
     </nav>
@@ -60,7 +66,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">ATL-100 Firmware documentation</li>
+      <li class="breadcrumb-item active">ATL-100 Firmware</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -70,19 +76,278 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="atl-100-firmware-documentation">
-<h1>ATL-100 Firmware documentation<a class="headerlink" href="#atl-100-firmware-documentation" title="Link to this heading"></a></h1>
-<p>Add your content using <code class="docutils literal notranslate"><span class="pre">reStructuredText</span></code> syntax. See the
-<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">reStructuredText</a>
-documentation for details.</p>
-<div class="toctree-wrapper compound">
+  <section id="atl-100-firmware">
+<h1>ATL-100 Firmware<a class="headerlink" href="#atl-100-firmware" title="Link to this heading"></a></h1>
+<p><strong>ATL-100</strong> is a multiparametric station developed by <a class="reference external" href="https://agrotechlab.lages.ifsc.edu.br">AgroTechLab (*Technology Development Laboratory for Agribusiness*)</a> of <a class="reference external" href="https://www.ifsc.edu.br">IFSC (*Federal Institute of Santa Catarina*)</a>.</p>
+<p>It can be used as meteorological station, agrometeorological station, hydrological station, aquaculture station,
+tide gauge station or fire monitoring station (forest or urban environment).</p>
+<p>The data collected in the field by the <strong>ATL-100</strong> stations are sent to the <strong>AgroTechLab Platform</strong> where they are
+filtered, stored and processed. These data are sources for insights which both (data and insights) can be accessed by
+users through websites or mobile applications.</p>
+<a class="reference internal image-reference" href="_images/agrotechlab_platform.png"><img alt="AgroTechLab Platform" class="align-center" src="_images/agrotechlab_platform.png" style="width: 100%;" />
+</a>
+<div class="toctree-wrapper compound" id="mastertoc">
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="authors_license.html">Authors and License</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="authors_license.html#authors">Authors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="authors_license.html#license">License</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="versions_support.html">Versions support</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tech_specs.html">Technical Specifications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tech_specs.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_specs.html#led-module">LED Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_specs.html#button-module">Button Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_specs.html#wifi-module">WiFi Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_specs.html#g-module">4G Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_specs.html#lora-lorawan-module">LoRa/LoRaWAN Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_specs.html#webserver-module">Webserver Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_specs.html#mqtt-module">MQTT Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_specs.html#modbus-module">Modbus Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_specs.html#telemetry-module">Telemetry Module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="source_code_docs.html">Source Code Docs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv416ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_config_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv419atl_adc_task_args_t"><code class="docutils literal notranslate"><span class="pre">atl_adc_task_args_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv419atl_adc_telemetry_t"><code class="docutils literal notranslate"><span class="pre">atl_adc_telemetry_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv424atl_config_mqtt_client_t"><code class="docutils literal notranslate"><span class="pre">atl_config_mqtt_client_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv416atl_config_ota_t"><code class="docutils literal notranslate"><span class="pre">atl_config_ota_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv419atl_config_system_t"><code class="docutils literal notranslate"><span class="pre">atl_config_system_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv412atl_config_t"><code class="docutils literal notranslate"><span class="pre">atl_config_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422atl_config_telemetry_t"><code class="docutils literal notranslate"><span class="pre">atl_config_telemetry_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422atl_config_webserver_t"><code class="docutils literal notranslate"><span class="pre">atl_config_webserver_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417atl_config_wifi_t"><code class="docutils literal notranslate"><span class="pre">atl_config_wifi_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv424atl_data_adc_telemetry_t"><code class="docutils literal notranslate"><span class="pre">atl_data_adc_telemetry_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420atl_data_telemetry_t"><code class="docutils literal notranslate"><span class="pre">atl_data_telemetry_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv418atl_gw_telemetry_t"><code class="docutils literal notranslate"><span class="pre">atl_gw_telemetry_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv419atl_led_rgb_color_t"><code class="docutils literal notranslate"><span class="pre">atl_led_rgb_color_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420atl_soil_telemetry_t"><code class="docutils literal notranslate"><span class="pre">atl_soil_telemetry_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415atl_telemetry_t"><code class="docutils literal notranslate"><span class="pre">atl_telemetry_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417basic_auth_info_t"><code class="docutils literal notranslate"><span class="pre">basic_auth_info_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417coil_reg_params_t"><code class="docutils literal notranslate"><span class="pre">coil_reg_params_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421discrete_reg_params_t"><code class="docutils literal notranslate"><span class="pre">discrete_reg_params_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420holding_reg_params_t"><code class="docutils literal notranslate"><span class="pre">holding_reg_params_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv418input_reg_params_t"><code class="docutils literal notranslate"><span class="pre">input_reg_params_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv414moving_averagePff8uint16_t"><code class="docutils literal notranslate"><span class="pre">moving_average()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv412atl_adc_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_adc_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv412atl_adc_initv"><code class="docutils literal notranslate"><span class="pre">atl_adc_init()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv43TAG"><code class="docutils literal notranslate"><span class="pre">TAG</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv410atl_config"><code class="docutils literal notranslate"><span class="pre">atl_config</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv414atl_adc_handle"><code class="docutils literal notranslate"><span class="pre">atl_adc_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420atl_adc_input_mode_e"><code class="docutils literal notranslate"><span class="pre">atl_adc_input_mode_e</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv418atl_adc_input_mode"><code class="docutils literal notranslate"><span class="pre">atl_adc_input_mode</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415atl_button_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_button_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415atl_button_initv"><code class="docutils literal notranslate"><span class="pre">atl_button_init()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv416button_evt_queue"><code class="docutils literal notranslate"><span class="pre">button_evt_queue</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv414button_pressed"><code class="docutils literal notranslate"><span class="pre">button_pressed</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417atl_button_handle"><code class="docutils literal notranslate"><span class="pre">atl_button_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv425atl_config_create_defaultv"><code class="docutils literal notranslate"><span class="pre">atl_config_create_default()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415atl_config_initv"><code class="docutils literal notranslate"><span class="pre">atl_config_init()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421atl_config_commit_nvsv"><code class="docutils literal notranslate"><span class="pre">atl_config_commit_nvs()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420atl_config_erase_nvsv"><code class="docutils literal notranslate"><span class="pre">atl_config_erase_nvs()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv416atl_config_mutex"><code class="docutils literal notranslate"><span class="pre">atl_config_mutex</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv419atl_i2c_master_initv"><code class="docutils literal notranslate"><span class="pre">atl_i2c_master_init()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422atl_i2c_detect_devicesv"><code class="docutils literal notranslate"><span class="pre">atl_i2c_detect_devices()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421atl_i2c_device_exists7uint8_t"><code class="docutils literal notranslate"><span class="pre">atl_i2c_device_exists()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv429atl_i2c_master_bus_add_deviceP19i2c_device_config_tP23i2c_master_dev_handle_t"><code class="docutils literal notranslate"><span class="pre">atl_i2c_master_bus_add_device()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415atl_i2c_receive23i2c_master_dev_handle_tP7uint8_t6size_t"><code class="docutils literal notranslate"><span class="pre">atl_i2c_receive()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv416atl_i2c_transmit23i2c_master_dev_handle_tP7uint8_t6size_t"><code class="docutils literal notranslate"><span class="pre">atl_i2c_transmit()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417i2c_mutex_timeout"><code class="docutils literal notranslate"><span class="pre">i2c_mutex_timeout</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv49i2c_mutex"><code class="docutils literal notranslate"><span class="pre">i2c_mutex</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv410bus_handle"><code class="docutils literal notranslate"><span class="pre">bus_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv412atl_led_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_led_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv425atl_led_get_behaviour_str19atl_led_behaviour_e"><code class="docutils literal notranslate"><span class="pre">atl_led_get_behaviour_str()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421atl_led_get_behaviourPc"><code class="docutils literal notranslate"><span class="pre">atl_led_get_behaviour()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420atl_led_builtin_initv"><code class="docutils literal notranslate"><span class="pre">atl_led_builtin_init()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422atl_led_builtin_tooglev"><code class="docutils literal notranslate"><span class="pre">atl_led_builtin_toogle()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421atl_led_builtin_blink7uint8_t8uint16_t7uint8_t7uint8_t7uint8_t"><code class="docutils literal notranslate"><span class="pre">atl_led_builtin_blink()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417atl_led_set_color7uint8_t7uint8_t7uint8_t"><code class="docutils literal notranslate"><span class="pre">atl_led_set_color()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv419atl_led_set_enabledb"><code class="docutils literal notranslate"><span class="pre">atl_led_set_enabled()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417led_mutex_timeout"><code class="docutils literal notranslate"><span class="pre">led_mutex_timeout</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421atl_led_behaviour_str"><code class="docutils literal notranslate"><span class="pre">atl_led_behaviour_str</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv49led_mutex"><code class="docutils literal notranslate"><span class="pre">led_mutex</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417led_builtin_state"><code class="docutils literal notranslate"><span class="pre">led_builtin_state</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv49led_strip"><code class="docutils literal notranslate"><span class="pre">led_strip</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv413atl_led_color"><code class="docutils literal notranslate"><span class="pre">atl_led_color</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv414atl_led_handle"><code class="docutils literal notranslate"><span class="pre">atl_led_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv412button_count"><code class="docutils literal notranslate"><span class="pre">button_count</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv419atl_led_behaviour_e"><code class="docutils literal notranslate"><span class="pre">atl_led_behaviour_e</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv48app_mainv"><code class="docutils literal notranslate"><span class="pre">app_main()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv432atl_modbus_get_num_device_paramsv"><code class="docutils literal notranslate"><span class="pre">atl_modbus_get_num_device_params()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv438atl_modbus_master_rs485_get_param_dataPK25mb_parameter_descriptor_t"><code class="docutils literal notranslate"><span class="pre">atl_modbus_master_rs485_get_param_data()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv428atl_modbus_master_rs485_initv"><code class="docutils literal notranslate"><span class="pre">atl_modbus_master_rs485_init()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv435atl_modbus_master_rs485_initializedv"><code class="docutils literal notranslate"><span class="pre">atl_modbus_master_rs485_initialized()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv431modbus_master_rs485_initialized"><code class="docutils literal notranslate"><span class="pre">modbus_master_rs485_initialized</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv423mb_rs485_master_handler"><code class="docutils literal notranslate"><span class="pre">mb_rs485_master_handler</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv428atl_modbus_device_parameters"><code class="docutils literal notranslate"><span class="pre">atl_modbus_device_parameters</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv4N19PhonyNameDueToError17CID_HOLD_HUMIDITYE"><code class="docutils literal notranslate"><span class="pre">PhonyNameDueToError::CID_HOLD_HUMIDITY</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv4N19PhonyNameDueToError20CID_HOLD_TEMPERATUREE"><code class="docutils literal notranslate"><span class="pre">PhonyNameDueToError::CID_HOLD_TEMPERATURE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv4N19PhonyNameDueToError21CID_HOLD_CONDUCTIVITYE"><code class="docutils literal notranslate"><span class="pre">PhonyNameDueToError::CID_HOLD_CONDUCTIVITY</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv4N19PhonyNameDueToError11CID_HOLD_PHE"><code class="docutils literal notranslate"><span class="pre">PhonyNameDueToError::CID_HOLD_PH</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv4N19PhonyNameDueToError17CID_HOLD_NITROGENE"><code class="docutils literal notranslate"><span class="pre">PhonyNameDueToError::CID_HOLD_NITROGEN</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv4N19PhonyNameDueToError19CID_HOLD_PHOSPHORUSE"><code class="docutils literal notranslate"><span class="pre">PhonyNameDueToError::CID_HOLD_PHOSPHORUS</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv4N19PhonyNameDueToError18CID_HOLD_POTASSIUME"><code class="docutils literal notranslate"><span class="pre">PhonyNameDueToError::CID_HOLD_POTASSIUM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv4N19PhonyNameDueToError17CID_HOLD_SALINITYE"><code class="docutils literal notranslate"><span class="pre">PhonyNameDueToError::CID_HOLD_SALINITY</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv4N19PhonyNameDueToError12CID_HOLD_TDSE"><code class="docutils literal notranslate"><span class="pre">PhonyNameDueToError::CID_HOLD_TDS</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv4N19PhonyNameDueToError21CID_HOLD_BATT_VOLTAGEE"><code class="docutils literal notranslate"><span class="pre">PhonyNameDueToError::CID_HOLD_BATT_VOLTAGE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv4N19PhonyNameDueToError14CID_HOLD_PTEMPE"><code class="docutils literal notranslate"><span class="pre">PhonyNameDueToError::CID_HOLD_PTEMP</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv418holding_reg_params"><code class="docutils literal notranslate"><span class="pre">holding_reg_params</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv416input_reg_params"><code class="docutils literal notranslate"><span class="pre">input_reg_params</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415coil_reg_params"><code class="docutils literal notranslate"><span class="pre">coil_reg_params</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv419discrete_reg_params"><code class="docutils literal notranslate"><span class="pre">discrete_reg_params</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421atl_mqtt_get_mode_str15atl_mqtt_mode_e"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_get_mode_str()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417atl_mqtt_get_modePc"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_get_mode()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv426atl_mqtt_get_transport_str20esp_mqtt_transport_t"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_get_transport_str()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422atl_mqtt_get_transportPc"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_get_transport()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv423atl_mqtt5_event_handlerPv16esp_event_base_t7int32_tPv"><code class="docutils literal notranslate"><span class="pre">atl_mqtt5_event_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv413atl_mqtt_initv"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_init()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv423atl_mqtt_send_telemetryP5cJSON"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_send_telemetry()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv423atl_mqtt_client_restartv"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_client_restart()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417atl_mqtt_mode_str"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_mode_str</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422atl_mqtt_transport_str"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_transport_str</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv429x200_analog_input_mqtt_handle"><code class="docutils literal notranslate"><span class="pre">x200_analog_input_mqtt_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv46client"><code class="docutils literal notranslate"><span class="pre">client</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421atl_user_property_arr"><code class="docutils literal notranslate"><span class="pre">atl_user_property_arr</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415atl_mqtt_mode_e"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_mode_e</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv414atl_mqtt_qos_e"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_qos_e</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv413atl_mqtt_mode"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_mode</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv412atl_mqtt_qos"><code class="docutils literal notranslate"><span class="pre">atl_mqtt_qos</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv425atl_ota_get_behaviour_str19atl_ota_behaviour_e"><code class="docutils literal notranslate"><span class="pre">atl_ota_get_behaviour_str()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421atl_ota_get_behaviourPc"><code class="docutils literal notranslate"><span class="pre">atl_ota_get_behaviour()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421atl_ota_behaviour_str"><code class="docutils literal notranslate"><span class="pre">atl_ota_behaviour_str</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv419atl_ota_behaviour_e"><code class="docutils literal notranslate"><span class="pre">atl_ota_behaviour_e</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420adc_calibration_init10adc_unit_t13adc_channel_t11adc_atten_tP17adc_cali_handle_t"><code class="docutils literal notranslate"><span class="pre">adc_calibration_init()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv412atl_dht_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_dht_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415atl_bme280_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_bme280_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv412atl_pwr_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_pwr_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv411atl_uv_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_uv_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv413atl_anem_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_anem_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv413atl_pluv_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_pluv_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv411atl_ws_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_ws_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv414atl_light_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_light_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv413atl_soil_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_soil_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv418atl_telemetry_taskPv"><code class="docutils literal notranslate"><span class="pre">atl_telemetry_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv418atl_telemetry_initv"><code class="docutils literal notranslate"><span class="pre">atl_telemetry_init()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv424atl_telemetry_get_configP22atl_config_telemetry_t"><code class="docutils literal notranslate"><span class="pre">atl_telemetry_get_config()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv424atl_telemetry_set_configP22atl_config_telemetry_t"><code class="docutils literal notranslate"><span class="pre">atl_telemetry_set_config()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422atl_telemetry_get_dataP20atl_data_telemetry_t"><code class="docutils literal notranslate"><span class="pre">atl_telemetry_get_data()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv426atl_telemetry_set_adc_data7uint8_t24atl_data_adc_telemetry_t"><code class="docutils literal notranslate"><span class="pre">atl_telemetry_set_adc_data()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv424atl_telemetry_data_mutex"><code class="docutils literal notranslate"><span class="pre">atl_telemetry_data_mutex</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv413atl_telemetry"><code class="docutils literal notranslate"><span class="pre">atl_telemetry</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv416atl_gw_telemetry"><code class="docutils literal notranslate"><span class="pre">atl_gw_telemetry</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv414atl_pwr_handle"><code class="docutils literal notranslate"><span class="pre">atl_pwr_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417atl_bme280_handle"><code class="docutils literal notranslate"><span class="pre">atl_bme280_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv414atl_dht_handle"><code class="docutils literal notranslate"><span class="pre">atl_dht_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv413atl_uv_handle"><code class="docutils literal notranslate"><span class="pre">atl_uv_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv416atl_light_handle"><code class="docutils literal notranslate"><span class="pre">atl_light_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415atl_anem_handle"><code class="docutils literal notranslate"><span class="pre">atl_anem_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415atl_pluv_handle"><code class="docutils literal notranslate"><span class="pre">atl_pluv_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv413atl_ws_handle"><code class="docutils literal notranslate"><span class="pre">atl_ws_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415atl_soil_handle"><code class="docutils literal notranslate"><span class="pre">atl_soil_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420atl_telemetry_handle"><code class="docutils literal notranslate"><span class="pre">atl_telemetry_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv411adc1_handle"><code class="docutils literal notranslate"><span class="pre">adc1_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422adc1_cali_chan3_handle"><code class="docutils literal notranslate"><span class="pre">adc1_cali_chan3_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422adc1_cali_chan4_handle"><code class="docutils literal notranslate"><span class="pre">adc1_cali_chan4_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422adc1_cali_chan5_handle"><code class="docutils literal notranslate"><span class="pre">adc1_cali_chan5_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421do_calibration1_chan3"><code class="docutils literal notranslate"><span class="pre">do_calibration1_chan3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421do_calibration1_chan4"><code class="docutils literal notranslate"><span class="pre">do_calibration1_chan4</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421do_calibration1_chan5"><code class="docutils literal notranslate"><span class="pre">do_calibration1_chan5</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv47hex2intc"><code class="docutils literal notranslate"><span class="pre">hex2int()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv49urldecodePc"><code class="docutils literal notranslate"><span class="pre">urldecode()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv419favicon_get_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">favicon_get_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415css_get_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">css_get_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv414js_get_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">js_get_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422http_404_error_handlerP11httpd_req_t16httpd_err_code_t"><code class="docutils literal notranslate"><span class="pre">http_404_error_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv416home_get_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">home_get_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv426conf_webserver_get_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_webserver_get_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv427conf_webserver_post_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_webserver_post_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421conf_mqtt_get_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_mqtt_get_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422conf_mqtt_post_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_mqtt_post_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv426conf_telemetry_get_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_telemetry_get_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv427conf_telemetry_post_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_telemetry_post_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421conf_wifi_get_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_wifi_get_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422conf_wifi_post_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_wifi_post_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv430conf_configuration_get_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_configuration_get_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv430api_v1_system_get_conf_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">api_v1_system_get_conf_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv430api_v1_system_set_conf_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">api_v1_system_set_conf_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv426conf_fw_update_get_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_fw_update_get_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv427conf_fw_update_post_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_fw_update_post_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv423conf_reboot_get_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_reboot_get_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv424conf_reboot_post_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">conf_reboot_post_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv416httpd_auth_basicPKcPKc"><code class="docutils literal notranslate"><span class="pre">httpd_auth_basic()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422basic_auth_get_handlerP11httpd_req_t"><code class="docutils literal notranslate"><span class="pre">basic_auth_get_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv425httpd_register_basic_auth14httpd_handle_t"><code class="docutils literal notranslate"><span class="pre">httpd_register_basic_auth()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420print_peer_cert_infoPK19mbedtls_ssl_context"><code class="docutils literal notranslate"><span class="pre">print_peer_cert_info()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv426https_server_user_callbackP30esp_https_server_user_cb_arg_t"><code class="docutils literal notranslate"><span class="pre">https_server_user_callback()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv418atl_webserver_initv"><code class="docutils literal notranslate"><span class="pre">atl_webserver_init()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv426atl_webserver_get_mode_str20atl_webserver_mode_e"><code class="docutils literal notranslate"><span class="pre">atl_webserver_get_mode_str()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422atl_webserver_get_modePc"><code class="docutils literal notranslate"><span class="pre">atl_webserver_get_mode()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422atl_webserver_mode_str"><code class="docutils literal notranslate"><span class="pre">atl_webserver_mode_str</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420atl_webserver_mode_e"><code class="docutils literal notranslate"><span class="pre">atl_webserver_mode_e</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv418atl_webserver_mode"><code class="docutils literal notranslate"><span class="pre">atl_webserver_mode</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417atl_wifi_get_modePc"><code class="docutils literal notranslate"><span class="pre">atl_wifi_get_mode()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421atl_wifi_get_mode_str15atl_wifi_mode_e"><code class="docutils literal notranslate"><span class="pre">atl_wifi_get_mode_str()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422atl_wifi_event_handlerPv16esp_event_base_t7int32_tPv"><code class="docutils literal notranslate"><span class="pre">atl_wifi_event_handler()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420atl_wifi_init_softapv"><code class="docutils literal notranslate"><span class="pre">atl_wifi_init_softap()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417atl_wifi_init_stav"><code class="docutils literal notranslate"><span class="pre">atl_wifi_init_sta()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417atl_wifi_mode_str"><code class="docutils literal notranslate"><span class="pre">atl_wifi_mode_str</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv418s_wifi_event_group"><code class="docutils literal notranslate"><span class="pre">s_wifi_event_group</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv410conn_retry"><code class="docutils literal notranslate"><span class="pre">conn_retry</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415atl_wifi_mode_e"><code class="docutils literal notranslate"><span class="pre">atl_wifi_mode_e</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv413atl_wifi_mode"><code class="docutils literal notranslate"><span class="pre">atl_wifi_mode</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv417ads1x15_getConfigP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_getConfig()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv426ads1x15_getNextReadingTimeP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_getNextReadingTime()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv414ads1x15_create8uint16_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_create()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv414ads1x15_deletev"><code class="docutils literal notranslate"><span class="pre">ads1x15_delete()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415ads1x15_setGainP16ads1x15_config_t14ads1x15_gain_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_setGain()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv415ads1x15_getGainP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_getGain()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv416ads1x15_getRangeP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_getRange()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421ads1x15_setContinuousP16ads1x15_config_tb"><code class="docutils literal notranslate"><span class="pre">ads1x15_setContinuous()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420ads1x15_isContinuousP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_isContinuous()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421ads1x15_setSampleRateP16ads1x15_config_t8uint16_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_setSampleRate()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421ads1x15_getSampleRateP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_getSampleRate()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv427ads1x15_readADC_SingleEndedP16ads1x15_config_t7uint8_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_readADC_SingleEnded()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv432ads1x15_readADC_Differential_0_1P16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_readADC_Differential_0_1()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv432ads1x15_readADC_Differential_2_3P16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_readADC_Differential_2_3()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421ads1x15_setComparatorP16ads1x15_config_t7uint8_t7int16_t7int16_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_setComparator()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv424ads1x15_setNotComparatorP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_setNotComparator()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420ads1x15_isComparatorP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_isComparator()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv435ads1x15_startComparator_SingleEndedP16ads1x15_config_t7uint8_t7int16_t7int16_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_startComparator_SingleEnded()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv432ads1x15_getLastConversionResultsP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_getLastConversionResults()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv416ads1x15_readNextP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_readNext()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv422ads1x15_conversionDoneP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_conversionDone()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv421ads1x15_writeRegisterP16ads1x15_config_t7uint8_t8uint16_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_writeRegister()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420ads1x15_readRegisterP16ads1x15_config_t7uint8_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_readRegister()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv419ads1x15_read4to20mAP16ads1x15_config_t7uint8_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_read4to20mA()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv419ads1x15_readVoltageP16ads1x15_config_t7uint8_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_readVoltage()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv433ads1x15_readDifferentialVoltage01P16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_readDifferentialVoltage01()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv433ads1x15_readDifferentialVoltage23P16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_readDifferentialVoltage23()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv418ads1x15_i2c_handle"><code class="docutils literal notranslate"><span class="pre">ads1x15_i2c_handle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv414ads1x15_gain_t"><code class="docutils literal notranslate"><span class="pre">ads1x15_gain_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv424ads1x15_setNotComparatorv"><code class="docutils literal notranslate"><span class="pre">ads1x15_setNotComparator()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv420ads1x15_isComparatorv"><code class="docutils literal notranslate"><span class="pre">ads1x15_isComparator()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv47getGainP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">getGain()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv48getRangeP16ads1x15_config_t"><code class="docutils literal notranslate"><span class="pre">getRange()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_code_docs.html#_CPPv412ads1115_addr"><code class="docutils literal notranslate"><span class="pre">ads1115_addr</span></code></a></li>
+</ul>
+</li>
+</ul>
 </div>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="authors_license.html" class="btn btn-neutral float-right" title="Authors and License" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

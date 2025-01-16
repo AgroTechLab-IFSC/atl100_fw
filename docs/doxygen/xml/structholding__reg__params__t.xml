@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structholding__reg__params__t" kind="struct" language="C++" prot="public">
+    <compoundname>holding_reg_params_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structholding__reg__params__t_1a6f55439a5c4848c866d4776c00ff8307" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t holding_data0</definition>
+        <argsstring></argsstring>
+        <name>holding_data0</name>
+        <qualifiedname>holding_reg_params_t::holding_data0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="52" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1a8e33e25576146ff64653cbc763044fde" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t holding_data1</definition>
+        <argsstring></argsstring>
+        <name>holding_data1</name>
+        <qualifiedname>holding_reg_params_t::holding_data1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="53" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1af0ab1702c2a3e7ec080f12772c3cb2c4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t holding_data2</definition>
+        <argsstring></argsstring>
+        <name>holding_data2</name>
+        <qualifiedname>holding_reg_params_t::holding_data2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="54" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1a48f3722d1dec1b26ad255365040ce5a0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t holding_data3</definition>
+        <argsstring></argsstring>
+        <name>holding_data3</name>
+        <qualifiedname>holding_reg_params_t::holding_data3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="55" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1a1dee806e034835edc0cb82f0694916de" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t holding_data4</definition>
+        <argsstring></argsstring>
+        <name>holding_data4</name>
+        <qualifiedname>holding_reg_params_t::holding_data4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="56" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1a9edce5498287804a75888488e9050732" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t holding_data5</definition>
+        <argsstring></argsstring>
+        <name>holding_data5</name>
+        <qualifiedname>holding_reg_params_t::holding_data5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="57" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1a92059efbff1f42f022495f248e262ee1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t holding_data6</definition>
+        <argsstring></argsstring>
+        <name>holding_data6</name>
+        <qualifiedname>holding_reg_params_t::holding_data6</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="58" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1a4eed874e35c0bd67feac8c9f82e31eae" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t holding_data7</definition>
+        <argsstring></argsstring>
+        <name>holding_data7</name>
+        <qualifiedname>holding_reg_params_t::holding_data7</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="59" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1a1955d5152e7bdf8c8f3cf9dbb951bbf1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t holding_data8</definition>
+        <argsstring></argsstring>
+        <name>holding_data8</name>
+        <qualifiedname>holding_reg_params_t::holding_data8</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="60" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1ad0974326469e9186b6a17ab85b1dba13" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float holding_data9</definition>
+        <argsstring></argsstring>
+        <name>holding_data9</name>
+        <qualifiedname>holding_reg_params_t::holding_data9</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="61" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1ad7f16d4593aee9f6fc0239926581b3bc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float holding_data10</definition>
+        <argsstring></argsstring>
+        <name>holding_data10</name>
+        <qualifiedname>holding_reg_params_t::holding_data10</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="62" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1a449b4d8d6009afa78d16f663cb552fe0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float holding_data11</definition>
+        <argsstring></argsstring>
+        <name>holding_data11</name>
+        <qualifiedname>holding_reg_params_t::holding_data11</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="63" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1afaca5d4703cc93e3d0a58caf8553c8ba" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float holding_data12</definition>
+        <argsstring></argsstring>
+        <name>holding_data12</name>
+        <qualifiedname>holding_reg_params_t::holding_data12</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="64" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structholding__reg__params__t_1adbeece5a901be436bb0cc0f957cc2334" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t test_regs[150]</definition>
+        <argsstring>[150]</argsstring>
+        <name>test_regs</name>
+        <qualifiedname>holding_reg_params_t::test_regs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="65" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="51" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="51" bodyend="66"/>
+    <listofallmembers>
+      <member refid="structholding__reg__params__t_1a6f55439a5c4848c866d4776c00ff8307" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data0</name></member>
+      <member refid="structholding__reg__params__t_1a8e33e25576146ff64653cbc763044fde" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data1</name></member>
+      <member refid="structholding__reg__params__t_1ad7f16d4593aee9f6fc0239926581b3bc" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data10</name></member>
+      <member refid="structholding__reg__params__t_1a449b4d8d6009afa78d16f663cb552fe0" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data11</name></member>
+      <member refid="structholding__reg__params__t_1afaca5d4703cc93e3d0a58caf8553c8ba" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data12</name></member>
+      <member refid="structholding__reg__params__t_1af0ab1702c2a3e7ec080f12772c3cb2c4" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data2</name></member>
+      <member refid="structholding__reg__params__t_1a48f3722d1dec1b26ad255365040ce5a0" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data3</name></member>
+      <member refid="structholding__reg__params__t_1a1dee806e034835edc0cb82f0694916de" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data4</name></member>
+      <member refid="structholding__reg__params__t_1a9edce5498287804a75888488e9050732" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data5</name></member>
+      <member refid="structholding__reg__params__t_1a92059efbff1f42f022495f248e262ee1" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data6</name></member>
+      <member refid="structholding__reg__params__t_1a4eed874e35c0bd67feac8c9f82e31eae" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data7</name></member>
+      <member refid="structholding__reg__params__t_1a1955d5152e7bdf8c8f3cf9dbb951bbf1" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data8</name></member>
+      <member refid="structholding__reg__params__t_1ad0974326469e9186b6a17ab85b1dba13" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>holding_data9</name></member>
+      <member refid="structholding__reg__params__t_1adbeece5a901be436bb0cc0f957cc2334" prot="public" virt="non-virtual"><scope>holding_reg_params_t</scope><name>test_regs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__led__rgb__color__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_led_rgb_color_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__led__rgb__color__t_1ad47d918910aaa51c73160ac85999d09c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t red</definition>
+        <argsstring></argsstring>
+        <name>red</name>
+        <qualifiedname>atl_led_rgb_color_t::red</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LED red value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="28" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__led__rgb__color__t_1a90d21fa503b626c00cdc8d94863d5877" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t green</definition>
+        <argsstring></argsstring>
+        <name>green</name>
+        <qualifiedname>atl_led_rgb_color_t::green</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LED green value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="29" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__led__rgb__color__t_1a287b397e90d7b995c81ff54e741f96b2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t blue</definition>
+        <argsstring></argsstring>
+        <name>blue</name>
+        <qualifiedname>atl_led_rgb_color_t::blue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LED blue value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="30" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" line="27" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_led.h" bodystart="27" bodyend="31"/>
+    <listofallmembers>
+      <member refid="structatl__led__rgb__color__t_1a287b397e90d7b995c81ff54e741f96b2" prot="public" virt="non-virtual"><scope>atl_led_rgb_color_t</scope><name>blue</name></member>
+      <member refid="structatl__led__rgb__color__t_1a90d21fa503b626c00cdc8d94863d5877" prot="public" virt="non-virtual"><scope>atl_led_rgb_color_t</scope><name>green</name></member>
+      <member refid="structatl__led__rgb__color__t_1ad47d918910aaa51c73160ac85999d09c" prot="public" virt="non-virtual"><scope>atl_led_rgb_color_t</scope><name>red</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

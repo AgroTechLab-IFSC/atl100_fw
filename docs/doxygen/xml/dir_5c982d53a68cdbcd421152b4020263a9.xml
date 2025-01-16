@@ -2,7 +2,32 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
   <compounddef id="dir_5c982d53a68cdbcd421152b4020263a9" kind="dir">
     <compoundname>main</compoundname>
+    <innerdir refid="dir_bad007344d42f4b5340fab5412b591e5">include</innerdir>
+    <innerfile refid="atl__adc_8c">atl_adc.c</innerfile>
+    <innerfile refid="atl__adc_8h">atl_adc.h</innerfile>
+    <innerfile refid="atl__button_8c">atl_button.c</innerfile>
+    <innerfile refid="atl__button_8h">atl_button.h</innerfile>
+    <innerfile refid="atl__config_8c">atl_config.c</innerfile>
+    <innerfile refid="atl__config_8h">atl_config.h</innerfile>
+    <innerfile refid="atl__i2c_8c">atl_i2c.c</innerfile>
+    <innerfile refid="atl__i2c_8h">atl_i2c.h</innerfile>
+    <innerfile refid="atl__led_8c">atl_led.c</innerfile>
+    <innerfile refid="atl__led_8h">atl_led.h</innerfile>
     <innerfile refid="atl__main_8c">atl_main.c</innerfile>
+    <innerfile refid="atl__modbus_8c">atl_modbus.c</innerfile>
+    <innerfile refid="atl__modbus_8h">atl_modbus.h</innerfile>
+    <innerfile refid="atl__modbus__params_8c">atl_modbus_params.c</innerfile>
+    <innerfile refid="atl__modbus__params_8h">atl_modbus_params.h</innerfile>
+    <innerfile refid="atl__mqtt_8c">atl_mqtt.c</innerfile>
+    <innerfile refid="atl__mqtt_8h">atl_mqtt.h</innerfile>
+    <innerfile refid="atl__ota_8c">atl_ota.c</innerfile>
+    <innerfile refid="atl__ota_8h">atl_ota.h</innerfile>
+    <innerfile refid="atl__telemetry_8c">atl_telemetry.c</innerfile>
+    <innerfile refid="atl__telemetry_8h">atl_telemetry.h</innerfile>
+    <innerfile refid="atl__webserver_8c">atl_webserver.c</innerfile>
+    <innerfile refid="atl__webserver_8h">atl_webserver.h</innerfile>
+    <innerfile refid="atl__wifi_8c">atl_wifi.c</innerfile>
+    <innerfile refid="atl__wifi_8h">atl_wifi.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

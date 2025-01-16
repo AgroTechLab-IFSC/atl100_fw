@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__data__adc__telemetry__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_data_adc_telemetry_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__data__adc__telemetry__t_1aff19710c26a6a5ac1d3b157c56bb24e8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float last_sample</definition>
+        <argsstring></argsstring>
+        <name>last_sample</name>
+        <qualifiedname>atl_data_adc_telemetry_t::last_sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ATL Analog input last sample. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="74" column="7" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__adc__telemetry__t_1a320b56bcf4a41e0f2776d34b6d1211ef" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float avg_sample</definition>
+        <argsstring></argsstring>
+        <name>avg_sample</name>
+        <qualifiedname>atl_data_adc_telemetry_t::avg_sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ATL Analog input average sample. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="75" column="7" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__adc__telemetry__t_1aaf69882dc07319bb5f5f28485f66fd9c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float min_sample</definition>
+        <argsstring></argsstring>
+        <name>min_sample</name>
+        <qualifiedname>atl_data_adc_telemetry_t::min_sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ATL Analog input minimum value sampled. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="76" column="7" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__data__adc__telemetry__t_1aa1b100d2f65323269437db423602d3bc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float max_sample</definition>
+        <argsstring></argsstring>
+        <name>max_sample</name>
+        <qualifiedname>atl_data_adc_telemetry_t::max_sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ATL Analog input maximum value sampled. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="77" column="7" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="73" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="73" bodyend="78"/>
+    <listofallmembers>
+      <member refid="structatl__data__adc__telemetry__t_1a320b56bcf4a41e0f2776d34b6d1211ef" prot="public" virt="non-virtual"><scope>atl_data_adc_telemetry_t</scope><name>avg_sample</name></member>
+      <member refid="structatl__data__adc__telemetry__t_1aff19710c26a6a5ac1d3b157c56bb24e8" prot="public" virt="non-virtual"><scope>atl_data_adc_telemetry_t</scope><name>last_sample</name></member>
+      <member refid="structatl__data__adc__telemetry__t_1aa1b100d2f65323269437db423602d3bc" prot="public" virt="non-virtual"><scope>atl_data_adc_telemetry_t</scope><name>max_sample</name></member>
+      <member refid="structatl__data__adc__telemetry__t_1aaf69882dc07319bb5f5f28485f66fd9c" prot="public" virt="non-virtual"><scope>atl_data_adc_telemetry_t</scope><name>min_sample</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__config__ota__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_config_ota_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__config__ota__t_1aa558d8c48731d06daa76c8f4fa28fc5b" prot="public" static="no" mutable="no">
+        <type>atl_ota_behaviour_e</type>
+        <definition>atl_ota_behaviour_e behaviour</definition>
+        <argsstring></argsstring>
+        <name>behaviour</name>
+        <qualifiedname>atl_config_ota_t::behaviour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OTA behaviour. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" line="31" column="28" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" line="30" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" bodystart="30" bodyend="32"/>
+    <listofallmembers>
+      <member refid="structatl__config__ota__t_1aa558d8c48731d06daa76c8f4fa28fc5b" prot="public" virt="non-virtual"><scope>atl_config_ota_t</scope><name>behaviour</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__config__system__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_config_system_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__config__system__t_1a48268bf0b72c4a63a3231ce60821446b" prot="public" static="no" mutable="no">
+        <type>atl_led_behaviour_e</type>
+        <definition>atl_led_behaviour_e led_behaviour</definition>
+        <argsstring></argsstring>
+        <name>led_behaviour</name>
+        <qualifiedname>atl_config_system_t::led_behaviour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LED behaviour. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" line="23" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" line="22" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" bodystart="22" bodyend="24"/>
+    <listofallmembers>
+      <member refid="structatl__config__system__t_1a48268bf0b72c4a63a3231ce60821446b" prot="public" virt="non-virtual"><scope>atl_config_system_t</scope><name>led_behaviour</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

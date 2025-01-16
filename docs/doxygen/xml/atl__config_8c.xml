@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="atl__config_8c" kind="file" language="C++">
+    <compoundname>atl_config.c</compoundname>
+    <includes local="no">string.h</includes>
+    <includes local="no">freertos/FreeRTOS.h</includes>
+    <includes local="no">freertos/semphr.h</includes>
+    <includes local="no">inttypes.h</includes>
+    <includes local="no">esp_err.h</includes>
+    <includes local="no">esp_log.h</includes>
+    <includes local="no">esp_mac.h</includes>
+    <includes local="no">nvs_flash.h</includes>
+    <includes local="no">nvs.h</includes>
+    <includes refid="atl__config_8h" local="yes">atl_config.h</includes>
+    <includes refid="atl__wifi_8h" local="yes">atl_wifi.h</includes>
+    <includes refid="atl__webserver_8h" local="yes">atl_webserver.h</includes>
+    <includes refid="atl__mqtt_8h" local="yes">atl_mqtt.h</includes>
+    <includes refid="atl__telemetry_8h" local="yes">atl_telemetry.h</includes>
+    <incdepgraph>
+      <node id="21">
+        <label>atl_adc.h</label>
+        <link refid="atl__adc_8h_source"/>
+      </node>
+      <node id="1">
+        <label>atl_config.c</label>
+        <link refid="atl__config_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>atl_config.h</label>
+        <link refid="atl__config_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>atl_led.h</label>
+        <link refid="atl__led_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>atl_mqtt.h</label>
+        <link refid="atl__mqtt_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>atl_ota.h</label>
+        <link refid="atl__ota_8h_source"/>
+      </node>
+      <node id="20">
+        <label>atl_telemetry.h</label>
+        <link refid="atl__telemetry_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>atl_webserver.h</label>
+        <link refid="atl__webserver_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>atl_wifi.h</label>
+        <link refid="atl__wifi_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>cJSON.h</label>
+      </node>
+      <node id="6">
+        <label>esp_err.h</label>
+      </node>
+      <node id="7">
+        <label>esp_log.h</label>
+      </node>
+      <node id="8">
+        <label>esp_mac.h</label>
+      </node>
+      <node id="3">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="4">
+        <label>freertos/semphr.h</label>
+      </node>
+      <node id="5">
+        <label>inttypes.h</label>
+      </node>
+      <node id="17">
+        <label>mqtt_client.h</label>
+      </node>
+      <node id="10">
+        <label>nvs.h</label>
+      </node>
+      <node id="9">
+        <label>nvs_flash.h</label>
+      </node>
+      <node id="13">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="atl__config_8c_1a5a85b9c772bbeb480b209a3e6ea92b4c" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* TAG</definition>
+        <argsstring></argsstring>
+        <name>TAG</name>
+        <initializer>= &quot;atl-config&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Module identification. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" line="17" column="19" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__config_8c_1a3e75bf52f8e28fca634e9e398b4a51c5" prot="public" static="no" mutable="no">
+        <type>SemaphoreHandle_t</type>
+        <definition>SemaphoreHandle_t atl_config_mutex</definition>
+        <argsstring></argsstring>
+        <name>atl_config_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configuration semaphore (mutex). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" line="20" column="19" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__config_8c_1aa1a878380b8d691d9b5d2ed2b925b7b9" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__config__t" kindref="compound">atl_config_t</ref></type>
+        <definition>atl_config_t atl_config</definition>
+        <argsstring></argsstring>
+        <name>atl_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Global configuration variable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" line="21" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="atl__config_8c_1ad6f4a37057aaad2f784ae252ead80d0e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>atl_config_create_default</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_config_create_default</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Create configuration file with default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create configuration file with default values. </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Creates default SYSTEM configuration</para>
+<para>Creates default OTA configuration</para>
+<para>Creates default WIFI configuration</para>
+<para>Creates default WEBSERVER configuration</para>
+<para>Creates default MQTT CLIENT configuration</para>
+<para>Creates default TELEMETRY configuration</para>
+<para>Creates default GATEWAY (ATL100 &lt;-&gt; CR300) configuration</para>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" line="28" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" bodystart="28" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__config_8c_1a139c8f8af88820ff9fa436ed0e9dda4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>atl_config_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_config_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize configuration from NVS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If not possible load configuration file, create a new with default values. <simplesect kind="return"><para>esp_err_t - If ERR_OK success. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" line="105" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" bodystart="105" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__config_8c_1acf6f221add001717796fdec16754556b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>atl_config_commit_nvs</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_config_commit_nvs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize configuration from NVS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If not possible load configuration file, create a new with default values. <simplesect kind="return"><para>esp_err_t - If ERR_OK success, otherwise fail. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" line="180" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" bodystart="180" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__config_8c_1aa0856cda8ab4c387ddb200ec4ddc6255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>atl_config_erase_nvs</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_config_erase_nvs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Erase NVS (Non-Volatile Storage). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Erase NVS. <simplesect kind="return"><para>esp_err_t - If ERR_OK success. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" line="228" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" bodystart="228" bodyend="232"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;freertos/FreeRTOS.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;freertos/semphr.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;esp_err.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;esp_log.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;esp_mac.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nvs_flash.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nvs.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_config.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_wifi.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_webserver.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_mqtt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_telemetry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*TAG<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;atl-config&quot;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Global<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">SemaphoreHandle_t<sp/>atl_config_mutex;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="structatl__config__t" kindref="compound">atl_config_t</ref><sp/>atl_config;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>atl_config_create_default(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ssid[32];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>mac[6]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1ab9f8d160f7ba4c03e04b618f5febe90f" kindref="member">system</ref>.<ref refid="structatl__config__system__t_1a48268bf0b72c4a63a3231ce60821446b" kindref="member">led_behaviour</ref><sp/>=<sp/>ATL_LED_ENABLED_FULL;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1afb76808297ded520a9b8c59234f0218f" kindref="member">ota</ref>.<ref refid="structatl__config__ota__t_1aa558d8c48731d06daa76c8f4fa28fc5b" kindref="member">behaviour</ref><sp/>=<sp/>ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1ae6753e606a77b9d7e2c2c18ac0962542" kindref="member">mode</ref><sp/>=<sp/>ATL_WIFI_AP_MODE;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>esp_efuse_mac_get_default(mac);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>sprintf(ssid,<sp/></highlight><highlight class="stringliteral">&quot;%s%02x%02x%02x&quot;</highlight><highlight class="normal">,<sp/>CONFIG_ATL_WIFI_AP_SSID_PREFIX,<sp/>mac[3],<sp/>mac[4],<sp/>mac[5]+1);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1a66b6285b9ea72acdd4b597e686abb317" kindref="member">ap_ssid</ref>,<sp/>ssid,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1a66b6285b9ea72acdd4b597e686abb317" kindref="member">ap_ssid</ref>));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1ab5ef9a652932a51655d334293be8e3b1" kindref="member">ap_pass</ref>,<sp/>CONFIG_ATL_WIFI_AP_PASSWORD,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1ab5ef9a652932a51655d334293be8e3b1" kindref="member">ap_pass</ref>));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1afc302041bd34816e0e5568475ae34d40" kindref="member">ap_channel</ref><sp/>=<sp/>CONFIG_ATL_WIFI_AP_CHANNEL;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1a4371431ae3262432e8e77e093e398477" kindref="member">ap_max_conn</ref><sp/>=<sp/>CONFIG_ATL_WIFI_AP_MAX_STA_CONN;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1aea148d15e521f8174e345d9340233d50" kindref="member">sta_ssid</ref>,<sp/></highlight><highlight class="stringliteral">&quot;AgroTechLab&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1aea148d15e521f8174e345d9340233d50" kindref="member">sta_ssid</ref>));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1a91b023aeb7726e7b36b6de73edbbc299" kindref="member">sta_pass</ref>,<sp/>CONFIG_ATL_WIFI_AP_PASSWORD,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1a91b023aeb7726e7b36b6de73edbbc299" kindref="member">sta_pass</ref>));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1a6e6dfce29c55c51dae4eeb0c460924fd" kindref="member">sta_channel</ref><sp/>=<sp/>CONFIG_ATL_WIFI_AP_CHANNEL;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1aecf33f79f5f583ba6e42afe09aa9a226" kindref="member">sta_max_conn_retry</ref><sp/>=<sp/>CONFIG_ATL_WIFI_STA_MAX_CONN_RETRY;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a09bcf1e643ea007415424a661b0eca73" kindref="member">webserver</ref>.<ref refid="structatl__config__webserver__t_1a8eb35d32a1d80811b3fbfeebbd86e793" kindref="member">mode</ref><sp/>=<sp/>ATL_WEBSERVER_HTTP;<sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;atl_config.<ref refid="structatl__config__t_1a09bcf1e643ea007415424a661b0eca73" kindref="member">webserver</ref>.<ref refid="structatl__config__webserver__t_1a01a9894f9a977ecdd09fe73264543dd0" kindref="member">admin_user</ref>,<sp/>CONFIG_ATL_WEBSERVER_ADMIN_USER,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(atl_config.<ref refid="structatl__config__t_1a09bcf1e643ea007415424a661b0eca73" kindref="member">webserver</ref>.<ref refid="structatl__config__webserver__t_1a01a9894f9a977ecdd09fe73264543dd0" kindref="member">admin_user</ref>));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;atl_config.<ref refid="structatl__config__t_1a09bcf1e643ea007415424a661b0eca73" kindref="member">webserver</ref>.<ref refid="structatl__config__webserver__t_1a9c408fd95b94337f9c05f95fa61190a9" kindref="member">admin_pass</ref>,<sp/>CONFIG_ATL_WEBSERVER_ADMIN_PASS,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(atl_config.<ref refid="structatl__config__t_1a09bcf1e643ea007415424a661b0eca73" kindref="member">webserver</ref>.<ref refid="structatl__config__webserver__t_1a9c408fd95b94337f9c05f95fa61190a9" kindref="member">admin_pass</ref>));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" kindref="member">mqtt_client</ref>.<ref refid="structatl__config__mqtt__client__t_1ac444c2f438eb2b64ee284346a1246125" kindref="member">mode</ref><sp/>=<sp/>CONFIG_ATL_MQTT_BROKER_MODE;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;atl_config.<ref refid="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" kindref="member">mqtt_client</ref>.<ref refid="structatl__config__mqtt__client__t_1a5f53eb7310c92a9ee9995eada7433ea4" kindref="member">broker_address</ref>,<sp/>CONFIG_ATL_MQTT_BROKER_ADDR,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(atl_config.<ref refid="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" kindref="member">mqtt_client</ref>.<ref refid="structatl__config__mqtt__client__t_1a5f53eb7310c92a9ee9995eada7433ea4" kindref="member">broker_address</ref>));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" kindref="member">mqtt_client</ref>.<ref refid="structatl__config__mqtt__client__t_1a12f5cb139e6c02830a0954427c8cb565" kindref="member">broker_port</ref><sp/>=<sp/>CONFIG_ATL_MQTT_BROKER_PORT;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" kindref="member">mqtt_client</ref>.<ref refid="structatl__config__mqtt__client__t_1a41a1bf55931c17079c4f2ba00b8daee3" kindref="member">transport</ref><sp/>=<sp/>MQTT_TRANSPORT_OVER_TCP;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" kindref="member">mqtt_client</ref>.<ref refid="structatl__config__mqtt__client__t_1a45d2254e1dd869e95590f29d5b4e8b99" kindref="member">disable_cn_check</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;atl_config.<ref refid="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" kindref="member">mqtt_client</ref>.<ref refid="structatl__config__mqtt__client__t_1ae1b94bb54887aa96f82572e274884090" kindref="member">user</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1a66b6285b9ea72acdd4b597e686abb317" kindref="member">ap_ssid</ref>,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(atl_config.<ref refid="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" kindref="member">mqtt_client</ref>.<ref refid="structatl__config__mqtt__client__t_1ae1b94bb54887aa96f82572e274884090" kindref="member">user</ref>));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;atl_config.<ref refid="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" kindref="member">mqtt_client</ref>.<ref refid="structatl__config__mqtt__client__t_1abee570d7effcd1527e91ffe21f870aa0" kindref="member">pass</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;atl_config.<ref refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" kindref="member">wifi</ref>.<ref refid="structatl__config__wifi__t_1a66b6285b9ea72acdd4b597e686abb317" kindref="member">ap_ssid</ref>,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(atl_config.<ref refid="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" kindref="member">mqtt_client</ref>.<ref refid="structatl__config__mqtt__client__t_1abee570d7effcd1527e91ffe21f870aa0" kindref="member">pass</ref>));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" kindref="member">mqtt_client</ref>.<ref refid="structatl__config__mqtt__client__t_1aa83cd7f03b18f77dfa73d82902b6c76c" kindref="member">qos</ref><sp/>=<sp/>CONFIG_ATL_MQTT_QOS;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ac5ced4296039304109d4335840f20f4e" kindref="member">send_period</ref><sp/>=<sp/>CONFIG_ATL_SEND_PERIOD;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1a8f1db6bea0943db416f84f3f5a08bba8" kindref="member">power</ref>.<ref refid="structatl__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" kindref="member">enabled</ref><sp/>=<sp/>CONFIG_ATL_PWR_ENABLED;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1a8f1db6bea0943db416f84f3f5a08bba8" kindref="member">power</ref>.<ref refid="structatl__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref><sp/>=<sp/>CONFIG_ATL_PWR_SAMPLING_PERIOD;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1a353f07b7ce4bcf4a22b126cf23da071b" kindref="member">uv</ref>.<ref refid="structatl__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" kindref="member">enabled</ref><sp/>=<sp/>CONFIG_ATL_UV_ENABLED;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1a353f07b7ce4bcf4a22b126cf23da071b" kindref="member">uv</ref>.<ref refid="structatl__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref><sp/>=<sp/>CONFIG_ATL_UV_SAMPLING_PERIOD;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1a744bb7d0442acd14dca186a375439f18" kindref="member">light</ref>.<ref refid="structatl__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" kindref="member">enabled</ref><sp/>=<sp/>CONFIG_ATL_LIGHT_ENABLED;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1a744bb7d0442acd14dca186a375439f18" kindref="member">light</ref>.<ref refid="structatl__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref><sp/>=<sp/>CONFIG_ATL_LIGHT_SAMPLING_PERIOD;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>4;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" kindref="member">adc</ref>[i].<ref refid="structatl__adc__telemetry__t_1af4c797a84b50407caa9d739666226b45" kindref="member">mode</ref><sp/>=<sp/>CONFIG_ATL_ADC_MODE;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" kindref="member">adc</ref>[i].<ref refid="structatl__adc__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref><sp/>=<sp/>CONFIG_ATL_ADC_SAMPLING_PERIOD;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" kindref="member">adc</ref>[i].<ref refid="structatl__adc__telemetry__t_1aba0b0513d397d51e6f438b2e9c420287" kindref="member">sampling_window</ref><sp/>=<sp/>CONFIG_ATL_ADC_SAMPLING_PERIOD;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ad1a744039c227ef365debdfa37b8c213" kindref="member">dht</ref>.<ref refid="structatl__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" kindref="member">enabled</ref><sp/>=<sp/>CONFIG_ATL_DHT_ENABLED;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ad1a744039c227ef365debdfa37b8c213" kindref="member">dht</ref>.<ref refid="structatl__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref><sp/>=<sp/>CONFIG_ATL_DHT_SAMPLING_PERIOD;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1a7319d676df786a4152191f437c008b7c" kindref="member">bme280</ref>.<ref refid="structatl__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" kindref="member">enabled</ref><sp/>=<sp/>CONFIG_ATL_BME280_ENABLED;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1a7319d676df786a4152191f437c008b7c" kindref="member">bme280</ref>.<ref refid="structatl__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref><sp/>=<sp/>CONFIG_ATL_BME280_SAMPLING_PERIOD;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ab689546d56c6472f0fa922ff2abf29b4" kindref="member">soil</ref>.<ref refid="structatl__soil__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" kindref="member">enabled</ref><sp/>=<sp/>CONFIG_ATL_SOIL_ENABLED;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ab689546d56c6472f0fa922ff2abf29b4" kindref="member">soil</ref>.<ref refid="structatl__soil__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref><sp/>=<sp/>CONFIG_ATL_SOIL_SAMPLING_PERIOD;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ab689546d56c6472f0fa922ff2abf29b4" kindref="member">soil</ref>.<ref refid="structatl__soil__telemetry__t_1a3a34fe33fa471a98e62d68426933fa2b" kindref="member">modbus_rtu_addr</ref><sp/>=<sp/>CONFIG_ATL_SOIL_MODBUS_ADDR;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1a1861cc2018a9cee6457ebdec5feb4be3" kindref="member">pluviometer</ref>.<ref refid="structatl__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" kindref="member">enabled</ref><sp/>=<sp/>CONFIG_ATL_PLUVIOMETER_ENABLED;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1a1861cc2018a9cee6457ebdec5feb4be3" kindref="member">pluviometer</ref>.<ref refid="structatl__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref><sp/>=<sp/>CONFIG_ATL_PLUVIOMETER_SAMPLING_PERIOD;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1a5221fd8b0569237a9cfee69b84375b5d" kindref="member">anemometer</ref>.<ref refid="structatl__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" kindref="member">enabled</ref><sp/>=<sp/>CONFIG_ATL_ANEMOMETER_ENABLED;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1a5221fd8b0569237a9cfee69b84375b5d" kindref="member">anemometer</ref>.<ref refid="structatl__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref><sp/>=<sp/>CONFIG_ATL_ANEMOMETER_SAMPLING_PERIOD;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1aff4382d39c32f12878a847898ada5b76" kindref="member">wind_sock</ref>.<ref refid="structatl__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" kindref="member">enabled</ref><sp/>=<sp/>CONFIG_ATL_WIND_SOCK_ENABLED;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1aff4382d39c32f12878a847898ada5b76" kindref="member">wind_sock</ref>.<ref refid="structatl__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref><sp/>=<sp/>CONFIG_ATL_WIND_SOCK_SAMPLING_PERIOD;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>atl_config.telemetry.cr300_gw.enabled<sp/>=<sp/>CONFIG_ATL_GATEWAY_ENABLED;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>atl_config.telemetry.cr300_gw.sampling_period<sp/>=<sp/>CONFIG_ATL_GATEWAY_SAMPLING_PERIOD;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>atl_config.telemetry.cr300_gw.modbus_rtu_addr<sp/>=<sp/>CONFIG_ATL_GATEWAY_MODBUS_ADDR;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">esp_err_t<sp/>atl_config_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>esp_err_t<sp/>err;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>nvs_handle_t<sp/>nvs_handler;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Creates<sp/>configuration<sp/>semaphore<sp/>(mutex)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_config_mutex<sp/>=<sp/>xSemaphoreCreateMutex();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(atl_config_mutex<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;[%s:%d]<sp/>Error<sp/>creating<sp/>configuration<sp/>semaphore!&quot;</highlight><highlight class="normal">,<sp/>__func__,<sp/>__LINE__);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ESP_FAIL;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>NVS<sp/>(Non-Volatile<sp/>Storage)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>nvs_flash_erase();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGI(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Starting<sp/>NVS<sp/>(Non-Volatile<sp/>Storage)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>nvs_flash_init();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>==<sp/>ESP_ERR_NVS_NO_FREE_PAGES<sp/>||<sp/>err<sp/>==<sp/>ESP_ERR_NVS_NEW_VERSION_FOUND)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGW(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Erasing<sp/>and<sp/>restarting<sp/>NVS&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_ERROR_CHECK_WITHOUT_ABORT(nvs_flash_erase());</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_ERROR_CHECK_WITHOUT_ABORT(nvs_flash_init());</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Open<sp/>NVS<sp/>system<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGI(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Loading<sp/>configuration<sp/>from<sp/>NVS&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGI(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Mounting<sp/>NVS<sp/>storage&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>nvs_open(</highlight><highlight class="stringliteral">&quot;nvs&quot;</highlight><highlight class="normal">,<sp/>NVS_READWRITE,<sp/>&amp;nvs_handler);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;[%s:%d]<sp/>Fail<sp/>mounting<sp/>NVS<sp/>storage&quot;</highlight><highlight class="normal">,<sp/>__func__,<sp/>__LINE__);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>esp_err_to_name(err));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>the<sp/>memory<sp/>size<sp/>required<sp/>to<sp/>configuration<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGI(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Loading<sp/>configuration<sp/>file&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>file_size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structatl__config__t" kindref="compound">atl_config_t</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>nvs_get_blob(nvs_handler,<sp/></highlight><highlight class="stringliteral">&quot;atl_config&quot;</highlight><highlight class="normal">,<sp/>&amp;atl_config,<sp/>&amp;file_size);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK<sp/>&amp;&amp;<sp/>err<sp/>!=<sp/>ESP_ERR_NVS_NOT_FOUND)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;[%s:%d]<sp/>Fail<sp/>loading<sp/>configuration<sp/>file!&quot;</highlight><highlight class="normal">,<sp/>__func__,<sp/>__LINE__);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_proc;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGW(TAG,<sp/></highlight><highlight class="stringliteral">&quot;File<sp/>not<sp/>found!<sp/>Creating<sp/>new<sp/>file<sp/>with<sp/>default<sp/>values!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atl_config_create_default();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Creates<sp/>atl_config<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>=<sp/>nvs_set_blob(nvs_handler,<sp/></highlight><highlight class="stringliteral">&quot;atl_config&quot;</highlight><highlight class="normal">,<sp/>&amp;atl_config,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structatl__config__t" kindref="compound">atl_config_t</ref>));</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;[%s:%d]<sp/>Fail<sp/>creating<sp/>new<sp/>configuration<sp/>file!&quot;</highlight><highlight class="normal">,<sp/>__func__,<sp/>__LINE__);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_proc;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>atl_config<sp/>file<sp/>in<sp/>NVS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>=<sp/>nvs_commit(nvs_handler);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;[%s:%d]<sp/>Fail<sp/>writing<sp/>new<sp/>configuration<sp/>file!&quot;</highlight><highlight class="normal">,<sp/>__func__,<sp/>__LINE__);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_proc;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Close<sp/>NVS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGI(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Unmounting<sp/>NVS<sp/>storage&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>nvs_close(nvs_handler);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ESP_OK;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Error<sp/>procedure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>error_proc:</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>esp_err_to_name(err));</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nvs_close(nvs_handler);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal">esp_err_t<sp/>atl_config_commit_nvs(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>esp_err_t<sp/>err;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>nvs_handle_t<sp/>nvs_handler;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGI(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Commiting<sp/>configuration<sp/>at<sp/>NVS&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Open<sp/>NVS<sp/>system<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGD(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Mounting<sp/>NVS<sp/>storage&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>xSemaphoreTake(atl_config_mutex,<sp/>portMAX_DELAY);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>nvs_open(</highlight><highlight class="stringliteral">&quot;nvs&quot;</highlight><highlight class="normal">,<sp/>NVS_READWRITE,<sp/>&amp;nvs_handler);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;[%s:%d]<sp/>Fail<sp/>mounting<sp/>NVS<sp/>storage&quot;</highlight><highlight class="normal">,<sp/>__func__,<sp/>__LINE__);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_proc;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Creates<sp/>atl_config<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>nvs_set_blob(nvs_handler,<sp/></highlight><highlight class="stringliteral">&quot;atl_config&quot;</highlight><highlight class="normal">,<sp/>&amp;atl_config,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structatl__config__t" kindref="compound">atl_config_t</ref>));</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;[%s:%d]<sp/>Fail<sp/>creating<sp/>new<sp/>configuration<sp/>file!&quot;</highlight><highlight class="normal">,<sp/>__func__,<sp/>__LINE__);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_proc;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>atl_config<sp/>file<sp/>in<sp/>NVS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>nvs_commit(nvs_handler);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;[%s:%d]<sp/>Fail<sp/>writing<sp/>new<sp/>configuration<sp/>file!&quot;</highlight><highlight class="normal">,<sp/>__func__,<sp/>__LINE__);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_proc;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Close<sp/>NVS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGD(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Unmounting<sp/>NVS<sp/>storage&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>nvs_close(nvs_handler);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>xSemaphoreGive(atl_config_mutex);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ESP_OK;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Error<sp/>procedure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal">error_proc:</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>esp_err_to_name(err));</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>nvs_close(nvs_handler);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>xSemaphoreGive(atl_config_mutex);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal">esp_err_t<sp/>atl_config_erase_nvs(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>esp_err_t<sp/>err<sp/>=<sp/>ESP_OK;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>nvs_flash_erase();</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c"/>
+  </compounddef>
+</doxygen>

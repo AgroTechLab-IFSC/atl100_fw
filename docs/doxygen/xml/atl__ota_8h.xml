@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="atl__ota_8h" kind="file" language="C++">
+    <compoundname>atl_ota.h</compoundname>
+    <includedby refid="atl__config_8h" local="yes">atl_config.h</includedby>
+    <includedby refid="atl__mqtt_8c" local="yes">atl_mqtt.c</includedby>
+    <includedby refid="atl__ota_8c" local="yes">atl_ota.c</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>atl_config.h</label>
+        <link refid="atl__config_8h_source"/>
+      </node>
+      <node id="1">
+        <label>atl_ota.h</label>
+        <link refid="atl__ota_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="atl__ota_8h_1ab92a472f0c0de2e434217ed40fd81e27" prot="public" static="no" strong="no">
+        <type></type>
+        <name>atl_ota_behaviour_e</name>
+        <enumvalue id="atl__ota_8h_1ab92a472f0c0de2e434217ed40fd81e27a11b200530e9f899cc23e9cf8bda6a704" prot="public">
+          <name>ATL_OTA_BEHAVIOUR_DISABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__ota_8h_1ab92a472f0c0de2e434217ed40fd81e27aef99ffa7989f439e5ee307585833c12d" prot="public">
+          <name>ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__ota_8h_1ab92a472f0c0de2e434217ed40fd81e27a781ba80c17fcd02c3d49df68204a225a" prot="public">
+          <name>ATL_OTA_BEHAVIOU_DOWNLOAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__ota_8h_1ab92a472f0c0de2e434217ed40fd81e27a8fe7f5015aa229937f57ae4190f3539f" prot="public">
+          <name>ATL_OTA_BEHAVIOU_DOWNLOAD_REBOOT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>OTA behaviour. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_ota.h" line="11" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_ota.h" bodystart="11" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="atl__ota_8h_1ac819dd837a8aa81ede9e037ea1fad7f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * atl_ota_get_behaviour_str</definition>
+        <argsstring>(atl_ota_behaviour_e behaviour)</argsstring>
+        <name>atl_ota_get_behaviour_str</name>
+        <param>
+          <type>atl_ota_behaviour_e</type>
+          <declname>behaviour</declname>
+        </param>
+        <briefdescription>
+<para>Get the ota behaviour string object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>behaviour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Function enum const* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_ota.h" line="23" column="12" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_ota.c" bodystart="19" bodyend="21" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_ota.h" declline="23" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__ota_8h_1affe01f94f3308a749166b6a02069ea6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>atl_ota_behaviour_e</type>
+        <definition>atl_ota_behaviour_e atl_ota_get_behaviour</definition>
+        <argsstring>(char *behaviour_str)</argsstring>
+        <name>atl_ota_get_behaviour</name>
+        <param>
+          <type>char *</type>
+          <declname>behaviour_str</declname>
+        </param>
+        <briefdescription>
+<para>Get the ota behaviour string object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>behaviour_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Function enum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_ota.h" line="30" column="21" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_ota.c" bodystart="28" bodyend="38" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_ota.h" declline="30" declcolumn="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>ATL_OTA_BEHAVIOUR_DISABLED,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>ATL_OTA_BEHAVIOU_DOWNLOAD,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>ATL_OTA_BEHAVIOU_DOWNLOAD_REBOOT,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}<sp/>atl_ota_behaviour_e;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>atl_ota_get_behaviour_str(atl_ota_behaviour_e<sp/>behaviour);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">atl_ota_behaviour_e<sp/>atl_ota_get_behaviour(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>behaviour_str);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_ota.h"/>
+  </compounddef>
+</doxygen>

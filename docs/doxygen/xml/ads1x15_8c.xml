@@ -1,0 +1,1238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="ads1x15_8c" kind="file" language="C++">
+    <compoundname>ads1x15.c</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">esp_timer.h</includes>
+    <includes local="no">esp_log.h</includes>
+    <includes local="no">driver/i2c_master.h</includes>
+    <includes refid="atl__i2c_8h" local="yes">atl_i2c.h</includes>
+    <includes refid="ads1x15_8h" local="yes">include/ads1x15.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>atl_i2c.h</label>
+        <link refid="atl__i2c_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ads1x15.c</label>
+        <link refid="ads1x15_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>include/ads1x15.h</label>
+        <link refid="ads1x15_8h_source"/>
+      </node>
+      <node id="6">
+        <label>driver/i2c_master.h</label>
+      </node>
+      <node id="5">
+        <label>esp_log.h</label>
+      </node>
+      <node id="4">
+        <label>esp_timer.h</label>
+      </node>
+      <node id="3">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ads1x15_8c_1a3e79c6425e8cc6a0ce853eb49a45e5b9" prot="public" static="no">
+        <name>TWI_FREQ</name>
+        <initializer>100000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="19" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ads1x15_8c_1a11d1b82d06cdfbb7aee05354326782d3" prot="public" static="no">
+        <name>I2C_WRITE_REGISTER_TIME</name>
+        <initializer>(2 * 4 * 10 * 1000000 / TWI_FREQ)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="27" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ads1x15_8c_1a5a85b9c772bbeb480b209a3e6ea92b4c" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* TAG</definition>
+        <argsstring></argsstring>
+        <name>TAG</name>
+        <initializer>= &quot;ads1x15&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Module identification. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="10" column="19" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ads1x15_8c_1a019cd5f470062d30ce8e0d2e437310fc" prot="public" static="no" mutable="no">
+        <type>i2c_master_dev_handle_t</type>
+        <definition>i2c_master_dev_handle_t ads1x15_i2c_handle</definition>
+        <argsstring></argsstring>
+        <name>ads1x15_i2c_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C device handle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="13" column="25" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ads1x15_8c_1a457e9b0ccf6478fd7e45c0463abbd533" prot="public" static="no" mutable="no">
+        <type>i2c_master_bus_handle_t</type>
+        <definition>i2c_master_bus_handle_t bus_handle</definition>
+        <argsstring></argsstring>
+        <name>bus_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C bus handle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="16" column="32" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" declline="16" declcolumn="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ads1x15_8c_1a0a8455d3ff64b7bb2409a12271f6b08c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>static uint16_t ads1x15_getConfig</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_getConfig</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="29" column="17" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="29" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a29901ebb1027038723fb59eb3da6c751" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t ads1x15_getNextReadingTime</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_getNextReadingTime</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="43" column="17" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="43" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1aa436bfaf3e2b2f5e5a53e57dcf575c15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t ads1x15_create</definition>
+        <argsstring>(uint16_t dev_addr)</argsstring>
+        <name>ads1x15_create</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>dev_addr</declname>
+        </param>
+        <briefdescription>
+<para>Create I2C device handle to ADS1X15 sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dev_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device address of sensor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><itemizedlist>
+<listitem><para>ESP_OK Success</para>
+</listitem><listitem><para>Others Fail </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="62" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="62" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a2e12a5fa1f1e9909a475119dd57d42d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t ads1x15_delete</definition>
+        <argsstring>(void)</argsstring>
+        <name>ads1x15_delete</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Delete and release I2C handle of BH1750 sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><itemizedlist>
+<listitem><para>ESP_OK Success</para>
+</listitem><listitem><para>Others Fail </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="87" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="87" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1afbb4148f236d8c594a23c3163aacaf43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ads1x15_setGain</definition>
+        <argsstring>(ads1x15_config_t *config_ptr, ads1x15_gain_t gain)</argsstring>
+        <name>ads1x15_setGain</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <param>
+          <type>ads1x15_gain_t</type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+<para>Sets the input gain. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The input gain is used to adjust the converter resolution to the signal magnitude. Greater gains adjusts lower voltages over the resolution.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A available gain from the Gain_t enumerator.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>ads1x15_gain_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="98" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="98" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a04a99eb77ed81969973fa5dceea6397e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ads1x15_gain_t</type>
+        <definition>ads1x15_gain_t ads1x15_getGain</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_getGain</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="108" column="16" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a9fe3ac3ce1a2beee97755c69f02b90aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ads1x15_getRange</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_getRange</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="112" column="7" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a29e3c2da111a8e5eb247e3fa86b40aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ads1x15_setContinuous</definition>
+        <argsstring>(ads1x15_config_t *config_ptr, bool c)</argsstring>
+        <name>ads1x15_setContinuous</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Sets the library to work on continuous mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In continuous mode, the library will reads the voltage value based on a sample rate. For example, if reading at 860Hz, then 860 measures will be done in a second.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to activate continuous mode, false to deactivate continuous mode.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>ads1x15_setSampleRate() </para>
+</simplesect>
+<simplesect kind="see"><para>ads1x15_getSampleRate() </para>
+</simplesect>
+<simplesect kind="see"><para>ads1x15_readNext() </para>
+</simplesect>
+<simplesect kind="see"><para>ads1x15_conversionDone() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="116" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1acc9a01a196b6ecef39bb71b110069caa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ads1x15_isContinuous</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_isContinuous</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Checks if in continuous mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Ture if in continuous mode, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="120" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a640d0c98d03c756b4bae331e0a1195e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ads1x15_setSampleRate</definition>
+        <argsstring>(ads1x15_config_t *config_ptr, uint16_t sps)</argsstring>
+        <name>ads1x15_setSampleRate</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>sps</declname>
+        </param>
+        <briefdescription>
+<para>Sets the conversor sample rate on continuous mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sample rate. Possible values are:<itemizedlist>
+<listitem><para>If using Nanoshield_ADC12 (12 bits): 128, 250, 490, 920, 1600, 2400, 3300</para>
+</listitem><listitem><para>If using Nanoshield_ADC (16 bits): 8, 16, 32, 64, 128, 250, 475, 860 If no one of the above, the closest lower value will be selected.</para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>ads1x15_setContiuous() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="124" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="124" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a5531d51c2e7a7580f3fa6876d4b7b323" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t ads1x15_getSampleRate</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_getSampleRate</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Gets actual ADS1X15 sample rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Actual sample rate set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="144" column="10" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="144" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a3673ebc2d5bf9f88ea6bb1e4ef98ba1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t ads1x15_readADC_SingleEnded</definition>
+        <argsstring>(ads1x15_config_t *config_ptr, uint8_t channel)</argsstring>
+        <name>ads1x15_readADC_SingleEnded</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Reads channel binary voltage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel to read. Must be in 0, 1, 2 or 3. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Binary representation of the voltage in the channel. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="165" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="165" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1ad2f10ec1b98de777d998f63f86c42175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t ads1x15_readADC_Differential_0_1</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_readADC_Differential_0_1</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Reads differential voltage in binary mode between channels 0(+) and 1(-). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads 16 or 12 bits representation of the difference between the voltage in channels 0(+) and 1(-).</para>
+<para><simplesect kind="return"><para>Binary representation of the differential voltage. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="201" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="201" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1ab7e67bb69e234ef3e47a359af4b1cc3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t ads1x15_readADC_Differential_2_3</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_readADC_Differential_2_3</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Reads differential voltage in binary mode between channels 2(+) and 3(-). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads 16 or 12 bits representation of the difference between the voltage in channels 2(+) and 3(-).</para>
+<para><simplesect kind="return"><para>Binary representation of the differential voltage. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="221" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="221" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a2ca1d7c93241fe2e35dd519fb1a1c8d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ads1x15_setComparator</definition>
+        <argsstring>(ads1x15_config_t *config_ptr, uint8_t channel, int16_t highThreshold, int16_t lowThreshold)</argsstring>
+        <name>ads1x15_setComparator</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>highThreshold</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>lowThreshold</declname>
+        </param>
+        <briefdescription>
+<para>Sets the ADS1X15 in comparator mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In comparator mode, the ADS1X15 sets the ALERT/RDY pin to LOW when the voltage read exceed a high threshold. This pin is set to HIGH again when the voltage read falls below a low threshold. The ALERT/RDY pin is connected to arduino D3 pin.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The channel to compare. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>highThreshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The high threshold. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lowThreshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The low threshold. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="240" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="240" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1ab2add3acc24c129f50a18f12e6ea1503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ads1x15_setNotComparator</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_setNotComparator</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="244" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="244" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1afa0285b66c80f3635f15cc20696366c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ads1x15_isComparator</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_isComparator</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="248" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="248" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1ac0871144fce519992f5b78110083f5e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ads1x15_startComparator_SingleEnded</definition>
+        <argsstring>(ads1x15_config_t *config_ptr, uint8_t channel, int16_t highThreshold, int16_t lowThreshold)</argsstring>
+        <name>ads1x15_startComparator_SingleEnded</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>highThreshold</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>lowThreshold</declname>
+        </param>
+        <briefdescription>
+<para>Sets the high threshold value to comparator mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The ADS1115 has a interrupt signal connected to arduino ALERT/RDY pin (D3) to notify voltages over a high threshold. To use this feature, the alert jumper on arduino must be closed and a interrupt handler must be set with attachinterrupt(6, &lt;interruptHandler&gt;, LOW), where &lt;interruptHandler&gt; is the function to be called on interrupt signal.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The channel to keep track of value. Must be in 0, 1, 2 or 3. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>highThreshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The high threshold set ALERT/RDY pin LOW. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lowThreshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The low threshold to set ALERT/RDY pin HIGH. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="252" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="252" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a8652f4e6bd1ac51b5aa73a276f2cc728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t ads1x15_getLastConversionResults</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_getLastConversionResults</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Reads the binary voltage requested when it is ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To use when in continuous mode. Same as ads1x15_readNext().</para>
+<para><simplesect kind="return"><para>The binary voltage representation.</para>
+</simplesect>
+<simplesect kind="see"><para>ads1x15_readNext() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="290" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="290" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a5d1381ad3c260813b78bca180951b658" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t ads1x15_readNext</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_readNext</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Reads the binary voltage requested when it is ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To use when in continuous mode.</para>
+<para><simplesect kind="return"><para>The binary voltage representation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="294" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="294" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a73d24c92eedf479f0a455568aca994d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ads1x15_conversionDone</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_conversionDone</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Checks if there is data available to read. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if no conversion is being done and the value is ready to be read. Otherwise, false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="307" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="307" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a98385762b0fd64bc8216edb75079c2fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ads1x15_writeRegister</definition>
+        <argsstring>(ads1x15_config_t *config_ptr, uint8_t reg, uint16_t value)</argsstring>
+        <name>ads1x15_writeRegister</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes to ADS1X15 config register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i2cAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C address of the ADS1X15. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Config register address to write. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="312" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="312" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1aba630a7286af5821b52107cd3692aece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>ads1x15_readRegister</definition>
+        <argsstring>(ads1x15_config_t *config_ptr, uint8_t reg)</argsstring>
+        <name>ads1x15_readRegister</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <briefdescription>
+<para>Read an ADS1X15 register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">config_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register address to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value of the addressed register. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="317" column="10" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="317" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a53ab29fab8a2163e5b2df69f1bc960e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ads1x15_read4to20mA</definition>
+        <argsstring>(ads1x15_config_t *config_ptr, uint8_t channel)</argsstring>
+        <name>ads1x15_read4to20mA</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Reads channel current from 4mA to 20mA. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel to read. Must be one of 0, 1, 2 or 3. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current on channel from 4mA to 20mA. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="323" column="7" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="323" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1aac2547fae044a90cea992e84a4ac1a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ads1x15_readVoltage</definition>
+        <argsstring>(ads1x15_config_t *config_ptr, uint8_t channel)</argsstring>
+        <name>ads1x15_readVoltage</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Reads channel voltage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel to read. Must be one of 0, 1, 2 or 3. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The voltage read up to 5V. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="327" column="7" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="327" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a668de4d8046e737f0372ec7d72354f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ads1x15_readDifferentialVoltage01</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_readDifferentialVoltage01</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Reads voltage in differential mode between channels 0(+) and 1(-). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads the difference between voltages in channel 0(+) and 1(-). For example, if the voltage in both channels is the same, then the differential voltage is zero. Notice that the voltage margin in channels still 0V to 5V in relation to GND.</para>
+<para><simplesect kind="return"><para>The difference between the voltages in channel 0(+) and 1(-). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="331" column="7" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="331" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="ads1x15_8c_1a9305a89ac34944b13327ee77315d58a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ads1x15_readDifferentialVoltage23</definition>
+        <argsstring>(ads1x15_config_t *config_ptr)</argsstring>
+        <name>ads1x15_readDifferentialVoltage23</name>
+        <param>
+          <type><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Reads voltage in differential mode between channels 2(+) and 3(-). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads the difference between voltages in channel 2(+) and 3(-). For example, if the voltage in both channels is the same, then the differential voltage is zero. Notice that the voltage margin in channels still 0V to 5V in relation to GND.</para>
+<para><simplesect kind="return"><para>The difference between the voltages in channel 2(+) and 3(-). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" line="335" column="7" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c" bodystart="335" bodyend="337"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;esp_timer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;esp_log.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;driver/i2c_master.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_i2c.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;include/ads1x15.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*TAG<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ads1x15&quot;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Global<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">i2c_master_dev_handle_t<sp/>ads1x15_i2c_handle;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Global<sp/>external<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>i2c_master_bus_handle_t<sp/>bus_handle;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#ifndef<sp/>__AVR__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TWI_FREQ<sp/>100000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&quot;utility/twi.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Time<sp/>it<sp/>takes<sp/>to<sp/>write<sp/>a<sp/>register<sp/>in<sp/>the<sp/>I2C<sp/>bus,<sp/>in<sp/>microseconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>2<sp/>x<sp/>4<sp/>bytes<sp/>x<sp/>9<sp/>bits<sp/>x<sp/>bit<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Bit<sp/>time<sp/>=<sp/>1000000<sp/>us<sp/>/<sp/>I2C<sp/>frequency</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_WRITE_REGISTER_TIME<sp/>(2<sp/>*<sp/>4<sp/>*<sp/>10<sp/>*<sp/>1000000<sp/>/<sp/>TWI_FREQ)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint16_t<sp/>ads1x15_getConfig(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Creates<sp/>a<sp/>default<sp/>register<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ADS1015_REG_CONFIG_CPOL_ACTVLOW<sp/>|<sp/></highlight><highlight class="comment">//<sp/>Alert/Rdy<sp/>active<sp/>low<sp/><sp/><sp/>(default<sp/>val)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADS1015_REG_CONFIG_CMODE_TRAD<sp/><sp/><sp/>|<sp/></highlight><highlight class="comment">//<sp/>Traditional<sp/>comparator<sp/>(default<sp/>val)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADS1015_REG_CONFIG_CLAT_NONLAT<sp/><sp/>|<sp/></highlight><highlight class="comment">//<sp/>ALERT/RDY<sp/>pin<sp/>in<sp/>non-latching<sp/>mode.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" kindref="member">sps_mask</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight><highlight class="comment">//<sp/>Samples<sp/>per<sp/>second</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mode:<sp/>single<sp/>shot<sp/>or<sp/>continuous</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(config_ptr-&gt;<ref refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" kindref="member">continuous</ref><sp/>?<sp/>ADS1015_REG_CONFIG_MODE_CONTIN<sp/>:<sp/>ADS1015_REG_CONFIG_MODE_SINGLE)<sp/>|</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mode:<sp/>comparator<sp/>or<sp/>not.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(config_ptr-&gt;<ref refid="structads1x15__config__t_1aa79e72fe93d514b4ba28908a38e2d988" kindref="member">comparator</ref><sp/>?<sp/>ADS1015_REG_CONFIG_CQUE_1CONV<sp/>:<sp/>ADS1015_REG_CONFIG_CQUE_NONE)<sp/>|</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config_ptr-&gt;gain;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PGA/voltage<sp/>range</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>ads1x15_getNextReadingTime(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Mark<sp/>the<sp/>time<sp/>to<sp/>read<sp/>the<sp/>next<sp/>sample:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>-<sp/>Continuous<sp/>mode:<sp/>current<sp/>time<sp/>+<sp/>time<sp/>for<sp/>two<sp/>conversions<sp/>+<sp/>time<sp/>for<sp/>I2C<sp/>communication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>-<sp/>Single-shot<sp/>mode:<sp/>current<sp/>time<sp/>+<sp/>time<sp/>for<sp/>one<sp/>conversion<sp/>+<sp/>time<sp/>for<sp/>I2C<sp/>communication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(config_ptr-&gt;<ref refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" kindref="member">continuous</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>micros()<sp/>+<sp/>2<sp/>*<sp/>1000000L<sp/>/<sp/>getSampleRate()<sp/>+<sp/>I2C_WRITE_REGISTER_TIME;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>esp_timer_get_time()<sp/>+<sp/>2<sp/>*<sp/>1000000L<sp/>/<sp/>ads1x15_getSampleRate(config_ptr)<sp/>+<sp/>I2C_WRITE_REGISTER_TIME;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>micros()<sp/>+<sp/>1000000L<sp/>/<sp/>getSampleRate()<sp/>+<sp/>I2C_WRITE_REGISTER_TIME;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>esp_timer_get_time()<sp/>+<sp/>1000000L<sp/>/<sp/>ads1x15_getSampleRate(config_ptr)<sp/>+<sp/>I2C_WRITE_REGISTER_TIME;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">esp_err_t<sp/>ads1x15_create(uint16_t<sp/>dev_addr)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>esp_err_t<sp/>err<sp/>=<sp/>ESP_OK;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>device<sp/>I2C<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_device_config_t<sp/>dev_cfg<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.dev_addr_length<sp/>=<sp/>I2C_ADDR_BIT_LEN_7,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.device_address<sp/>=<sp/>dev_addr,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.scl_speed_hz<sp/>=<sp/>ATL_I2C_MASTER_FREQ_HZ,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.flags.disable_ack_check<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>device<sp/>handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>i2c_master_bus_add_device(bus_handle,<sp/>&amp;dev_cfg,<sp/>&amp;ads1x15_i2c_handle);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Fail<sp/>creating<sp/>I2C<sp/>device<sp/>handle!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">esp_err_t<sp/>ads1x15_delete(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>esp_err_t<sp/>err<sp/>=<sp/>ESP_OK;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>err<sp/>=<sp/>i2c_master_bus_rm_device(ads1x15_i2c_handle);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>ESP_OK)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Fail<sp/>removing<sp/>I2C<sp/>device<sp/>handle!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ads1x15_setGain(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr,<sp/>ads1x15_gain_t<sp/>gain)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a064ad62f48364786301c06c4bd02b844" kindref="member">gain</ref><sp/>=<sp/>gain;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(gain)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a3930d1e8af0848833f4de0e0e9517dca" kindref="member">range</ref><sp/>=<sp/>4.096<sp/>/<sp/>(1<sp/>&lt;&lt;<sp/>((gain<sp/>&gt;&gt;<sp/>9)<sp/>-<sp/>1));</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a3930d1e8af0848833f4de0e0e9517dca" kindref="member">range</ref><sp/>=<sp/>6.144;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">ads1x15_gain_t<sp/>ads1x15_getGain(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a064ad62f48364786301c06c4bd02b844" kindref="member">gain</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ads1x15_getRange(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a3930d1e8af0848833f4de0e0e9517dca" kindref="member">range</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ads1x15_setContinuous(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" kindref="member">continuous</ref><sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ads1x15_isContinuous(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" kindref="member">continuous</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ads1x15_setSampleRate(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr,<sp/>uint16_t<sp/>sps)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sps<sp/>&gt;=<sp/>860)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" kindref="member">sps_mask</ref><sp/>=<sp/>ADS1115_REG_CONFIG_DR_860SPS;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sps<sp/>&gt;=<sp/>475)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" kindref="member">sps_mask</ref><sp/>=<sp/>ADS1115_REG_CONFIG_DR_475SPS;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sps<sp/>&gt;=<sp/>250)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" kindref="member">sps_mask</ref><sp/>=<sp/>ADS1115_REG_CONFIG_DR_250SPS;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sps<sp/>&gt;=<sp/>128)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" kindref="member">sps_mask</ref><sp/>=<sp/>ADS1115_REG_CONFIG_DR_128SPS;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sps<sp/>&gt;=<sp/>64)<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" kindref="member">sps_mask</ref><sp/>=<sp/>ADS1115_REG_CONFIG_DR_64SPS;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sps<sp/>&gt;=<sp/>32)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" kindref="member">sps_mask</ref><sp/>=<sp/>ADS1115_REG_CONFIG_DR_32SPS;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sps<sp/>&gt;=<sp/>16)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" kindref="member">sps_mask</ref><sp/>=<sp/>ADS1115_REG_CONFIG_DR_16SPS;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" kindref="member">sps_mask</ref><sp/>=<sp/>ADS1115_REG_CONFIG_DR_8SPS;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">uint16_t<sp/>ads1x15_getSampleRate(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(config_ptr-&gt;<ref refid="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" kindref="member">sps_mask</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ADS1115_REG_CONFIG_DR_860SPS:</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>860;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ADS1115_REG_CONFIG_DR_475SPS:</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>475;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ADS1115_REG_CONFIG_DR_250SPS:</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>250;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ADS1115_REG_CONFIG_DR_128SPS:</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>128;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ADS1115_REG_CONFIG_DR_64SPS:</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>64;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ADS1115_REG_CONFIG_DR_32SPS:</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>32;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ADS1115_REG_CONFIG_DR_16SPS:</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>16;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>8;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">int16_t<sp/>ads1x15_readADC_SingleEnded(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr,<sp/>uint8_t<sp/>channel)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>uint16_t<sp/>config<sp/>=<sp/>ads1x15_getConfig(config_ptr);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(channel<sp/>&gt;<sp/>3)<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>single-ended<sp/>input<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(channel)<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>(0):</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_MUX_SINGLE_0;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>(1):</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_MUX_SINGLE_1;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>(2):</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_MUX_SINGLE_2;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>(3):</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_MUX_SINGLE_3;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>&apos;start<sp/>single-conversion&apos;<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_OS_SINGLE;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Write<sp/>config<sp/>register<sp/>to<sp/>the<sp/>ADC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>ads1x15_writeRegister(config_ptr,<sp/>ADS1015_REG_POINTER_CONFIG,<sp/>config);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>next<sp/>reading<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a6b93ee7499b57b1da89fa0766ef4199f" kindref="member">next_reading_time</ref><sp/>=<sp/>ads1x15_getNextReadingTime(config_ptr);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>in<sp/>continuous<sp/>mode,<sp/>return<sp/>immediately,<sp/>otherwise<sp/>wait<sp/>for<sp/>conversion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" kindref="member">continuous</ref><sp/>?<sp/>0<sp/>:<sp/>ads1x15_readNext(config_ptr);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal">int16_t<sp/>ads1x15_readADC_Differential_0_1(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>uint16_t<sp/>config<sp/>=<sp/>ads1x15_getConfig(config_ptr);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>channels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_MUX_DIFF_0_1;<sp/><sp/></highlight><highlight class="comment">//<sp/>AIN0<sp/>=<sp/>P,<sp/>AIN1<sp/>=<sp/>N</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>&apos;start<sp/>single-conversion&apos;<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_OS_SINGLE;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Write<sp/>config<sp/>register<sp/>to<sp/>the<sp/>ADC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>ads1x15_writeRegister(config_ptr,<sp/>ADS1015_REG_POINTER_CONFIG,<sp/>config);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>next<sp/>reading<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a6b93ee7499b57b1da89fa0766ef4199f" kindref="member">next_reading_time</ref><sp/>=<sp/>ads1x15_getNextReadingTime(config_ptr);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>in<sp/>continuous<sp/>mode,<sp/>return<sp/>immediately,<sp/>otherwise<sp/>wait<sp/>for<sp/>conversion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" kindref="member">continuous</ref><sp/>?<sp/>0<sp/>:<sp/>ads1x15_readNext(config_ptr);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal">int16_t<sp/>ads1x15_readADC_Differential_2_3(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>uint16_t<sp/>config<sp/>=<sp/>ads1x15_getConfig(config_ptr);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>channels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_MUX_DIFF_2_3;<sp/><sp/></highlight><highlight class="comment">//<sp/>AIN2<sp/>=<sp/>P,<sp/>AIN3<sp/>=<sp/>N</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>&apos;start<sp/>single-conversion&apos;<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_OS_SINGLE;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Write<sp/>config<sp/>register<sp/>to<sp/>the<sp/>ADC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/>ads1x15_writeRegister(config_ptr,<sp/>ADS1015_REG_POINTER_CONFIG,<sp/>config);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>next<sp/>reading<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a6b93ee7499b57b1da89fa0766ef4199f" kindref="member">next_reading_time</ref><sp/>=<sp/>ads1x15_getNextReadingTime(config_ptr);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>in<sp/>continuous<sp/>mode,<sp/>return<sp/>immediately,<sp/>otherwise<sp/>wait<sp/>for<sp/>conversion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" kindref="member">continuous</ref><sp/>?<sp/>0<sp/>:<sp/>ads1x15_readNext(config_ptr);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ads1x15_setComparator(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr,<sp/>uint8_t<sp/>channel,<sp/>int16_t<sp/>highThreshold,<sp/>int16_t<sp/>lowThreshold)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>ads1x15_startComparator_SingleEnded(config_ptr,<sp/>channel,<sp/>highThreshold,<sp/>lowThreshold);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ads1x15_setNotComparator(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1aa79e72fe93d514b4ba28908a38e2d988" kindref="member">comparator</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ads1x15_isComparator(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1aa79e72fe93d514b4ba28908a38e2d988" kindref="member">comparator</ref>;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ads1x15_startComparator_SingleEnded(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr,<sp/>uint8_t<sp/>channel,<sp/>int16_t<sp/>highThreshold,<sp/>int16_t<sp/>lowThreshold)<sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Comparator<sp/>must<sp/>be<sp/>used<sp/>in<sp/>continuous<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1aa79e72fe93d514b4ba28908a38e2d988" kindref="member">comparator</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" kindref="member">continuous</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/>uint16_t<sp/>config<sp/>=<sp/>ads1x15_getConfig(config_ptr);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>single-ended<sp/>input<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(channel)<sp/>{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>(0):</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_MUX_SINGLE_0;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>(1):</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_MUX_SINGLE_1;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>(2):</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_MUX_SINGLE_2;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>(3):</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>config<sp/>|=<sp/>ADS1015_REG_CONFIG_MUX_SINGLE_3;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>high<sp/>threshold<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Shift<sp/>12-bit<sp/>results<sp/>left<sp/>4<sp/>bits<sp/>for<sp/>the<sp/>ADS1015</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/>ads1x15_writeRegister(config_ptr,<sp/>ADS1015_REG_POINTER_HITHRESH,<sp/>highThreshold);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>low<sp/>threshold<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Shift<sp/>12-bit<sp/>results<sp/>left<sp/>4<sp/>bits<sp/>for<sp/>the<sp/>ADS1015</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/>ads1x15_writeRegister(config_ptr,<sp/>ADS1015_REG_POINTER_LOWTHRESH,<sp/>lowThreshold);<sp/><sp/></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Write<sp/>config<sp/>register<sp/>to<sp/>the<sp/>ADC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>ads1x15_writeRegister(config_ptr,<sp/>ADS1015_REG_POINTER_CONFIG,<sp/>config);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>next<sp/>reading<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a6b93ee7499b57b1da89fa0766ef4199f" kindref="member">next_reading_time</ref><sp/>=<sp/>ads1x15_getNextReadingTime(config_ptr);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal">int16_t<sp/>ads1x15_getLastConversionResults(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ads1x15_readNext(config_ptr);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal">int16_t<sp/>ads1x15_readNext(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>until<sp/>end<sp/>of<sp/>conversion<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!ads1x15_conversionDone(config_ptr));</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Mark<sp/>the<sp/>time<sp/>to<sp/>read<sp/>the<sp/>next<sp/>sample<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a6b93ee7499b57b1da89fa0766ef4199f" kindref="member">next_reading_time</ref><sp/>+=<sp/>1000000L<sp/>/<sp/>ads1x15_getSampleRate(config_ptr);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>the<sp/>conversion<sp/>results<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/>uint16_t<sp/>res<sp/>=<sp/>ads1x15_readRegister(config_ptr,<sp/>ADS1015_REG_POINTER_CONVERT);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int16_t)res;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ads1x15_conversionDone(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>micros()<sp/>&gt;=<sp/>m_nextReadingTime;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>esp_timer_get_time()<sp/>&gt;=<sp/>config_ptr-&gt;<ref refid="structads1x15__config__t_1a6b93ee7499b57b1da89fa0766ef4199f" kindref="member">next_reading_time</ref>;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ads1x15_writeRegister(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr,<sp/>uint8_t<sp/>reg,<sp/>uint16_t<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/>uint16_t<sp/>data<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>atl_i2c_write_register(config_ptr-&gt;i2c_addr,<sp/>reg,<sp/>(uint8_t<sp/>*)&amp;data,<sp/>sizeof(data));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal">uint16_t<sp/>ads1x15_readRegister(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr,<sp/>uint8_t<sp/>reg)<sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/>uint16_t<sp/>data<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>atl_i2c_read_register(config_ptr-&gt;i2c_addr,<sp/>reg,<sp/>(uint8_t<sp/>*)&amp;data,<sp/>sizeof(data));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ads1x15_read4to20mA(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr,<sp/>uint8_t<sp/>channel)<sp/>{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1000<sp/>*<sp/>ads1x15_readVoltage(config_ptr,<sp/>channel)<sp/>/<sp/>100;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ads1x15_readVoltage(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr,<sp/>uint8_t<sp/>channel)<sp/>{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(config_ptr-&gt;<ref refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" kindref="member">continuous</ref><sp/>?<sp/>ads1x15_readNext(config_ptr)<sp/>:<sp/>ads1x15_readADC_SingleEnded(config_ptr,<sp/>channel))<sp/>*<sp/>config_ptr-&gt;range<sp/>/<sp/>32767;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ads1x15_readDifferentialVoltage01(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(config_ptr-&gt;<ref refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" kindref="member">continuous</ref><sp/>?<sp/>ads1x15_readNext(config_ptr)<sp/>:<sp/>ads1x15_readADC_Differential_0_1(config_ptr))<sp/>*<sp/>config_ptr-&gt;range<sp/>/<sp/>32767;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ads1x15_readDifferentialVoltage23(<ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>*config_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(config_ptr-&gt;<ref refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" kindref="member">continuous</ref><sp/>?<sp/>ads1x15_readNext(config_ptr)<sp/>:<sp/>ads1x15_readADC_Differential_2_3(config_ptr))<sp/>*<sp/>config_ptr-&gt;range<sp/>/<sp/>32767;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/ads1x15.c"/>
+  </compounddef>
+</doxygen>

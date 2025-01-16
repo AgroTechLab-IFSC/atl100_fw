@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__config__wifi__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_config_wifi_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__config__wifi__t_1ae6753e606a77b9d7e2c2c18ac0962542" prot="public" static="no" mutable="no">
+        <type>atl_wifi_mode_e</type>
+        <definition>atl_wifi_mode_e mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <qualifiedname>atl_config_wifi_t::mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WiFi startup mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" line="30" column="24" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__wifi__t_1a66b6285b9ea72acdd4b597e686abb317" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ap_ssid[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>ap_ssid</name>
+        <qualifiedname>atl_config_wifi_t::ap_ssid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WiFi AP SSID. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" line="31" column="25" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__wifi__t_1ab5ef9a652932a51655d334293be8e3b1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ap_pass[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>ap_pass</name>
+        <qualifiedname>atl_config_wifi_t::ap_pass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WiFi AP password. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" line="32" column="25" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__wifi__t_1afc302041bd34816e0e5568475ae34d40" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ap_channel</definition>
+        <argsstring></argsstring>
+        <name>ap_channel</name>
+        <qualifiedname>atl_config_wifi_t::ap_channel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WiFi AP channel. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" line="33" column="25" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__wifi__t_1a4371431ae3262432e8e77e093e398477" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ap_max_conn</definition>
+        <argsstring></argsstring>
+        <name>ap_max_conn</name>
+        <qualifiedname>atl_config_wifi_t::ap_max_conn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WiFi AP maximum STA connections. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" line="34" column="25" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__wifi__t_1aea148d15e521f8174e345d9340233d50" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sta_ssid[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>sta_ssid</name>
+        <qualifiedname>atl_config_wifi_t::sta_ssid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WiFi STA SSID. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" line="35" column="25" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__wifi__t_1a91b023aeb7726e7b36b6de73edbbc299" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sta_pass[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>sta_pass</name>
+        <qualifiedname>atl_config_wifi_t::sta_pass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WiFi STA password. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" line="36" column="25" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__wifi__t_1a6e6dfce29c55c51dae4eeb0c460924fd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sta_channel</definition>
+        <argsstring></argsstring>
+        <name>sta_channel</name>
+        <qualifiedname>atl_config_wifi_t::sta_channel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WiFi STA channel. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" line="37" column="25" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__wifi__t_1aecf33f79f5f583ba6e42afe09aa9a226" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sta_max_conn_retry</definition>
+        <argsstring></argsstring>
+        <name>sta_max_conn_retry</name>
+        <qualifiedname>atl_config_wifi_t::sta_max_conn_retry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WiFi maximum connection retry. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" line="38" column="25" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" line="29" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_wifi.h" bodystart="29" bodyend="39"/>
+    <listofallmembers>
+      <member refid="structatl__config__wifi__t_1afc302041bd34816e0e5568475ae34d40" prot="public" virt="non-virtual"><scope>atl_config_wifi_t</scope><name>ap_channel</name></member>
+      <member refid="structatl__config__wifi__t_1a4371431ae3262432e8e77e093e398477" prot="public" virt="non-virtual"><scope>atl_config_wifi_t</scope><name>ap_max_conn</name></member>
+      <member refid="structatl__config__wifi__t_1ab5ef9a652932a51655d334293be8e3b1" prot="public" virt="non-virtual"><scope>atl_config_wifi_t</scope><name>ap_pass</name></member>
+      <member refid="structatl__config__wifi__t_1a66b6285b9ea72acdd4b597e686abb317" prot="public" virt="non-virtual"><scope>atl_config_wifi_t</scope><name>ap_ssid</name></member>
+      <member refid="structatl__config__wifi__t_1ae6753e606a77b9d7e2c2c18ac0962542" prot="public" virt="non-virtual"><scope>atl_config_wifi_t</scope><name>mode</name></member>
+      <member refid="structatl__config__wifi__t_1a6e6dfce29c55c51dae4eeb0c460924fd" prot="public" virt="non-virtual"><scope>atl_config_wifi_t</scope><name>sta_channel</name></member>
+      <member refid="structatl__config__wifi__t_1aecf33f79f5f583ba6e42afe09aa9a226" prot="public" virt="non-virtual"><scope>atl_config_wifi_t</scope><name>sta_max_conn_retry</name></member>
+      <member refid="structatl__config__wifi__t_1a91b023aeb7726e7b36b6de73edbbc299" prot="public" virt="non-virtual"><scope>atl_config_wifi_t</scope><name>sta_pass</name></member>
+      <member refid="structatl__config__wifi__t_1aea148d15e521f8174e345d9340233d50" prot="public" virt="non-virtual"><scope>atl_config_wifi_t</scope><name>sta_ssid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

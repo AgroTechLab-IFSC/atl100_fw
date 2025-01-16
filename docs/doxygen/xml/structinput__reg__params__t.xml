@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structinput__reg__params__t" kind="struct" language="C++" prot="public">
+    <compoundname>input_reg_params_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structinput__reg__params__t_1aa62a7d9eaf31c7a2e8905ae5dca9afaa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float input_data0</definition>
+        <argsstring></argsstring>
+        <name>input_data0</name>
+        <qualifiedname>input_reg_params_t::input_data0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="37" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__reg__params__t_1a9ac1dfb3f1e07592b193fc9a7dd333ee" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float input_data1</definition>
+        <argsstring></argsstring>
+        <name>input_data1</name>
+        <qualifiedname>input_reg_params_t::input_data1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="38" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__reg__params__t_1aced7e7f10c2a5f9d5639fc6e83a20abd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float input_data2</definition>
+        <argsstring></argsstring>
+        <name>input_data2</name>
+        <qualifiedname>input_reg_params_t::input_data2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="39" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__reg__params__t_1a44f6d4579023dac63688b6fc5225e158" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float input_data3</definition>
+        <argsstring></argsstring>
+        <name>input_data3</name>
+        <qualifiedname>input_reg_params_t::input_data3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="40" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__reg__params__t_1a839cbc4db781b12d340ead0d50effe76" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t data[150]</definition>
+        <argsstring>[150]</argsstring>
+        <name>data</name>
+        <qualifiedname>input_reg_params_t::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="41" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__reg__params__t_1a5e9119f21067b20cede34c80d235f5ba" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float input_data4</definition>
+        <argsstring></argsstring>
+        <name>input_data4</name>
+        <qualifiedname>input_reg_params_t::input_data4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="42" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__reg__params__t_1a39bd736f3abebcf19cbda1c9b3a4bd24" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float input_data5</definition>
+        <argsstring></argsstring>
+        <name>input_data5</name>
+        <qualifiedname>input_reg_params_t::input_data5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="43" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__reg__params__t_1aaf7a348a0ef55a2ca0da14864423c965" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float input_data6</definition>
+        <argsstring></argsstring>
+        <name>input_data6</name>
+        <qualifiedname>input_reg_params_t::input_data6</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="44" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__reg__params__t_1a7cc2def213fe00ab20a7507712ff1157" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float input_data7</definition>
+        <argsstring></argsstring>
+        <name>input_data7</name>
+        <qualifiedname>input_reg_params_t::input_data7</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="45" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__reg__params__t_1aba09e64995e610b729e0187b9f784cc1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t data_block1[150]</definition>
+        <argsstring>[150]</argsstring>
+        <name>data_block1</name>
+        <qualifiedname>input_reg_params_t::data_block1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="46" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="36" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="36" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structinput__reg__params__t_1a839cbc4db781b12d340ead0d50effe76" prot="public" virt="non-virtual"><scope>input_reg_params_t</scope><name>data</name></member>
+      <member refid="structinput__reg__params__t_1aba09e64995e610b729e0187b9f784cc1" prot="public" virt="non-virtual"><scope>input_reg_params_t</scope><name>data_block1</name></member>
+      <member refid="structinput__reg__params__t_1aa62a7d9eaf31c7a2e8905ae5dca9afaa" prot="public" virt="non-virtual"><scope>input_reg_params_t</scope><name>input_data0</name></member>
+      <member refid="structinput__reg__params__t_1a9ac1dfb3f1e07592b193fc9a7dd333ee" prot="public" virt="non-virtual"><scope>input_reg_params_t</scope><name>input_data1</name></member>
+      <member refid="structinput__reg__params__t_1aced7e7f10c2a5f9d5639fc6e83a20abd" prot="public" virt="non-virtual"><scope>input_reg_params_t</scope><name>input_data2</name></member>
+      <member refid="structinput__reg__params__t_1a44f6d4579023dac63688b6fc5225e158" prot="public" virt="non-virtual"><scope>input_reg_params_t</scope><name>input_data3</name></member>
+      <member refid="structinput__reg__params__t_1a5e9119f21067b20cede34c80d235f5ba" prot="public" virt="non-virtual"><scope>input_reg_params_t</scope><name>input_data4</name></member>
+      <member refid="structinput__reg__params__t_1a39bd736f3abebcf19cbda1c9b3a4bd24" prot="public" virt="non-virtual"><scope>input_reg_params_t</scope><name>input_data5</name></member>
+      <member refid="structinput__reg__params__t_1aaf7a348a0ef55a2ca0da14864423c965" prot="public" virt="non-virtual"><scope>input_reg_params_t</scope><name>input_data6</name></member>
+      <member refid="structinput__reg__params__t_1a7cc2def213fe00ab20a7507712ff1157" prot="public" virt="non-virtual"><scope>input_reg_params_t</scope><name>input_data7</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

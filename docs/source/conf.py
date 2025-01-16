@@ -16,6 +16,7 @@ sys.path.append("../breathe/")
 project = 'ATL-100 Firmware'
 copyright = 'since 2025, AgroTechLab'
 author = 'Robson Costa'
+version = '0.1'
 release = '0.1.0'
 
 # -- General configuration ---------------------------------------------------
@@ -53,3 +54,4 @@ breathe_default_project = "ATL-100 Firmware"
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+html_css_files = ['agrotechlab.css']

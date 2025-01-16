@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="atl__adc_8c" kind="file" language="C++">
+    <compoundname>atl_adc.c</compoundname>
+    <includes local="no">freertos/FreeRTOS.h</includes>
+    <includes local="no">freertos/task.h</includes>
+    <includes local="no">driver/i2c.h</includes>
+    <includes local="no">esp_log.h</includes>
+    <includes local="no">esp_err.h</includes>
+    <includes local="no">cJSON.h</includes>
+    <includes refid="atl__config_8h" local="yes">atl_config.h</includes>
+    <includes refid="atl__telemetry_8h" local="yes">atl_telemetry.h</includes>
+    <includes refid="atl__i2c_8h" local="yes">atl_i2c.h</includes>
+    <includes refid="atl__led_8h" local="yes">atl_led.h</includes>
+    <includes refid="ads1x15_8h" local="yes">include/ads1x15.h</includes>
+    <includes refid="atl__mqtt_8h" local="yes">atl_mqtt.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>atl_adc.c</label>
+        <link refid="atl__adc_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>atl_adc.h</label>
+        <link refid="atl__adc_8h_source"/>
+      </node>
+      <node id="8">
+        <label>atl_config.h</label>
+        <link refid="atl__config_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>atl_i2c.h</label>
+        <link refid="atl__i2c_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>atl_led.h</label>
+        <link refid="atl__led_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>atl_mqtt.h</label>
+        <link refid="atl__mqtt_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>atl_ota.h</label>
+        <link refid="atl__ota_8h_source"/>
+      </node>
+      <node id="18">
+        <label>atl_telemetry.h</label>
+        <link refid="atl__telemetry_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>atl_webserver.h</label>
+        <link refid="atl__webserver_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>atl_wifi.h</label>
+        <link refid="atl__wifi_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>include/ads1x15.h</label>
+        <link refid="ads1x15_8h_source"/>
+      </node>
+      <node id="7">
+        <label>cJSON.h</label>
+      </node>
+      <node id="4">
+        <label>driver/i2c.h</label>
+      </node>
+      <node id="21">
+        <label>driver/i2c_master.h</label>
+      </node>
+      <node id="6">
+        <label>esp_err.h</label>
+      </node>
+      <node id="5">
+        <label>esp_log.h</label>
+      </node>
+      <node id="2">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="9">
+        <label>freertos/semphr.h</label>
+      </node>
+      <node id="3">
+        <label>freertos/task.h</label>
+      </node>
+      <node id="12">
+        <label>inttypes.h</label>
+      </node>
+      <node id="16">
+        <label>mqtt_client.h</label>
+      </node>
+      <node id="11">
+        <label>stdbool.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structatl__adc__task__args__t" prot="public">atl_adc_task_args_t</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="atl__adc_8c_1a5a85b9c772bbeb480b209a3e6ea92b4c" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* TAG</definition>
+        <argsstring></argsstring>
+        <name>TAG</name>
+        <initializer>= &quot;atl-adc&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Module identification. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" line="22" column="19" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__adc_8c_1aa1a878380b8d691d9b5d2ed2b925b7b9" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__config__t" kindref="compound">atl_config_t</ref></type>
+        <definition>atl_config_t atl_config</definition>
+        <argsstring></argsstring>
+        <name>atl_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Global configuration variable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" line="25" column="21" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.c" bodystart="21" bodyend="-1" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" declline="25" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__adc_8c_1a1cd1957c1e1a82031c8df60c308cd434" prot="public" static="no" mutable="no">
+        <type>TaskHandle_t</type>
+        <definition>TaskHandle_t atl_adc_handle[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>atl_adc_handle</name>
+        <initializer>= { NULL, NULL, NULL, NULL }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC task handle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" line="28" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="atl__adc_8c_1a83af722ed661a597ccf54ac865e50b6e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float moving_average</definition>
+        <argsstring>(float *values_vector_ptr, float new_value, uint16_t window_size)</argsstring>
+        <name>moving_average</name>
+        <param>
+          <type>float *</type>
+          <declname>values_vector_ptr</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>new_value</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>window_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" line="35" column="14" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" bodystart="35" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__adc_8c_1ab52eaee7b02de61c4a6904b53854d94c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atl_adc_task</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>atl_adc_task</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>ADC task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" line="61" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" bodystart="61" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__adc_8c_1ad0ed8391732be381124eb1de0740a855" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>atl_adc_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_adc_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize Analog Input interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize Analog Input interface. <simplesect kind="return"><para>esp_err_t - If ESP_OK success. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" line="126" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c" bodystart="126" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;freertos/FreeRTOS.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;freertos/task.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;driver/i2c.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;esp_log.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;esp_err.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cJSON.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_config.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_telemetry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_i2c.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_led.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;include/ads1x15.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_mqtt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_telemetry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structatl__adc__task__args__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>i2c_address;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>i2c_port;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/><ref refid="structatl__adc__task__args__t" kindref="compound">atl_adc_task_args_t</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*TAG<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;atl-adc&quot;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Global<sp/>external<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structatl__config__t" kindref="compound">atl_config_t</ref><sp/>atl_config;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Global<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">TaskHandle_t<sp/>atl_adc_handle[4]<sp/>=<sp/>{<sp/>NULL,<sp/>NULL,<sp/>NULL,<sp/>NULL<sp/>};<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>moving_average(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*values_vector_ptr,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>new_value,<sp/>uint16_t<sp/>window_size)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>acc<sp/>=<sp/>0.0f;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>accumulator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Move<sp/>vector<sp/>excluding<sp/>the<sp/>older<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i<sp/>=<sp/>window_size<sp/>-<sp/>1;<sp/>i<sp/>&gt;<sp/>0;<sp/>i--)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>*(values_vector_ptr<sp/>+<sp/>i)<sp/>=<sp/>*(values_vector_ptr<sp/>+<sp/>i<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Put<sp/>the<sp/>last<sp/>ADC<sp/>value<sp/>readed<sp/>in<sp/>the<sp/>first<sp/>vector<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>*values_vector_ptr<sp/>=<sp/>new_value;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Sum<sp/>all<sp/>vector<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>window_size;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>acc<sp/>+=<sp/>*(values_vector_ptr<sp/>+<sp/>i);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Return<sp/>moving<sp/>average<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>acc<sp/>/<sp/>window_size;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>atl_adc_task(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__adc__task__args__t" kindref="compound">atl_adc_task_args_t</ref><sp/>task_args<sp/>=<sp/>*((<ref refid="structatl__adc__task__args__t" kindref="compound">atl_adc_task_args_t</ref><sp/>*)args);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>values_sampled[atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" kindref="member">adc</ref>[task_args.i2c_port].<ref refid="structatl__adc__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref>];<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__data__adc__telemetry__t" kindref="compound">atl_data_adc_telemetry_t</ref><sp/>adc_values;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>default<sp/>ADS1X15<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structads1x15__config__t" kindref="compound">ads1x15_config_t</ref><sp/>ads1x15_config;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>ads1x15_config.<ref refid="structads1x15__config__t_1a3590df8c0f943a671fd63d696a55a50c" kindref="member">i2c_addr</ref><sp/>=<sp/>task_args.i2c_address;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>ads1x15_config.<ref refid="structads1x15__config__t_1a064ad62f48364786301c06c4bd02b844" kindref="member">gain</ref><sp/>=<sp/>GAIN_TWOTHIRDS;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>ads1x15_config.<ref refid="structads1x15__config__t_1a3930d1e8af0848833f4de0e0e9517dca" kindref="member">range</ref><sp/>=<sp/>6.144;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>ads1x15_config.<ref refid="structads1x15__config__t_1af081ff7d17734572510dd65c31d1bb9b" kindref="member">sps_mask</ref><sp/>=<sp/>ADS1115_REG_CONFIG_DR_128SPS;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>ads1x15_config.<ref refid="structads1x15__config__t_1a6b93ee7499b57b1da89fa0766ef4199f" kindref="member">next_reading_time</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>ads1x15_config.<ref refid="structads1x15__config__t_1a1e1af3942dcd71f24fec807245a881df" kindref="member">continuous</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>ads1x15_config.<ref refid="structads1x15__config__t_1aa79e72fe93d514b4ba28908a38e2d988" kindref="member">comparator</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>If<sp/>analog<sp/>input<sp/>in<sp/>4-20mA<sp/>mode,<sp/>adjust<sp/>gain<sp/>to<sp/>two<sp/>(2.048V<sp/>range)<sp/>to<sp/>get<sp/>maximum<sp/>resolution<sp/>for<sp/>4-20mA<sp/>range<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" kindref="member">adc</ref>[task_args.i2c_port].<ref refid="structatl__adc__telemetry__t_1af4c797a84b50407caa9d739666226b45" kindref="member">mode</ref><sp/>==<sp/>ATL_ADC_INPUT_4_20_MA)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ads1x15_setGain(&amp;ads1x15_config,<sp/>GAIN_TWO);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>telemetry<sp/>struct<sp/>values<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1aff19710c26a6a5ac1d3b157c56bb24e8" kindref="member">last_sample</ref><sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1a320b56bcf4a41e0f2776d34b6d1211ef" kindref="member">avg_sample</ref><sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1aaf69882dc07319bb5f5f28485f66fd9c" kindref="member">min_sample</ref><sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1aa1b100d2f65323269437db423602d3bc" kindref="member">max_sample</ref><sp/>=<sp/>0.0f;<sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Task<sp/>looping<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ESP_LOGI(TAG,<sp/>&quot;Running<sp/>ADC<sp/>task<sp/>(addr:<sp/>0x%02x<sp/>-<sp/>port<sp/>%d)&quot;,<sp/>task_args.i2c_address,<sp/>task_args.i2c_port);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>current<sp/>sample<sp/>value<sp/>*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" kindref="member">adc</ref>[task_args.i2c_port].<ref refid="structatl__adc__telemetry__t_1af4c797a84b50407caa9d739666226b45" kindref="member">mode</ref><sp/>==<sp/>ATL_ADC_INPUT_4_20_MA)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1aff19710c26a6a5ac1d3b157c56bb24e8" kindref="member">last_sample</ref><sp/>=<sp/>ads1x15_read4to20mA(&amp;ads1x15_config,<sp/>task_args.i2c_port);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" kindref="member">adc</ref>[task_args.i2c_port].<ref refid="structatl__adc__telemetry__t_1af4c797a84b50407caa9d739666226b45" kindref="member">mode</ref><sp/>==<sp/>ATL_ADC_INPUT_0_10_V)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1aff19710c26a6a5ac1d3b157c56bb24e8" kindref="member">last_sample</ref><sp/>=<sp/>ads1x15_readVoltage(&amp;ads1x15_config,<sp/>task_args.i2c_port);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Compute<sp/>moving<sp/>average<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1a320b56bcf4a41e0f2776d34b6d1211ef" kindref="member">avg_sample</ref><sp/>=<sp/>moving_average(values_sampled,<sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1aff19710c26a6a5ac1d3b157c56bb24e8" kindref="member">last_sample</ref>,<sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" kindref="member">adc</ref>[task_args.i2c_port].<ref refid="structatl__adc__telemetry__t_1aba0b0513d397d51e6f438b2e9c420287" kindref="member">sampling_window</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Update<sp/>minimum<sp/>sample<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(adc_values.<ref refid="structatl__data__adc__telemetry__t_1aff19710c26a6a5ac1d3b157c56bb24e8" kindref="member">last_sample</ref><sp/>&lt;<sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1aaf69882dc07319bb5f5f28485f66fd9c" kindref="member">min_sample</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1aaf69882dc07319bb5f5f28485f66fd9c" kindref="member">min_sample</ref><sp/>=<sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1aff19710c26a6a5ac1d3b157c56bb24e8" kindref="member">last_sample</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Update<sp/>maximum<sp/>sample<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(adc_values.<ref refid="structatl__data__adc__telemetry__t_1aff19710c26a6a5ac1d3b157c56bb24e8" kindref="member">last_sample</ref><sp/>&gt;<sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1aa1b100d2f65323269437db423602d3bc" kindref="member">max_sample</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1aa1b100d2f65323269437db423602d3bc" kindref="member">max_sample</ref><sp/>=<sp/>adc_values.<ref refid="structatl__data__adc__telemetry__t_1aff19710c26a6a5ac1d3b157c56bb24e8" kindref="member">last_sample</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Update<sp/>current<sp/>analog<sp/>input<sp/>port<sp/>telemetry<sp/>values<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atl_telemetry_set_adc_data(task_args.i2c_port,<sp/>adc_values);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Assessment<sp/>period<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vTaskDelay(pdMS_TO_TICKS(atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" kindref="member">adc</ref>[task_args.i2c_port].<ref refid="structatl__adc__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref><sp/>*<sp/>1000));</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">esp_err_t<sp/>atl_adc_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>esp_err_t<sp/>err<sp/>=<sp/>ESP_OK;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__adc__task__args__t" kindref="compound">atl_adc_task_args_t</ref><sp/>task_args;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGI(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Starting<sp/>ADC<sp/>inputs!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Update<sp/>device<sp/>address<sp/>and<sp/>create<sp/>a<sp/>task<sp/>to<sp/>each<sp/>analog<sp/>port<sp/>enabled<sp/>*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>4;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(atl_config.<ref refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" kindref="member">telemetry</ref>.<ref refid="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" kindref="member">adc</ref>[i].<ref refid="structatl__adc__telemetry__t_1af4c797a84b50407caa9d739666226b45" kindref="member">mode</ref><sp/>!=<sp/>ATL_ADC_DISABLED)<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGI(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Creating<sp/>ADC<sp/>task<sp/>(address<sp/>0x%02x)<sp/>to<sp/>port<sp/>%u&quot;</highlight><highlight class="normal">,<sp/>CONFIG_ATL_ADC_I2C_ADDR,<sp/>i);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>task_args.i2c_address<sp/>=<sp/>CONFIG_ATL_ADC_I2C_ADDR;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>task_args.i2c_port<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xTaskCreate(atl_adc_task,<sp/></highlight><highlight class="stringliteral">&quot;atl_adc_task&quot;</highlight><highlight class="normal">,<sp/>4096,<sp/>&amp;task_args,<sp/>10,<sp/>&amp;atl_adc_handle[i]);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_adc.c"/>
+  </compounddef>
+</doxygen>

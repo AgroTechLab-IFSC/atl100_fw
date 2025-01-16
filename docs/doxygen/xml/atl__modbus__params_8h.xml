@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="atl__modbus__params_8h" kind="file" language="C++">
+    <compoundname>atl_modbus_params.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="atl__modbus_8h" local="yes">atl_modbus.h</includedby>
+    <includedby refid="atl__modbus__params_8c" local="yes">atl_modbus_params.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>atl_modbus_params.h</label>
+        <link refid="atl__modbus__params_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>atl_modbus.h</label>
+        <link refid="atl__modbus_8h_source"/>
+      </node>
+      <node id="1">
+        <label>atl_modbus_params.h</label>
+        <link refid="atl__modbus__params_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structdiscrete__reg__params__t" prot="public">discrete_reg_params_t</innerclass>
+    <innerclass refid="structcoil__reg__params__t" prot="public">coil_reg_params_t</innerclass>
+    <innerclass refid="structinput__reg__params__t" prot="public">input_reg_params_t</innerclass>
+    <innerclass refid="structholding__reg__params__t" prot="public">holding_reg_params_t</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="atl__modbus__params_8h_1aa3864bcbda7c50abe802bea206c094e6" prot="public" static="no" mutable="no">
+        <type><ref refid="structholding__reg__params__t" kindref="compound">holding_reg_params_t</ref></type>
+        <definition>holding_reg_params_t holding_reg_params</definition>
+        <argsstring></argsstring>
+        <name>holding_reg_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="69" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c" bodystart="5" bodyend="-1" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" declline="69" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__modbus__params_8h_1a14a10d24f69cd2e6c154b1d1055c898a" prot="public" static="no" mutable="no">
+        <type><ref refid="structinput__reg__params__t" kindref="compound">input_reg_params_t</ref></type>
+        <definition>input_reg_params_t input_reg_params</definition>
+        <argsstring></argsstring>
+        <name>input_reg_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="70" column="27" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c" bodystart="6" bodyend="-1" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" declline="70" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__modbus__params_8h_1a014a7e67d1e440ca2e1ef005d77b43ad" prot="public" static="no" mutable="no">
+        <type><ref refid="structcoil__reg__params__t" kindref="compound">coil_reg_params_t</ref></type>
+        <definition>coil_reg_params_t coil_reg_params</definition>
+        <argsstring></argsstring>
+        <name>coil_reg_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="71" column="26" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c" bodystart="7" bodyend="-1" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" declline="71" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="atl__modbus__params_8h_1a9b5cab29763bc13862b37e4f3d18aaef" prot="public" static="no" mutable="no">
+        <type><ref refid="structdiscrete__reg__params__t" kindref="compound">discrete_reg_params_t</ref></type>
+        <definition>discrete_reg_params_t discrete_reg_params</definition>
+        <argsstring></argsstring>
+        <name>discrete_reg_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="72" column="30" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.c" bodystart="8" bodyend="-1" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" declline="72" declcolumn="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push,<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structdiscrete__reg__params__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>discrete_input0:1;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>discrete_input1:1;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>discrete_input2:1;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>discrete_input3:1;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>discrete_input4:1;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>discrete_input5:1;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>discrete_input6:1;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>discrete_input7:1;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>discrete_input_port1;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>discrete_input_port2;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/><ref refid="structdiscrete__reg__params__t" kindref="compound">discrete_reg_params_t</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push,<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="structcoil__reg__params__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>coils_port0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>coils_port1;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>coils_port2;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/><ref refid="structcoil__reg__params__t" kindref="compound">coil_reg_params_t</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push,<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structinput__reg__params__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>input_data0;<sp/></highlight><highlight class="comment">//<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>input_data1;<sp/></highlight><highlight class="comment">//<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>input_data2;<sp/></highlight><highlight class="comment">//<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>input_data3;<sp/></highlight><highlight class="comment">//<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>data[150];<sp/></highlight><highlight class="comment">//<sp/>8<sp/>+<sp/>150<sp/>=<sp/>158</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>input_data4;<sp/></highlight><highlight class="comment">//<sp/>158</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>input_data5;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>input_data6;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>input_data7;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>data_block1[150];</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}<sp/><ref refid="structinput__reg__params__t" kindref="compound">input_reg_params_t</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push,<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structholding__reg__params__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>holding_data0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>holding_data1;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>holding_data2;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>holding_data3;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>holding_data4;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>holding_data5;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>holding_data6;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>holding_data7;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>holding_data8;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>holding_data9;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>holding_data10;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>holding_data11;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>holding_data12;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>test_regs[150];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}<sp/><ref refid="structholding__reg__params__t" kindref="compound">holding_reg_params_t</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structholding__reg__params__t" kindref="compound">holding_reg_params_t</ref><sp/>holding_reg_params;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structinput__reg__params__t" kindref="compound">input_reg_params_t</ref><sp/>input_reg_params;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structcoil__reg__params__t" kindref="compound">coil_reg_params_t</ref><sp/>coil_reg_params;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structdiscrete__reg__params__t" kindref="compound">discrete_reg_params_t</ref><sp/>discrete_reg_params;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h"/>
+  </compounddef>
+</doxygen>

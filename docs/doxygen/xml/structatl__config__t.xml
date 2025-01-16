@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_config_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__config__t_1ab9f8d160f7ba4c03e04b618f5febe90f" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__config__system__t" kindref="compound">atl_config_system_t</ref></type>
+        <definition>atl_config_system_t system</definition>
+        <argsstring></argsstring>
+        <name>system</name>
+        <qualifiedname>atl_config_t::system</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ATL system configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" line="39" column="32" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__t_1afb76808297ded520a9b8c59234f0218f" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__config__ota__t" kindref="compound">atl_config_ota_t</ref></type>
+        <definition>atl_config_ota_t ota</definition>
+        <argsstring></argsstring>
+        <name>ota</name>
+        <qualifiedname>atl_config_t::ota</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ATL OTA (Over-the-Air) configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" line="40" column="32" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__config__wifi__t" kindref="compound">atl_config_wifi_t</ref></type>
+        <definition>atl_config_wifi_t wifi</definition>
+        <argsstring></argsstring>
+        <name>wifi</name>
+        <qualifiedname>atl_config_t::wifi</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ATL WiFi configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" line="41" column="32" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__t_1a09bcf1e643ea007415424a661b0eca73" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__config__webserver__t" kindref="compound">atl_config_webserver_t</ref></type>
+        <definition>atl_config_webserver_t webserver</definition>
+        <argsstring></argsstring>
+        <name>webserver</name>
+        <qualifiedname>atl_config_t::webserver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ATL Webserver configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" line="42" column="32" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__config__mqtt__client__t" kindref="compound">atl_config_mqtt_client_t</ref></type>
+        <definition>atl_config_mqtt_client_t mqtt_client</definition>
+        <argsstring></argsstring>
+        <name>mqtt_client</name>
+        <qualifiedname>atl_config_t::mqtt_client</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ATL MQTT client configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" line="43" column="32" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" prot="public" static="no" mutable="no">
+        <type><ref refid="structatl__config__telemetry__t" kindref="compound">atl_config_telemetry_t</ref></type>
+        <definition>atl_config_telemetry_t telemetry</definition>
+        <argsstring></argsstring>
+        <name>telemetry</name>
+        <qualifiedname>atl_config_t::telemetry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ATL Telemetry configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" line="44" column="32" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>atl_adc_telemetry_t</label>
+        <link refid="structatl__adc__telemetry__t"/>
+      </node>
+      <node id="6">
+        <label>atl_config_mqtt_client_t</label>
+        <link refid="structatl__config__mqtt__client__t"/>
+      </node>
+      <node id="3">
+        <label>atl_config_ota_t</label>
+        <link refid="structatl__config__ota__t"/>
+      </node>
+      <node id="2">
+        <label>atl_config_system_t</label>
+        <link refid="structatl__config__system__t"/>
+      </node>
+      <node id="1">
+        <label>atl_config_t</label>
+        <link refid="structatl__config__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>system</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ota</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>wifi</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>webserver</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mqtt_client</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>telemetry</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>atl_config_telemetry_t</label>
+        <link refid="structatl__config__telemetry__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>anemometer</edgelabel>
+          <edgelabel>bme280</edgelabel>
+          <edgelabel>dht</edgelabel>
+          <edgelabel>light</edgelabel>
+          <edgelabel>pluviometer</edgelabel>
+          <edgelabel>power</edgelabel>
+          <edgelabel>uv</edgelabel>
+          <edgelabel>wind_sock</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>adc</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>soil</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>cr300_gw</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>atl_config_webserver_t</label>
+        <link refid="structatl__config__webserver__t"/>
+      </node>
+      <node id="4">
+        <label>atl_config_wifi_t</label>
+        <link refid="structatl__config__wifi__t"/>
+      </node>
+      <node id="11">
+        <label>atl_gw_telemetry_t</label>
+        <link refid="structatl__gw__telemetry__t"/>
+      </node>
+      <node id="10">
+        <label>atl_soil_telemetry_t</label>
+        <link refid="structatl__soil__telemetry__t"/>
+      </node>
+      <node id="8">
+        <label>atl_telemetry_t</label>
+        <link refid="structatl__telemetry__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" line="38" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_config.h" bodystart="38" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structatl__config__t_1ae6459d6c63d7bc143d3eb8542dc63b6a" prot="public" virt="non-virtual"><scope>atl_config_t</scope><name>mqtt_client</name></member>
+      <member refid="structatl__config__t_1afb76808297ded520a9b8c59234f0218f" prot="public" virt="non-virtual"><scope>atl_config_t</scope><name>ota</name></member>
+      <member refid="structatl__config__t_1ab9f8d160f7ba4c03e04b618f5febe90f" prot="public" virt="non-virtual"><scope>atl_config_t</scope><name>system</name></member>
+      <member refid="structatl__config__t_1a537c4272e519699358bd96fd68ece4cc" prot="public" virt="non-virtual"><scope>atl_config_t</scope><name>telemetry</name></member>
+      <member refid="structatl__config__t_1a09bcf1e643ea007415424a661b0eca73" prot="public" virt="non-virtual"><scope>atl_config_t</scope><name>webserver</name></member>
+      <member refid="structatl__config__t_1a7271aa5d0e1a312cbf51dda2d3591236" prot="public" virt="non-virtual"><scope>atl_config_t</scope><name>wifi</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="atl__modbus_8h" kind="file" language="C++">
+    <compoundname>atl_modbus.h</compoundname>
+    <includes local="no">esp_err.h</includes>
+    <includes local="no">mbcontroller.h</includes>
+    <includes refid="atl__modbus__params_8h" local="yes">atl_modbus_params.h</includes>
+    <includedby refid="atl__modbus_8c" local="yes">atl_modbus.c</includedby>
+    <includedby refid="atl__telemetry_8c" local="yes">atl_telemetry.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>atl_modbus.h</label>
+        <link refid="atl__modbus_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>atl_modbus_params.h</label>
+        <link refid="atl__modbus__params_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>esp_err.h</label>
+      </node>
+      <node id="3">
+        <label>mbcontroller.h</label>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="atl__modbus_8h_1acd656235a37a9c8fb0e78c3580189d36" prot="public" static="no">
+        <name>ATL_MB_RS485_PORT_NUM</name>
+        <initializer>UART_NUM_1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RS-485 UART port. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="10" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__modbus_8h_1ae50ae4cb9753db8ee3f4a6a44f720d40" prot="public" static="no">
+        <name>ATL_MB_RS485_DEV_SPEED</name>
+        <initializer>4800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RS-485 baudrate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="11" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__modbus_8h_1a817ddd8e4b89f4f392a3ada720ff2e98" prot="public" static="no">
+        <name>ATL_MB_RS485_DEVICE_ADDR1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Only one slave device used (soil sensor). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="12" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__modbus_8h_1a6cefdb1a1f0971c889c2de67843547e5" prot="public" static="no">
+        <name>CONFIG_MB_COMM_MODE_RTU</name>
+        <initializer>true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RS-485 RTU mode enabled. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="13" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__modbus_8h_1af409c6c15777ad79c8924a7faf8ed99b" prot="public" static="no">
+        <name>ATL_MB_RS485_MASTER_MAX_RETRIES</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum read retries. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="14" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__modbus_8h_1a113c3fd7136ebf31cc11663d04b32c3e" prot="public" static="no">
+        <name>ATL_MB_RS485_RETRIES_TIMEOUT_MS</name>
+        <initializer>500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timeout between retries. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="15" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__modbus_8h_1a1ed445ab9f5431e5a9c352af33797a96" prot="public" static="no">
+        <name>ATL_MB_RS485_POLL_TIMEOUT_MS</name>
+        <initializer>250</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timeout between polls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="16" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__modbus_8h_1a629232709f4abaaaf5d5efb58c9e0447" prot="public" static="no">
+        <name>HOLD_OFFSET</name>
+        <param><defname>field</defname></param>
+        <initializer>((uint16_t)(offsetof(<ref refid="structholding__reg__params__t" kindref="compound">holding_reg_params_t</ref>, field) + 1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="19" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__modbus_8h_1aa76f68a53c3639b2cda987035e1de9b5" prot="public" static="no">
+        <name>INPUT_OFFSET</name>
+        <param><defname>field</defname></param>
+        <initializer>((uint16_t)(offsetof(<ref refid="structinput__reg__params__t" kindref="compound">input_reg_params_t</ref>, field) + 1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="20" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__modbus_8h_1aa9c49580ed7093262f56a4418e718e68" prot="public" static="no">
+        <name>COIL_OFFSET</name>
+        <param><defname>field</defname></param>
+        <initializer>((uint16_t)(offsetof(<ref refid="structcoil__reg__params__t" kindref="compound">coil_reg_params_t</ref>, field) + 1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="21" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__modbus_8h_1a3b1c42c53c39e030176dec8657bc3449" prot="public" static="no">
+        <name>DISCR_OFFSET</name>
+        <param><defname>field</defname></param>
+        <initializer>((uint16_t)(offsetof(<ref refid="structdiscrete__reg__params__t" kindref="compound">discrete_reg_params_t</ref>, field) + 1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="22" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__modbus_8h_1a04706748a8e9f42f5f6008acef843a1e" prot="public" static="no">
+        <name>ATL_MB_STR</name>
+        <param><defname>fieldname</defname></param>
+        <initializer>((const char*)( fieldname ))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="25" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atl__modbus_8h_1a0a3fbde13b034d5cd5854f487e75474e" prot="public" static="no">
+        <name>ATL_MB_OPTS</name>
+        <param><defname>min_val</defname></param>
+        <param><defname>max_val</defname></param>
+        <param><defname>step_val</defname></param>
+        <initializer>{ .opt1 = min_val, .opt2 = max_val, .opt3 = step_val }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="28" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="atl__modbus_8h_1a06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <enumvalue id="atl__modbus_8h_1a06fc87d81c62e9abb8790b6e5713c55ba28f98b59f6ae32defcc2cc8a3b264f0a" prot="public">
+          <name>CID_HOLD_HUMIDITY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__modbus_8h_1a06fc87d81c62e9abb8790b6e5713c55ba5e1eb08c4ab389087ca6767383878f2e" prot="public">
+          <name>CID_HOLD_TEMPERATURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__modbus_8h_1a06fc87d81c62e9abb8790b6e5713c55ba16cd0f61fe70559f46bb525cb65ffb00" prot="public">
+          <name>CID_HOLD_CONDUCTIVITY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__modbus_8h_1a06fc87d81c62e9abb8790b6e5713c55ba9f6860f6be3e363c8bfc4b1df4d3e8b8" prot="public">
+          <name>CID_HOLD_PH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__modbus_8h_1a06fc87d81c62e9abb8790b6e5713c55bab49b9c91fd807f8b8cfb8e951932afe8" prot="public">
+          <name>CID_HOLD_NITROGEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__modbus_8h_1a06fc87d81c62e9abb8790b6e5713c55bac6493af04d3d9738347f78e88e36bea5" prot="public">
+          <name>CID_HOLD_PHOSPHORUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__modbus_8h_1a06fc87d81c62e9abb8790b6e5713c55ba3534c3d8bf7999ba53ca92a624dc4d90" prot="public">
+          <name>CID_HOLD_POTASSIUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__modbus_8h_1a06fc87d81c62e9abb8790b6e5713c55ba94005b2bd8ded108be24a6091b8fb75e" prot="public">
+          <name>CID_HOLD_SALINITY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__modbus_8h_1a06fc87d81c62e9abb8790b6e5713c55ba03b4e7e35ff4efff85edcd7e1d452c13" prot="public">
+          <name>CID_HOLD_TDS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__modbus_8h_1a06fc87d81c62e9abb8790b6e5713c55ba41673279c4e28c94dbf215f5fed490a1" prot="public">
+          <name>CID_HOLD_BATT_VOLTAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="atl__modbus_8h_1a06fc87d81c62e9abb8790b6e5713c55baf4f0c6d78173fef37fc5d2af7b896101" prot="public">
+          <name>CID_HOLD_PTEMP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="34" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" bodystart="34" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="atl__modbus_8h_1a7cbf346850a1a6dc21e56a1bd15c9399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t atl_modbus_get_num_device_params</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_modbus_get_num_device_params</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the number of parameters in the table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint16_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="52" column="10" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" bodystart="62" bodyend="64" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" declline="52" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__modbus_8h_1a7786c56fc166feaa365261266b36d2be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * atl_modbus_master_rs485_get_param_data</definition>
+        <argsstring>(const mb_parameter_descriptor_t *param_descriptor)</argsstring>
+        <name>atl_modbus_master_rs485_get_param_data</name>
+        <param>
+          <type>const mb_parameter_descriptor_t *</type>
+          <declname>param_descriptor</declname>
+        </param>
+        <briefdescription>
+<para>The function to get pointer to parameter storage (instance) according to parameter description table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>param_descriptor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="59" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" bodystart="70" bodyend="97" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" declline="59" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__modbus_8h_1a7beb5dc784f6baf041a6d61df6c204a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t atl_modbus_master_rs485_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_modbus_master_rs485_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize Modbus Master stack at RS-485 interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>esp_err_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="65" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" bodystart="103" bodyend="171" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" declline="65" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__modbus_8h_1a69bc4c91e0a04cedd1cbd877fb32c2a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atl_modbus_master_rs485_initialized</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_modbus_master_rs485_initialized</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize Modbus Master stack at RS-485 interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>esp_err_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" line="71" column="6" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.c" bodystart="177" bodyend="179" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h" declline="71" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;esp_err.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mbcontroller.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_modbus_params.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_MB_RS485_PORT_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UART_NUM_1<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_MB_RS485_DEV_SPEED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4800<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_MB_RS485_DEVICE_ADDR1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_MB_COMM_MODE_RTU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>true<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_MB_RS485_MASTER_MAX_RETRIES<sp/><sp/><sp/><sp/><sp/>5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_MB_RS485_RETRIES_TIMEOUT_MS<sp/><sp/><sp/><sp/><sp/>500<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_MB_RS485_POLL_TIMEOUT_MS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>250<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>macro<sp/>to<sp/>get<sp/>offset<sp/>for<sp/>parameter<sp/>in<sp/>the<sp/>appropriate<sp/>structure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HOLD_OFFSET(field)<sp/>((uint16_t)(offsetof(holding_reg_params_t,<sp/>field)<sp/>+<sp/>1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INPUT_OFFSET(field)<sp/>((uint16_t)(offsetof(input_reg_params_t,<sp/>field)<sp/>+<sp/>1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COIL_OFFSET(field)<sp/>((uint16_t)(offsetof(coil_reg_params_t,<sp/>field)<sp/>+<sp/>1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISCR_OFFSET(field)<sp/>((uint16_t)(offsetof(discrete_reg_params_t,<sp/>field)<sp/>+<sp/>1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>macro<sp/>to<sp/>get<sp/>fielname<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_MB_STR(fieldname)<sp/>((const<sp/>char*)(<sp/>fieldname<sp/>))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>macro<sp/>options<sp/>can<sp/>be<sp/>used<sp/>as<sp/>bit<sp/>masks<sp/>or<sp/>parameter<sp/>limits<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATL_MB_OPTS(min_val,<sp/>max_val,<sp/>step_val)<sp/>{<sp/>.opt1<sp/>=<sp/>min_val,<sp/>.opt2<sp/>=<sp/>max_val,<sp/>.opt3<sp/>=<sp/>step_val<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>CID_HOLD_HUMIDITY<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>CID_HOLD_TEMPERATURE,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>CID_HOLD_CONDUCTIVITY,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>CID_HOLD_PH,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>CID_HOLD_NITROGEN,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>CID_HOLD_PHOSPHORUS,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>CID_HOLD_POTASSIUM,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>CID_HOLD_SALINITY,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>CID_HOLD_TDS,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>CID_HOLD_BATT_VOLTAGE,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>CID_HOLD_PTEMP,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">uint16_t<sp/>atl_modbus_get_num_device_params(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>atl_modbus_master_rs485_get_param_data(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mb_parameter_descriptor_t*<sp/>param_descriptor);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">esp_err_t<sp/>atl_modbus_master_rs485_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>atl_modbus_master_rs485_initialized(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus.h"/>
+  </compounddef>
+</doxygen>

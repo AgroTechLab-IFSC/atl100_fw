@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structdiscrete__reg__params__t" kind="struct" language="C++" prot="public">
+    <compoundname>discrete_reg_params_t</compoundname>
+    <includes refid="atl__modbus__params_8h" local="no">atl_modbus_params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscrete__reg__params__t_1a53ba3e80dc79497f830a2655235fbf53" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t discrete_input0</definition>
+        <argsstring></argsstring>
+        <name>discrete_input0</name>
+        <qualifiedname>discrete_reg_params_t::discrete_input0</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="14" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscrete__reg__params__t_1a1e5911975117132d3dae2475c2dc4ad1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t discrete_input1</definition>
+        <argsstring></argsstring>
+        <name>discrete_input1</name>
+        <qualifiedname>discrete_reg_params_t::discrete_input1</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="15" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscrete__reg__params__t_1a7999cf2680f2935b49652b8b71c8673c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t discrete_input2</definition>
+        <argsstring></argsstring>
+        <name>discrete_input2</name>
+        <qualifiedname>discrete_reg_params_t::discrete_input2</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="16" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscrete__reg__params__t_1a5c15c2608ba55c1e7acb5f08d4193f0a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t discrete_input3</definition>
+        <argsstring></argsstring>
+        <name>discrete_input3</name>
+        <qualifiedname>discrete_reg_params_t::discrete_input3</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="17" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscrete__reg__params__t_1a3f4306cb7911d0035113bc9715090928" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t discrete_input4</definition>
+        <argsstring></argsstring>
+        <name>discrete_input4</name>
+        <qualifiedname>discrete_reg_params_t::discrete_input4</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="18" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscrete__reg__params__t_1a966552146ae2b0bfdb5bdc678fd68dfc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t discrete_input5</definition>
+        <argsstring></argsstring>
+        <name>discrete_input5</name>
+        <qualifiedname>discrete_reg_params_t::discrete_input5</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="19" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscrete__reg__params__t_1af69df1bd71712d71256bd433fe4dc90e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t discrete_input6</definition>
+        <argsstring></argsstring>
+        <name>discrete_input6</name>
+        <qualifiedname>discrete_reg_params_t::discrete_input6</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="20" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscrete__reg__params__t_1af397f83c668d9b0d14b09d6d5c9fb05a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t discrete_input7</definition>
+        <argsstring></argsstring>
+        <name>discrete_input7</name>
+        <qualifiedname>discrete_reg_params_t::discrete_input7</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="21" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscrete__reg__params__t_1a307e134096c684d36a4c8379ab1f319c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t discrete_input_port1</definition>
+        <argsstring></argsstring>
+        <name>discrete_input_port1</name>
+        <qualifiedname>discrete_reg_params_t::discrete_input_port1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="22" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscrete__reg__params__t_1a374896ebbecc56f0befa5030ec4fe1f8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t discrete_input_port2</definition>
+        <argsstring></argsstring>
+        <name>discrete_input_port2</name>
+        <qualifiedname>discrete_reg_params_t::discrete_input_port2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="23" column="13" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file defines structure of modbus parameters which reflect correspond modbus address space for each modbus register type (coils, discreet inputs, holding registers, input registers). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" line="13" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_modbus_params.h" bodystart="13" bodyend="24"/>
+    <listofallmembers>
+      <member refid="structdiscrete__reg__params__t_1a53ba3e80dc79497f830a2655235fbf53" prot="public" virt="non-virtual"><scope>discrete_reg_params_t</scope><name>discrete_input0</name></member>
+      <member refid="structdiscrete__reg__params__t_1a1e5911975117132d3dae2475c2dc4ad1" prot="public" virt="non-virtual"><scope>discrete_reg_params_t</scope><name>discrete_input1</name></member>
+      <member refid="structdiscrete__reg__params__t_1a7999cf2680f2935b49652b8b71c8673c" prot="public" virt="non-virtual"><scope>discrete_reg_params_t</scope><name>discrete_input2</name></member>
+      <member refid="structdiscrete__reg__params__t_1a5c15c2608ba55c1e7acb5f08d4193f0a" prot="public" virt="non-virtual"><scope>discrete_reg_params_t</scope><name>discrete_input3</name></member>
+      <member refid="structdiscrete__reg__params__t_1a3f4306cb7911d0035113bc9715090928" prot="public" virt="non-virtual"><scope>discrete_reg_params_t</scope><name>discrete_input4</name></member>
+      <member refid="structdiscrete__reg__params__t_1a966552146ae2b0bfdb5bdc678fd68dfc" prot="public" virt="non-virtual"><scope>discrete_reg_params_t</scope><name>discrete_input5</name></member>
+      <member refid="structdiscrete__reg__params__t_1af69df1bd71712d71256bd433fe4dc90e" prot="public" virt="non-virtual"><scope>discrete_reg_params_t</scope><name>discrete_input6</name></member>
+      <member refid="structdiscrete__reg__params__t_1af397f83c668d9b0d14b09d6d5c9fb05a" prot="public" virt="non-virtual"><scope>discrete_reg_params_t</scope><name>discrete_input7</name></member>
+      <member refid="structdiscrete__reg__params__t_1a307e134096c684d36a4c8379ab1f319c" prot="public" virt="non-virtual"><scope>discrete_reg_params_t</scope><name>discrete_input_port1</name></member>
+      <member refid="structdiscrete__reg__params__t_1a374896ebbecc56f0befa5030ec4fe1f8" prot="public" virt="non-virtual"><scope>discrete_reg_params_t</scope><name>discrete_input_port2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

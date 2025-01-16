@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_bad007344d42f4b5340fab5412b591e5" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="ads1x15_8c">ads1x15.c</innerfile>
+    <innerfile refid="ads1x15_8h">ads1x15.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/include/"/>
+  </compounddef>
+</doxygen>

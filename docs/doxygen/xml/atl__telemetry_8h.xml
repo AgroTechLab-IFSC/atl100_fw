@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="atl__telemetry_8h" kind="file" language="C++">
+    <compoundname>atl_telemetry.h</compoundname>
+    <includes refid="atl__adc_8h" local="yes">atl_adc.h</includes>
+    <includedby refid="atl__adc_8c" local="yes">atl_adc.c</includedby>
+    <includedby refid="atl__config_8c" local="yes">atl_config.c</includedby>
+    <includedby refid="atl__config_8h" local="yes">atl_config.h</includedby>
+    <includedby refid="atl__main_8c" local="yes">atl_main.c</includedby>
+    <includedby refid="atl__telemetry_8c" local="yes">atl_telemetry.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>atl_adc.h</label>
+        <link refid="atl__adc_8h_source"/>
+      </node>
+      <node id="1">
+        <label>atl_telemetry.h</label>
+        <link refid="atl__telemetry_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>atl_config.h</label>
+        <link refid="atl__config_8h_source"/>
+      </node>
+      <node id="1">
+        <label>atl_telemetry.h</label>
+        <link refid="atl__telemetry_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structatl__telemetry__t" prot="public">atl_telemetry_t</innerclass>
+    <innerclass refid="structatl__adc__telemetry__t" prot="public">atl_adc_telemetry_t</innerclass>
+    <innerclass refid="structatl__soil__telemetry__t" prot="public">atl_soil_telemetry_t</innerclass>
+    <innerclass refid="structatl__gw__telemetry__t" prot="public">atl_gw_telemetry_t</innerclass>
+    <innerclass refid="structatl__config__telemetry__t" prot="public">atl_config_telemetry_t</innerclass>
+    <innerclass refid="structatl__data__adc__telemetry__t" prot="public">atl_data_adc_telemetry_t</innerclass>
+    <innerclass refid="structatl__data__telemetry__t" prot="public">atl_data_telemetry_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="atl__telemetry_8h_1a63baed8df076ce9dddaea1ae8694c1d8" prot="public" static="no">
+        <name>DEFAULT_VREF</name>
+        <initializer>1100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use adc2_vref_to_gpio() to obtain a better estimate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="9" column="9" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="atl__telemetry_8h_1a63f90b993169f6f150a6102500b1b0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t atl_telemetry_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>atl_telemetry_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize telemetry structure and sensor tasks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>esp_err_t - If ERR_OK success. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="111" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.c" bodystart="1006" bodyend="1195" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" declline="111" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__telemetry_8h_1a23921fe8fa30dfc6971764b9e2f5a7d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t atl_telemetry_get_config</definition>
+        <argsstring>(atl_config_telemetry_t *config_ptr)</argsstring>
+        <name>atl_telemetry_get_config</name>
+        <param>
+          <type><ref refid="structatl__config__telemetry__t" kindref="compound">atl_config_telemetry_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="118" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.c" bodystart="1202" bodyend="1213" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" declline="118" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__telemetry_8h_1a7ff6d09c0b173f5dea3fcedf61a99fc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t atl_telemetry_set_config</definition>
+        <argsstring>(atl_config_telemetry_t *config_ptr)</argsstring>
+        <name>atl_telemetry_set_config</name>
+        <param>
+          <type><ref refid="structatl__config__telemetry__t" kindref="compound">atl_config_telemetry_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="125" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.c" bodystart="1220" bodyend="1236" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" declline="125" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__telemetry_8h_1a0cf965d2554b85256c07021416221ad5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t atl_telemetry_get_data</definition>
+        <argsstring>(atl_data_telemetry_t *config_ptr)</argsstring>
+        <name>atl_telemetry_get_data</name>
+        <param>
+          <type><ref refid="structatl__data__telemetry__t" kindref="compound">atl_data_telemetry_t</ref> *</type>
+          <declname>config_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="132" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.c" bodystart="1243" bodyend="1254" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" declline="132" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="atl__telemetry_8h_1ac4beb96c4a7ed511677c052a1fafd61d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t atl_telemetry_set_adc_data</definition>
+        <argsstring>(uint8_t port, atl_data_adc_telemetry_t values)</argsstring>
+        <name>atl_telemetry_set_adc_data</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>port</declname>
+          <defname>channel</defname>
+        </param>
+        <param>
+          <type><ref refid="structatl__data__adc__telemetry__t" kindref="compound">atl_data_adc_telemetry_t</ref></type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+<para>Set ADC telemetry data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- struct <ref refid="structatl__data__adc__telemetry__t" kindref="compound">atl_data_adc_telemetry_t</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>esp_err_t</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- ADC channel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- struct <ref refid="structatl__data__adc__telemetry__t" kindref="compound">atl_data_adc_telemetry_t</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>esp_err_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" line="140" column="11" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.c" bodystart="1262" bodyend="1281" declfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h" declline="140" declcolumn="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atl_adc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_VREF<sp/><sp/><sp/><sp/>1100<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structatl__telemetry__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16" refid="structatl__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" kindref="member">enabled</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17" refid="structatl__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="structatl__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}<sp/><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structatl__adc__telemetry__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25" refid="structatl__adc__telemetry__t_1af4c797a84b50407caa9d739666226b45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>atl_adc_input_mode_e<sp/><sp/><sp/><sp/><ref refid="structatl__adc__telemetry__t_1af4c797a84b50407caa9d739666226b45" kindref="member">mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="structatl__adc__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__adc__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27" refid="structatl__adc__telemetry__t_1aba0b0513d397d51e6f438b2e9c420287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__adc__telemetry__t_1aba0b0513d397d51e6f438b2e9c420287" kindref="member">sampling_window</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}<sp/><ref refid="structatl__adc__telemetry__t" kindref="compound">atl_adc_telemetry_t</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structatl__soil__telemetry__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35" refid="structatl__soil__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__soil__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" kindref="member">enabled</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="structatl__soil__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="structatl__soil__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="structatl__soil__telemetry__t_1a3a34fe33fa471a98e62d68426933fa2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="structatl__soil__telemetry__t_1a3a34fe33fa471a98e62d68426933fa2b" kindref="member">modbus_rtu_addr</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/><ref refid="structatl__soil__telemetry__t" kindref="compound">atl_soil_telemetry_t</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structatl__gw__telemetry__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45" refid="structatl__gw__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__gw__telemetry__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" kindref="member">enabled</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="structatl__gw__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="structatl__gw__telemetry__t_1a99212a15987cbc47e8a24fe3d9bb9086" kindref="member">sampling_period</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structatl__gw__telemetry__t_1a3a34fe33fa471a98e62d68426933fa2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="structatl__gw__telemetry__t_1a3a34fe33fa471a98e62d68426933fa2b" kindref="member">modbus_rtu_addr</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/><ref refid="structatl__gw__telemetry__t" kindref="compound">atl_gw_telemetry_t</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structatl__config__telemetry__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55" refid="structatl__config__telemetry__t_1ac5ced4296039304109d4335840f20f4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__config__telemetry__t_1ac5ced4296039304109d4335840f20f4e" kindref="member">send_period</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="structatl__config__telemetry__t_1a8f1db6bea0943db416f84f3f5a08bba8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__config__telemetry__t_1a8f1db6bea0943db416f84f3f5a08bba8" kindref="member">power</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="structatl__config__telemetry__t_1ac7dddf43c7439fdd1469ba4b420f13c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__adc__telemetry__t" kindref="compound">atl_adc_telemetry_t</ref><sp/><sp/><sp/><sp/><sp/>adc[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="structatl__config__telemetry__t_1ad1a744039c227ef365debdfa37b8c213" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__config__telemetry__t_1ad1a744039c227ef365debdfa37b8c213" kindref="member">dht</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="structatl__config__telemetry__t_1a353f07b7ce4bcf4a22b126cf23da071b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__config__telemetry__t_1a353f07b7ce4bcf4a22b126cf23da071b" kindref="member">uv</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="structatl__config__telemetry__t_1a744bb7d0442acd14dca186a375439f18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__config__telemetry__t_1a744bb7d0442acd14dca186a375439f18" kindref="member">light</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="structatl__config__telemetry__t_1a7319d676df786a4152191f437c008b7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__config__telemetry__t_1a7319d676df786a4152191f437c008b7c" kindref="member">bme280</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="structatl__config__telemetry__t_1ab689546d56c6472f0fa922ff2abf29b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__soil__telemetry__t" kindref="compound">atl_soil_telemetry_t</ref><sp/><sp/><sp/><sp/><ref refid="structatl__config__telemetry__t_1ab689546d56c6472f0fa922ff2abf29b4" kindref="member">soil</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="structatl__config__telemetry__t_1a1861cc2018a9cee6457ebdec5feb4be3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__config__telemetry__t_1a1861cc2018a9cee6457ebdec5feb4be3" kindref="member">pluviometer</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="structatl__config__telemetry__t_1a5221fd8b0569237a9cfee69b84375b5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__config__telemetry__t_1a5221fd8b0569237a9cfee69b84375b5d" kindref="member">anemometer</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="structatl__config__telemetry__t_1aff4382d39c32f12878a847898ada5b76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__telemetry__t" kindref="compound">atl_telemetry_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__config__telemetry__t_1aff4382d39c32f12878a847898ada5b76" kindref="member">wind_sock</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="structatl__config__telemetry__t_1a2b8657be602137a6dca38b21131b5859" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__gw__telemetry__t" kindref="compound">atl_gw_telemetry_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structatl__config__telemetry__t_1a2b8657be602137a6dca38b21131b5859" kindref="member">cr300_gw</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}<sp/><ref refid="structatl__config__telemetry__t" kindref="compound">atl_config_telemetry_t</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structatl__data__adc__telemetry__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="structatl__data__adc__telemetry__t_1aff19710c26a6a5ac1d3b157c56bb24e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__adc__telemetry__t_1aff19710c26a6a5ac1d3b157c56bb24e8" kindref="member">last_sample</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="structatl__data__adc__telemetry__t_1a320b56bcf4a41e0f2776d34b6d1211ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__adc__telemetry__t_1a320b56bcf4a41e0f2776d34b6d1211ef" kindref="member">avg_sample</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="structatl__data__adc__telemetry__t_1aaf69882dc07319bb5f5f28485f66fd9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__adc__telemetry__t_1aaf69882dc07319bb5f5f28485f66fd9c" kindref="member">min_sample</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="structatl__data__adc__telemetry__t_1aa1b100d2f65323269437db423602d3bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__adc__telemetry__t_1aa1b100d2f65323269437db423602d3bc" kindref="member">max_sample</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}<sp/><ref refid="structatl__data__adc__telemetry__t" kindref="compound">atl_data_adc_telemetry_t</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="structatl__data__telemetry__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85" refid="structatl__data__telemetry__t_1a579949df4492aae2b400cfb42ab1a1b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__telemetry__t_1a579949df4492aae2b400cfb42ab1a1b0" kindref="member">power_voltage</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="structatl__data__telemetry__t_1a5cbb9c964da67812cd01b081c2fc6cd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__telemetry__t_1a5cbb9c964da67812cd01b081c2fc6cd1" kindref="member">air_temperature</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="structatl__data__telemetry__t_1a531741af69122a00d7b578003b853b37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__telemetry__t_1a531741af69122a00d7b578003b853b37" kindref="member">air_humidity</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="structatl__data__telemetry__t_1ab90be8b57e55d7638fd682ecf1b1fa87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__telemetry__t_1ab90be8b57e55d7638fd682ecf1b1fa87" kindref="member">air_pressure</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="structatl__data__telemetry__t_1a96fbe866fa68fbbf78e78a32b24d117e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structatl__data__telemetry__t_1a96fbe866fa68fbbf78e78a32b24d117e" kindref="member">uv_index</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="structatl__data__telemetry__t_1a9176ad201977b7411b70a06b4dd306a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__telemetry__t_1a9176ad201977b7411b70a06b4dd306a5" kindref="member">light_intensity</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="structatl__data__telemetry__t_1ad154f22ddc5493eb6b09454c00d66291" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__telemetry__t_1ad154f22ddc5493eb6b09454c00d66291" kindref="member">soil_temperature</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="structatl__data__telemetry__t_1a4ea448d71d6f8f065a8bd43aec18cd89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__telemetry__t_1a4ea448d71d6f8f065a8bd43aec18cd89" kindref="member">soil_humidity</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="structatl__data__telemetry__t_1a06e2b0c76d0604d989b5ce0628f1be6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structatl__data__telemetry__t_1a06e2b0c76d0604d989b5ce0628f1be6e" kindref="member">soil_ec</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="structatl__data__telemetry__t_1a6a8f22e23cd9b29c2bdec3ec99a4a82c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__telemetry__t_1a6a8f22e23cd9b29c2bdec3ec99a4a82c" kindref="member">soil_ph</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="structatl__data__telemetry__t_1ab633ed6bfc01cfe87f5c81f95885992b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structatl__data__telemetry__t_1ab633ed6bfc01cfe87f5c81f95885992b" kindref="member">soil_nitrogen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="structatl__data__telemetry__t_1afa5a17414b8e5f9f0b7a1bcf77718172" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structatl__data__telemetry__t_1afa5a17414b8e5f9f0b7a1bcf77718172" kindref="member">soil_phosphorus</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="structatl__data__telemetry__t_1afa94d9fc5a3018ee78cf3150daf77167" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structatl__data__telemetry__t_1afa94d9fc5a3018ee78cf3150daf77167" kindref="member">soil_potassium</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="structatl__data__telemetry__t_1aefcda1ea715e95d2ca9462723d3c65b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structatl__data__telemetry__t_1aefcda1ea715e95d2ca9462723d3c65b3" kindref="member">soil_salinity</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="structatl__data__telemetry__t_1a7483aa7cb2f94c0ee190835a155b6b0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structatl__data__telemetry__t_1a7483aa7cb2f94c0ee190835a155b6b0b" kindref="member">soil_tds</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="structatl__data__telemetry__t_1aebe6bf5a40de4d481c060538269689cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__telemetry__t_1aebe6bf5a40de4d481c060538269689cb" kindref="member">pluviometer</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="structatl__data__telemetry__t_1a4eb9d93a05d39ce1f36f471daa8315dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structatl__data__telemetry__t_1a4eb9d93a05d39ce1f36f471daa8315dc" kindref="member">anemometer</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="structatl__data__telemetry__t_1a0b04edae445b69fee59bf201a26d5abc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structatl__data__telemetry__t_1a0b04edae445b69fee59bf201a26d5abc" kindref="member">wind_direction</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="structatl__data__telemetry__t_1a72c92c8504db65a701d1d5a9fd397a26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structatl__data__adc__telemetry__t" kindref="compound">atl_data_adc_telemetry_t</ref><sp/>adc[4];<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}<sp/><ref refid="structatl__data__telemetry__t" kindref="compound">atl_data_telemetry_t</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">esp_err_t<sp/>atl_telemetry_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">esp_err_t<sp/>atl_telemetry_get_config(<ref refid="structatl__config__telemetry__t" kindref="compound">atl_config_telemetry_t</ref>*<sp/>config_ptr);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">esp_err_t<sp/>atl_telemetry_set_config(<ref refid="structatl__config__telemetry__t" kindref="compound">atl_config_telemetry_t</ref>*<sp/>config_ptr);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">esp_err_t<sp/>atl_telemetry_get_data(<ref refid="structatl__data__telemetry__t" kindref="compound">atl_data_telemetry_t</ref>*<sp/>config_ptr);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">esp_err_t<sp/>atl_telemetry_set_adc_data(uint8_t<sp/>port,<sp/><ref refid="structatl__data__adc__telemetry__t" kindref="compound">atl_data_adc_telemetry_t</ref><sp/>values);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_telemetry.h"/>
+  </compounddef>
+</doxygen>

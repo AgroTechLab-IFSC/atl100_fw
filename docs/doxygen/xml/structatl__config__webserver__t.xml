@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__config__webserver__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_config_webserver_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__config__webserver__t_1a8eb35d32a1d80811b3fbfeebbd86e793" prot="public" static="no" mutable="no">
+        <type>atl_webserver_mode_e</type>
+        <definition>atl_webserver_mode_e mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <qualifiedname>atl_config_webserver_t::mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Webserver mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.h" line="25" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__webserver__t_1a01a9894f9a977ecdd09fe73264543dd0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t admin_user[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>admin_user</name>
+        <qualifiedname>atl_config_webserver_t::admin_user</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Webserver administration user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.h" line="26" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__webserver__t_1a9c408fd95b94337f9c05f95fa61190a9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t admin_pass[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>admin_pass</name>
+        <qualifiedname>atl_config_webserver_t::admin_pass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Webserver administration pass. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.h" line="27" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.h" line="24" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.h" bodystart="24" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structatl__config__webserver__t_1a9c408fd95b94337f9c05f95fa61190a9" prot="public" virt="non-virtual"><scope>atl_config_webserver_t</scope><name>admin_pass</name></member>
+      <member refid="structatl__config__webserver__t_1a01a9894f9a977ecdd09fe73264543dd0" prot="public" virt="non-virtual"><scope>atl_config_webserver_t</scope><name>admin_user</name></member>
+      <member refid="structatl__config__webserver__t_1a8eb35d32a1d80811b3fbfeebbd86e793" prot="public" virt="non-virtual"><scope>atl_config_webserver_t</scope><name>mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

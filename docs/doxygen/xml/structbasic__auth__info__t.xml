@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structbasic__auth__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>basic_auth_info_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbasic__auth__info__t_1a9b20c006bd90a09e1465fb668700e81d" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <qualifiedname>basic_auth_info_t::username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.c" line="2265" column="10" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.c" bodystart="2265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbasic__auth__info__t_1a59460a3ff2c12443d1022e5cc0fba85c" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* password</definition>
+        <argsstring></argsstring>
+        <name>password</name>
+        <qualifiedname>basic_auth_info_t::password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.c" line="2266" column="10" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.c" bodystart="2266" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.c" line="2264" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_webserver.c" bodystart="2264" bodyend="2267"/>
+    <listofallmembers>
+      <member refid="structbasic__auth__info__t_1a59460a3ff2c12443d1022e5cc0fba85c" prot="public" virt="non-virtual"><scope>basic_auth_info_t</scope><name>password</name></member>
+      <member refid="structbasic__auth__info__t_1a9b20c006bd90a09e1465fb668700e81d" prot="public" virt="non-virtual"><scope>basic_auth_info_t</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

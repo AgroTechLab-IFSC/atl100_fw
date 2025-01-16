@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structatl__config__mqtt__client__t" kind="struct" language="C++" prot="public">
+    <compoundname>atl_config_mqtt_client_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatl__config__mqtt__client__t_1ac444c2f438eb2b64ee284346a1246125" prot="public" static="no" mutable="no">
+        <type>atl_mqtt_mode_e</type>
+        <definition>atl_mqtt_mode_e mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <qualifiedname>atl_config_mqtt_client_t::mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" line="35" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__mqtt__client__t_1a5f53eb7310c92a9ee9995eada7433ea4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t broker_address[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>broker_address</name>
+        <qualifiedname>atl_config_mqtt_client_t::broker_address</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT broker address. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" line="36" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__mqtt__client__t_1a12f5cb139e6c02830a0954427c8cb565" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t broker_port</definition>
+        <argsstring></argsstring>
+        <name>broker_port</name>
+        <qualifiedname>atl_config_mqtt_client_t::broker_port</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT broker port. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" line="37" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__mqtt__client__t_1a41a1bf55931c17079c4f2ba00b8daee3" prot="public" static="no" mutable="no">
+        <type>esp_mqtt_transport_t</type>
+        <definition>esp_mqtt_transport_t transport</definition>
+        <argsstring></argsstring>
+        <name>transport</name>
+        <qualifiedname>atl_config_mqtt_client_t::transport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT transport protocol. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" line="38" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__mqtt__client__t_1a45d2254e1dd869e95590f29d5b4e8b99" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool disable_cn_check</definition>
+        <argsstring></argsstring>
+        <name>disable_cn_check</name>
+        <qualifiedname>atl_config_mqtt_client_t::disable_cn_check</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Skip certificate Common Name check (for self-signed certificates). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" line="39" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__mqtt__client__t_1ae1b94bb54887aa96f82572e274884090" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t user[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>user</name>
+        <qualifiedname>atl_config_mqtt_client_t::user</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT username. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" line="40" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__mqtt__client__t_1abee570d7effcd1527e91ffe21f870aa0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t pass[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>pass</name>
+        <qualifiedname>atl_config_mqtt_client_t::pass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT password. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" line="41" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatl__config__mqtt__client__t_1aa83cd7f03b18f77dfa73d82902b6c76c" prot="public" static="no" mutable="no">
+        <type>atl_mqtt_qos_e</type>
+        <definition>atl_mqtt_qos_e qos</definition>
+        <argsstring></argsstring>
+        <name>qos</name>
+        <qualifiedname>atl_config_mqtt_client_t::qos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT QoS level. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" line="42" column="29" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" line="34" column="1" bodyfile="C:/AgroTechLab/Embedded/atl100_fw/main/atl_mqtt.h" bodystart="34" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structatl__config__mqtt__client__t_1a5f53eb7310c92a9ee9995eada7433ea4" prot="public" virt="non-virtual"><scope>atl_config_mqtt_client_t</scope><name>broker_address</name></member>
+      <member refid="structatl__config__mqtt__client__t_1a12f5cb139e6c02830a0954427c8cb565" prot="public" virt="non-virtual"><scope>atl_config_mqtt_client_t</scope><name>broker_port</name></member>
+      <member refid="structatl__config__mqtt__client__t_1a45d2254e1dd869e95590f29d5b4e8b99" prot="public" virt="non-virtual"><scope>atl_config_mqtt_client_t</scope><name>disable_cn_check</name></member>
+      <member refid="structatl__config__mqtt__client__t_1ac444c2f438eb2b64ee284346a1246125" prot="public" virt="non-virtual"><scope>atl_config_mqtt_client_t</scope><name>mode</name></member>
+      <member refid="structatl__config__mqtt__client__t_1abee570d7effcd1527e91ffe21f870aa0" prot="public" virt="non-virtual"><scope>atl_config_mqtt_client_t</scope><name>pass</name></member>
+      <member refid="structatl__config__mqtt__client__t_1aa83cd7f03b18f77dfa73d82902b6c76c" prot="public" virt="non-virtual"><scope>atl_config_mqtt_client_t</scope><name>qos</name></member>
+      <member refid="structatl__config__mqtt__client__t_1a41a1bf55931c17079c4f2ba00b8daee3" prot="public" virt="non-virtual"><scope>atl_config_mqtt_client_t</scope><name>transport</name></member>
+      <member refid="structatl__config__mqtt__client__t_1ae1b94bb54887aa96f82572e274884090" prot="public" virt="non-virtual"><scope>atl_config_mqtt_client_t</scope><name>user</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
