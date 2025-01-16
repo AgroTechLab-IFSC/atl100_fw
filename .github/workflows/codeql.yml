@@ -71,36 +71,41 @@ jobs:
         # queries: security-extended,security-and-quality
     
     # Use caches to improve performance
-    - name: Initialize Cache
-      uses: actions/cache@v4
-      with:
-        path: |
-          ~/.cache/pip
-    #       ~/.platformio/.cache
-        key: ${{ runner.os }}-esp_idf
+    # - name: Initialize Cache
+    #   uses: actions/cache@v4
+    #   with:
+    #     path: |
+    #       ~/.cache/pip
+    # #       ~/.platformio/.cache
+    #     key: ${{ runner.os }}-esp_idf
 
     # Setup Python
-    - name: Setup Python 3.13
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.13'
+    # - name: Setup Python 3.13
+    #   uses: actions/setup-python@v5
+    #   with:
+    #     python-version: '3.13'
     
     # # Install ESP-IDF
     # - name: Install ESP-IDF
     #   run: pip install --upgrade esp-idf
     
-    # Build ESP-IDF project
-    - name: Build ESP-IDF Project
+    # # Build ESP-IDF project
+    # - name: Build ESP-IDF Project
+    #   uses: espressif/esp-idf-ci-action@v1
+    #   with:
+    #     esp_idf_version: latest
+    #     target: esp32s3
+    #     path: ''
+
+    - if: matrix.build-mode == 'manual'
+      
+      # Build ESP-IDF project
+      name: Build ESP-IDF Project
       uses: espressif/esp-idf-ci-action@v1
       with:
-        esp_idf_version: v5.4
+        esp_idf_version: latest
         target: esp32s3
         path: ''
-
-    # - if: matrix.build-mode == 'manual'
-    #   shell: bash
-    #   name: Build ESP-IDF Project
-    #   run: pio run
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
