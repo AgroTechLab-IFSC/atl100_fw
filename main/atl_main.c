@@ -6,6 +6,7 @@
 #include "atl_wifi.h"
 #include "atl_webserver.h"
 #include "atl_mqtt.h"
+#include "atl_telemetry.h"
 
 /* Constants */
 static const char *TAG = "atl-main";        /**< Module identification. */
@@ -47,8 +48,8 @@ void app_main(void) {
                         atl_mqtt_init();
                 }
 
-        //         /* Initialize telemetry */
-        //         atl_telemetry_init();
+                /* Initialize telemetry */
+                atl_telemetry_init();
 
             } else {
                 ESP_LOGE(TAG, "Fail to initialize WiFi in STA mode!");

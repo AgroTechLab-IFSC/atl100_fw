@@ -3,7 +3,7 @@
 #include "atl_ota.h"
 
 /* Constants */
-static const char *TAG = "atl-ota";             /**< Module identification. */
+// static const char *TAG = "atl-ota";             /**< Module identification. */
 const char *atl_ota_behaviour_str[] = {         
     "ATL_OTA_BEHAVIOUR_DISABLED",
 	"ATL_OTA_BEHAVIOUR_VERIFY_NOTIFY",

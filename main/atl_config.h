@@ -6,7 +6,7 @@
 #include "atl_webserver.h"
 #include "atl_mqtt.h"
 #include "atl_ota.h"
-// #include "atl_telemetry.h"
+#include "atl_telemetry.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -41,7 +41,7 @@ typedef struct {
     atl_config_wifi_t          wifi;               /**< ATL WiFi configuration.*/
     atl_config_webserver_t     webserver;          /**< ATL Webserver configuration.*/
     atl_config_mqtt_client_t   mqtt_client;        /**< ATL MQTT client configuration.*/
-    // atl_config_telemetry_t     telemetry;          /**< ATL Telemetry configuration.*/  
+    atl_config_telemetry_t     telemetry;          /**< ATL Telemetry configuration.*/  
 } atl_config_t;
 
 /**

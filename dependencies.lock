@@ -89,6 +89,6 @@ direct_dependencies:
 - espressif/led_strip
 - idf
 - zorxx/dht
-manifest_hash: 69716477f9c225234a8e8bcfb4c5edac06c6d5b21d7e13f35d610c292b7538ca
+manifest_hash: c40a0a3c1163bbf513f3360f1e6af9ff6e7fb108d1c2fd17853dc20d88fa3ad0
 target: esp32s3
 version: 2.0.0

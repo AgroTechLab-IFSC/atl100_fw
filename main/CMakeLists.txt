@@ -1,12 +1,18 @@
 idf_component_register(SRCS 
+                         "atl_adc.c"
                          "atl_button.c"
                          "atl_config.c"
+                         "atl_i2c.c"
                          "atl_led.c"
                          "atl_main.c"
+                         "atl_modbus.c"
+                         "atl_modbus_params.c"
                          "atl_mqtt.c"
                          "atl_ota.c"
+                         "atl_telemetry.c"
                          "atl_webserver.c"
                          "atl_wifi.c"
+                         "include/ads1x15.c"
                        INCLUDE_DIRS
                          "."
                          "include/"

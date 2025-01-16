@@ -11,6 +11,7 @@
 #include "atl_wifi.h"
 #include "atl_webserver.h"
 #include "atl_mqtt.h"
+#include "atl_telemetry.h"
 
 /* Constants */
 static const char *TAG = "atl-config";      /**< Module identification. */
@@ -63,31 +64,31 @@ static void atl_config_create_default(void) {
     atl_config.mqtt_client.qos = CONFIG_ATL_MQTT_QOS;
 
     /** Creates default TELEMETRY configuration **/
-    // atl_config.telemetry.send_period = CONFIG_ATL_SEND_PERIOD;
-    // atl_config.telemetry.power.enabled = CONFIG_ATL_PWR_ENABLED;
-    // atl_config.telemetry.power.sampling_period = CONFIG_ATL_PWR_SAMPLING_PERIOD;
-    // atl_config.telemetry.uv.enabled = CONFIG_ATL_UV_ENABLED;
-    // atl_config.telemetry.uv.sampling_period = CONFIG_ATL_UV_SAMPLING_PERIOD;
-    // atl_config.telemetry.light.enabled = CONFIG_ATL_LIGHT_ENABLED;
-    // atl_config.telemetry.light.sampling_period = CONFIG_ATL_LIGHT_SAMPLING_PERIOD;
-    // for (uint8_t i = 0; i < 4; i++) {
-    //     atl_config.telemetry.adc[i].mode = CONFIG_ATL_ADC_MODE;
-    //     atl_config.telemetry.adc[i].sampling_period = CONFIG_ATL_ADC_SAMPLING_PERIOD;
-    //     atl_config.telemetry.adc[i].sampling_window = CONFIG_ATL_ADC_SAMPLING_PERIOD;
-    // }
-    // atl_config.telemetry.dht.enabled = CONFIG_ATL_DHT_ENABLED;
-    // atl_config.telemetry.dht.sampling_period = CONFIG_ATL_DHT_SAMPLING_PERIOD;
-    // atl_config.telemetry.bme280.enabled = CONFIG_ATL_BME280_ENABLED;
-    // atl_config.telemetry.bme280.sampling_period = CONFIG_ATL_BME280_SAMPLING_PERIOD;
-    // atl_config.telemetry.soil.enabled = CONFIG_ATL_SOIL_ENABLED;
-    // atl_config.telemetry.soil.sampling_period = CONFIG_ATL_SOIL_SAMPLING_PERIOD;
-    // atl_config.telemetry.soil.modbus_rtu_addr = CONFIG_ATL_SOIL_MODBUS_ADDR;
-    // atl_config.telemetry.pluviometer.enabled = CONFIG_ATL_PLUVIOMETER_ENABLED;
-    // atl_config.telemetry.pluviometer.sampling_period = CONFIG_ATL_PLUVIOMETER_SAMPLING_PERIOD;
-    // atl_config.telemetry.anemometer.enabled = CONFIG_ATL_ANEMOMETER_ENABLED;
-    // atl_config.telemetry.anemometer.sampling_period = CONFIG_ATL_ANEMOMETER_SAMPLING_PERIOD;
-    // atl_config.telemetry.wind_sock.enabled = CONFIG_ATL_WIND_SOCK_ENABLED;
-    // atl_config.telemetry.wind_sock.sampling_period = CONFIG_ATL_WIND_SOCK_SAMPLING_PERIOD;
+    atl_config.telemetry.send_period = CONFIG_ATL_SEND_PERIOD;
+    atl_config.telemetry.power.enabled = CONFIG_ATL_PWR_ENABLED;
+    atl_config.telemetry.power.sampling_period = CONFIG_ATL_PWR_SAMPLING_PERIOD;
+    atl_config.telemetry.uv.enabled = CONFIG_ATL_UV_ENABLED;
+    atl_config.telemetry.uv.sampling_period = CONFIG_ATL_UV_SAMPLING_PERIOD;
+    atl_config.telemetry.light.enabled = CONFIG_ATL_LIGHT_ENABLED;
+    atl_config.telemetry.light.sampling_period = CONFIG_ATL_LIGHT_SAMPLING_PERIOD;
+    for (uint8_t i = 0; i < 4; i++) {
+        atl_config.telemetry.adc[i].mode = CONFIG_ATL_ADC_MODE;
+        atl_config.telemetry.adc[i].sampling_period = CONFIG_ATL_ADC_SAMPLING_PERIOD;
+        atl_config.telemetry.adc[i].sampling_window = CONFIG_ATL_ADC_SAMPLING_PERIOD;
+    }
+    atl_config.telemetry.dht.enabled = CONFIG_ATL_DHT_ENABLED;
+    atl_config.telemetry.dht.sampling_period = CONFIG_ATL_DHT_SAMPLING_PERIOD;
+    atl_config.telemetry.bme280.enabled = CONFIG_ATL_BME280_ENABLED;
+    atl_config.telemetry.bme280.sampling_period = CONFIG_ATL_BME280_SAMPLING_PERIOD;
+    atl_config.telemetry.soil.enabled = CONFIG_ATL_SOIL_ENABLED;
+    atl_config.telemetry.soil.sampling_period = CONFIG_ATL_SOIL_SAMPLING_PERIOD;
+    atl_config.telemetry.soil.modbus_rtu_addr = CONFIG_ATL_SOIL_MODBUS_ADDR;
+    atl_config.telemetry.pluviometer.enabled = CONFIG_ATL_PLUVIOMETER_ENABLED;
+    atl_config.telemetry.pluviometer.sampling_period = CONFIG_ATL_PLUVIOMETER_SAMPLING_PERIOD;
+    atl_config.telemetry.anemometer.enabled = CONFIG_ATL_ANEMOMETER_ENABLED;
+    atl_config.telemetry.anemometer.sampling_period = CONFIG_ATL_ANEMOMETER_SAMPLING_PERIOD;
+    atl_config.telemetry.wind_sock.enabled = CONFIG_ATL_WIND_SOCK_ENABLED;
+    atl_config.telemetry.wind_sock.sampling_period = CONFIG_ATL_WIND_SOCK_SAMPLING_PERIOD;
 
     /** Creates default GATEWAY (ATL100 <-> CR300) configuration */
     // atl_config.telemetry.cr300_gw.enabled = CONFIG_ATL_GATEWAY_ENABLED;

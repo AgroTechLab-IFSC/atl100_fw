@@ -1,6 +1,6 @@
 dependencies:
   # Required IDF version
-  idf: ">=5.3.1"
+  idf: ">=5.4.0"
 
   # Addrassable RGB LED
   espressif/led_strip: 
@@ -12,7 +12,7 @@ dependencies:
 
   # BME280 sensor
   espressif/bme280:
-    version: ">=0.1.0"
+    version: ">=0.1.1"
 
   # BH1750 sensor
   espressif/bh1750:
@@ -20,4 +20,4 @@ dependencies:
   
   # Modbus
   espressif/esp-modbus:
-    version: ">=1.0.16"
+    version: ">=2.0.1"
