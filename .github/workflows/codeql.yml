@@ -85,20 +85,22 @@ jobs:
       with:
         python-version: '3.13'
     
-    # Install ESP-IDF
-    - name: Install ESP-IDF
-      run: pip install --upgrade esp-idf
-      
-    # If the analyze step fails for one of the languages you are analyzing with
-    # "We were unable to automatically build your code", modify the matrix above
-    # to set the build mode to "manual" for that language. Then modify this step
-    # to build your code.
-    # ℹ️ Command-line programs to run using the OS shell.
-    # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
+    # # Install ESP-IDF
+    # - name: Install ESP-IDF
+    #   run: pip install --upgrade esp-idf
+    
+    # Build ESP-IDF project
+    - name: Build ESP-IDF Project
+      uses: espressif/esp-idf-ci-action@v1
+      with:
+        esp_idf_version: release-v5.4
+        target: esp32s3
+        path: '../../'
+
     # - if: matrix.build-mode == 'manual'
     #   shell: bash
     #   name: Build ESP-IDF Project
-      # run: pio run
+    #   run: pio run
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
